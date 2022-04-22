@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Lemon_Tuesday;
+  src: url("../Fonts/lemon_tuesday/Lemon Tuesday.otf");
+}
+
+/* html{
+background-image: linear-gradient(rgba(88,111,145,0.9), rgba(90,146,107,0.9));
+} not*/
+
+body {
+  
+  text-align: center;
+  font-size: 150%;
+  padding: 5%;
+}
+
+p-description{
+  margin: 5%;
+  text-align: center;
+}
+
+nav{
+  text-align: left;
+  margin-left: -40%;
+}
+
+h1{
+  text-align: center;
+}
+
+p{
+  font-size: 150%;
+}
+
+.text{
+  font-family: Lemon_Tuesday;
+  text-transform: uppercase;
+}

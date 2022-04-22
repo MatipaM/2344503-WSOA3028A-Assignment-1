@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Lemon_Tuesday;
+    src: url("../Fonts/lemon_tuesday/Lemon Tuesday.otf");
+  }
+
+  html{
+    background-image: linear-gradient(rgba(88,111,145,0.9), rgba(90,146,107,0.9));
+  }
+
+  p{
+      font-size: 150%;
+  }
+
+.row{
+    height: 50%;
+    margin-bottom: 10%;
+}
+
+.column{
+    width: 50%;
+    margin-left: 2%;
+}
+
+.columnSmallImg{
+    width: 25%;
+}
+
+.SmallImg{
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+h1{
+    margin-top: 0%;
+}
+
+.mainImage{
+    margin-left: 5%;
+    width: 50%;
+    float: left;
+}
+
+footer{
+    /* font-family: Lemon_Tuesday; */
+    float: left;
+    margin-bottom: 1%;
+}
+
+h3{
+    font-size: 300%;
+}
+
+.loginIcon{
+    margin-top: 15%;
+}
+
+/* h2{
+    font-family: Lemon_Tuesday;
+    font-size: 400%;
+    text-align: center;
+    color: white;
+    letter-spacing: 300%;
+} */
+
+.mainHeadings{
+    font-family: Lemon_Tuesday;
+    font-size: 300%;
+    text-align: center;
+    color: white;
+    letter-spacing: 300%;
+}
+
+.Logos{
+    margin-top: -5%;
+}
+
+.sponsored{
+    text-align: left;
+    color: rgba(40,40,40,1);
+    /* margin-left: 5%; */
+    font-size: 200%;
+    margin-bottom: -2%;
+    font-weight: bold;
+}
+
+/* .p-appDescription{
+    font-size: 200%;
+} */
+
+nav{
+    font-size: 200%;
+}
+
+.concept2{
+    margin-left: 10%;
+}
+
+
+@media (max-width: 1300px){
+    #check:checked ~ .slideshow-container .mySlides1 .next .prev{
+        display: hidden;
+        left: -1200%;
+    }
+
+    
+    nav ul{
+        margin-top: 30%;
+    }
+
+    html{
+        background-color: rgba(88,111,145,1);
+    }
+}

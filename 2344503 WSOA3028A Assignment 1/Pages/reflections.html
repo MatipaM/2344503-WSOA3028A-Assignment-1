@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+    <label for="check" class="bars"> <i class="fa-solid fa-bars"></i> </label>
+    
+            <ul><a href="PlantsVsInsects.html" class="u-url"><i class="fa-solid fa-gamepad"></i>  </a>  </ul>
+            <ul> <a href="Firtech.html" class="u-url"><i class="fa-solid fa-tablet-screen-button"></i> </a>  </ul>
+            <ul> <a href="blogPosts.html" class="u-url"><i class="fa-brands fa-readme"></i></a> </ul>
+            <ul> <a href="contactMe.html" class="u-url"><i class="fa-solid fa-address-book"></i> </a></ul>
+            <ul> <a href="index.html" class="u-url"><i class="fa-solid fa-house"></i></a></ul>
+        </nav>
+    </header>
+<head>
+    <meta name="description" content="This is the reflections page of portolfio. This page speaks to how I created this website via wireframes, technical and creative reflections.">
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/blogPosts.css">
+    <link rel="stylesheet" href="../CSS/PlantsVsInsects.css">
+    <link rel="stylesheet" href="../CSS/loginPage.css">
+    <link rel="stylesheet" href="../CSS/reflections.css">
+    <script src="https://kit.fontawesome.com/e9f29bfa82.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />   
+    <title>Matipa's Portfolio Website</title>
+</head>
+<!-- 
+<span class="loginIcon">
+    <a href="login.html">
+    <i class="fa-solid fa-user"></i>
+    <br/>
+    <div class="loginText p-login">
+    Log in!
+    </a>
+</div>
+</span> -->
+
+<section>
+
+    <img src="../Images/ReflectionPixelArt.gif" alt="DocuVault Logo" height="10%"> 
+
+    <article>
+        <h2 class="heading">
+Technical Reflection
+        </h2>
+
+<p>For this assignment, I really struggled with replicating the nav bar which would turn into a menu when the screen width was smaller than a certain size (In my case would have been around 1000px). I was trying to make it so that when the screen width was small the user could select the bars icon and then a horizontal menu of the navigation bar would appear. However, the (unordered) list elements in the navigation bar would render on top of one another instead of directly beneath. This made it too difficult to read any of the text, let alone click on the desired hyperlink, as it would just redirect you to the hyperlink which was rendered on top. I also had added a background which rendered underneath the top layer of text but above the rest of the links. I decided to take out the media query code and instead use a nav menu of icons as it took up less space and was more visually appealing than the text. </p>
+
+<p>My concern with the icons that I used in place of the text in the navigation bar is that they are a bit ambiguous at the beginning. However, I saw through time, users would become familiar with the icons and navigation would become much easier over time. I also chose icons which I thought users would more naturally associate with the title of the webpage. </p>
+
+<p>I also struggled to get the gradient background to cover the background image, as at the edges there is a sharp transition into my default background. However, I attempted to use box-shadow, etc. to try make this transition more subtle by making the gradient fade off. </p>
+
+<p>When it came to semantic markup I did make an effort to mark all elements on my page with tags that I thought were most appropriate. These tags also made it easier for me to alter text elements with the appropriate css. Initially, I wasn't too sure what content to place in the header and footer section of my website. After doing some research I decided to add references/citations of pixel art from other artists which I had added to my website as well the contact details I was comfortable with recruiters seeing. In the header of each webpage I added the navigation bar.  </p>
+
+<p>(The app has responsive design for devices of minimum width: 300px)
+</p>
+</article>
+<article>
+
+    <h2 class="heading">
+Creative Reflection
+    </h2>
+
+<p>I decided to import a font I found online, 'Lemon Tuesday' which I used throughout my website for headings and important text. I then used an already imported text as my secondary font. I did not want to use Lemon Tuesday throughout  my blog (add image) as it can be difficult to read especially when printed too small and I did not want to overwhelm my user with large sections of text.</p>
+
+<p>I liked the idea of adding pixel art consistently throughout my website as I thought it made my website more visually appealing. The increased visual appeal helped because the purpose of my portfolio website was to show off my skills as a developer as opposed to an artist. Therefore I found, pages were not as attractive as they could be if they were filled with my art. I considered using pixel art to design more detailed icons for my navigation bar as the lack of text requires less ambiguous icons. However, I did enjoy the sleek designs of the icons I got from font awesome. </p>
+
+<p>On my app development page where I speak about the internship I am currently doing at 'Firtech', a software development/automation company. I decided to use two carousels side by side and tried to align the pages I had designed using Miro with the pages I had built in visual studio. I did this because I wanted recruiters to be able to see how each page had developed from my planning process to the current outcome (as I am still improving the pages). This was quite challenging as during the development process, pages had been moved, deleted and/or added which made it difficult to compare pages exactly. This is also why I decided to use back and forward buttons instead of two automatic carousels so the user can skip extra pages if they would like to see the exact page in planning versus in development. </p>
+
+<p>I decided to only use two primary fonts as I wanted my website to contain some form of consistency. This is also why I used similar saturation in colours and my main colours only consisted of red, blue and purple. I chose the background to be a screenshot of my code because I thought it would be fitting on the first page. That way recruiters can get an idea of what type of portfolio they are looking at before diving into the main content. </p>
+
+<p>I also created a Contact Form which is not yet functional as I have not coded the JavaScript for it yet. I thought this would be useful in cases where a recruiter may have questions or further queries that my website may have not been able to answer.
+
+<p>For my text heavy pages such as my blog posts page and  reflection page. I included a background gradient as the solid colours make it much easier to see the text. I also thought the transition between the two solid colours was beautiful yet subtle enough to not draw too much attention away from the text.
+</p>
+</article>
+
+<article>
+    <p>
+    <h2 class="heading">
+Style Guide
+    </h2>
+
+<h1>Main Headings</h1>
+
+<h2 class="heading">Secondary Headings</h2>
+
+<h3 class="heading1" >Tertiary Headings</h3>
+
+General Text. <br/>
+
+Colour Scheme:  <br/>
+<img src="../Images/WireframesAndColour/red.png" alt="red" width="5%">
+<img src="../Images/WireframesAndColour/blue.png" alt="blue" width="5%">
+<img src="../Images/WireframesAndColour/purple.png" alt="purple" width="5%">
+<img src="../Images/WireframesAndColour/green.png" alt="green" width="5%">
+
+<button class="u-url submit" >Buttons: <img src="../Images/DovePixelArt.png" alt="pixel art typewriter" width="5%"> </button>
+
+
+Nav Menu (fontawesome Icons): 
+<div class="navMenu">
+    <ul><a href="PlantsVsInsects.html" class="u-url"><i class="fa-solid fa-gamepad"></i>  </a>  </ul>
+<ul> <a href="Firtech.html" class="u-url"><i class="fa-solid fa-tablet-screen-button"></i> </a>  </ul>
+<ul> <a href="blogPosts.html" class="u-url"><i class="fa-brands fa-readme"></i></a> </ul>
+<ul> <a href="contactMe.html" class="u-url"><i class="fa-solid fa-address-book"></i> </a></ul>
+<ul> <a href="index.html" class="u-url"><i class="fa-solid fa-house"></i></a></ul>
+</div>
+</p>
+
+<p>
+    My colour scheme was inspired by the background image I chose throughout the website. That is the screenshot of some code. I liked the blue of the IDE and then used the same saturation for the other colours. I thought the purple and red stood out on top of the blue but still worked well with the blue. The green just looked really lovely as part of the transition and was light enough to let the text over it stand out.</p>
+<p>
+    I wanted to keep the layout of my index page, simple as it is the first page my user sees when entering my website. So I just added a welcome note as well as some pixel art which I used throughout my website. With the text heavy pages, I centered the text and added a gradient background to allow the text to stand out. For my portfolio pages, I placed images above text, to indicate that the text was more of a support to the items I had developed. I did not want recruiters who have multitudes of portoflios to scan to feel the need to scan through all of the text just to find the game link/images. 
+</p>
+</article>
+
+<h2 class="heading">
+   Wireframes
+</h2>
+    <img src="../Images/WireframesAndColour/WireFrame1.png" alt="Index Page Wireframe" width="75%">
+    <img src="../Images/WireframesAndColour/Wireframe2.png" alt="App/Game Development Wireframe" width="75%">
+    <img src="../Images/WireframesAndColour/Wireframe3.png" alt="Blog Posts Wireframe" width="75%">
+    <img src="../Images/WireframesAndColour/Wireframe4.png" alt="Contact Page Wireframe" width="75%">
+
+</section>
+
+<!-- <script src="../JS/validation.js"></script> -->
+
+<body>
+<article>
+    <section>
+
+    </section>
+</article>
+</body>
+<footer>
+    <cite>
+        Tenor. 2022. Pixel Study GIF - Pixel Study - Discover & Share GIFs. [online] Available at: <https://tenor.com/view/pixel-study-gif-20419806> [Accessed 22 April 2022].
+    </cite>
+</footer>
+</html>

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Lemon_Tuesday;
+    src: url("../Fonts/lemon_tuesday/Lemon Tuesday.otf");
+  }
+
+  .heading{
+    font-family: Lemon_Tuesday;
+    font-size: 300%;
+    text-align: center;
+    color: black;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+body {
+    background-image: linear-gradient(rgba(88,111,145,0.9), rgba(90,146,107,0.9));
+    /* font-size: 200%; */
+}
+
+.references{
+    margin-bottom: 5%;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+    font-size: 200%;
+}
+
+p{
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 150%;
+}
+
+.ComputerPixelArt{
+    width: 25%;
+}

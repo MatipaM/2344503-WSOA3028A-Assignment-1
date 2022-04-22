@@ -1,0 +1,57 @@
+  html{
+      font-family: Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+
+  h1{
+      margin-top: 10%;
+      font-size: 500%;
+  }
+
+  .helloUser{
+    font-family: Lemon_Tuesday;
+    font-size: 500%;
+    text-align: center;
+    font-weight: bold;
+    /* margin-left: 50%;
+    margin-right: -10%; */
+    justify-content: center;
+    /* margin-top: 30%; */
+  }
+
+  .homeImage{
+      margin-top: -10%;
+  }
+
+  .typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 42px;
+    background-color: white;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+}
+
+  @keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+
+.p-name{
+    font-family: Lemon_Tuesday;
+    font-size: 500%;
+    text-align: center;
+    font-weight: bold;
+    /* margin-left: 50%;
+    margin-right: -10%; */
+    justify-content: center;
+    /* margin-top: 30%; */
+  }

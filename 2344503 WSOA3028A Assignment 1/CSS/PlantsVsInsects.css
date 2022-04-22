@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Lemon_Tuesday;
+  src: url("../Fonts/lemon_tuesday/Lemon Tuesday.otf");
+}
+
+html{
+background-image: linear-gradient(rgba(88,111,145,0.9), rgba(90,146,107,0.9));
+} 
+
+body {
+  text-align: center;
+  /* font-size: 150%; */
+  padding: 5%;
+}
+
+.p-gameDescription{
+ float: right;
+}
+
+p{
+  font-size: 125%;
+  margin-left: 10%;
+  text-align: left;
+}
+
+nav {
+  text-align: left;
+  margin-left: -80%;
+
+}
+
+ul{
+  margin-top: -40%;
+}
+
+h1{
+  text-align: center;
+}
+
+.text{
+  font-family: Lemon_Tuesday;
+  text-transform: uppercase;
+}
+
+.heading1{
+  font-size: 150%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 2%;
+}
+
+.heading2{
+  font-size: 150%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.pixelArt1{
+  float: left;
+}
+
+.pixelArt2{
+  float: right;
+}
+
+.heading{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 200%;
+  font-family: Lemon_Tuesday;
+  text-transform: uppercase;
+}
+
+.reflectionText{
+  font-size: 200%;
+}
+
+
+.gameLink{
+  font-size: 150%;
+}
