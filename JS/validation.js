@@ -10,18 +10,42 @@ var usernameValid = true;
 var emailValid = true;
 var passwordValid = true;
 
-form.addEventListener(document.getElementById("submit"), (e)=>{
+// form.addEventListener("submit", (e)=>{
+//     e.preventDefault();
+//     console.log("button is working");
+//     if((usernameValid === true) && (passwordValid===true)){
+//         loggedIn = true;
+//         console.log("is working");
+//     }
+//     else{
+//         console.log("prevent default");
+//         e.preventDefault();
+//     }
+// })
+
+form.addEventListener('submit', function (e) {
+    // prevent the form from submitting
     e.preventDefault();
-    console.log("button is working");
-    if((usernameValid === true) && (passwordValid===true)){
-        loggedIn = true;
-        console.log("is working");
+
+    // validate forms
+    let isUsernameValid = checkUsername(),
+        // isEmailValid = checkEmail(),
+        isPasswordValid = checkPassword(),
+        isConfirmPasswordValid = checkConfirmPassword();
+
+    let isFormValid = isUsernameValid &&
+        // isEmailValid &&
+        isPasswordValid &&
+        isConfirmPasswordValid;
+
+    // submit to the server if the form is valid
+    if (isFormValid) {
+
     }
     else{
-        console.log("prevent default");
         e.preventDefault();
     }
-})
+});
 
 function checkUsername(){
     console.log("is checking username");
@@ -46,27 +70,80 @@ function checkUsername(){
     }
 }
 
-function checkPassword(){
-    console.log("checking password")
 
-    const passwordValue = password.value;
-    const password2Value = password2.value;
+const isPasswordSecure = (password) => {
+    const re = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+    return re.test(password);
+};
 
-    console.log(password2); //coming back as undefined
-    console.log(passwordValue);
+const showError = (input, message) => {
 
-    if(passwordValue != password2Value) // need more secure password validation
-  {
-    message = "Both passwords need to be the same";
-    return setErrorFor(message);
-  }
-  else{
-      console.log("Passwords are the same");
-    localStorage.setItem("Password",passwordValue);
-    return passwordValid = true;
-   
-}
-}
+    const formField = input.parentElement;
+    formField.classList.remove('success');
+    formField.classList.add('error');
+    const error = formField.querySelector('small');
+    error.textContent = message;
+};
+
+const showSuccess = (input, message) => {
+
+    const formField = input.parentElement;
+    formField.classList.remove('error');
+    formField.classList.add('success');
+    const error = formField.querySelector('small');
+    error.textContent = message;
+};
+
+const checkPassword = () => {
+
+    let valid = false;
+
+    const password = passwordEl.value.trim();
+
+    if (!isPasswordSecure(password)) {
+        showError(passwordEl, 'Password must has at least 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special character in (!@#$%^&*)');
+    } else {
+        showSuccess(passwordEl);
+        valid = true;
+    }
+
+    return valid;
+};
+
+const checkConfirmPassword = () => {
+    let valid = false;
+    // check confirm password
+    const confirmPassword = confirmPasswordEl.value.trim();
+    const password = passwordEl.value.trim();
+
+    if (!isRequired(confirmPassword)) {
+        showError(confirmPasswordEl, 'Please enter the password again');
+    } else if (password !== confirmPassword) {
+        showError(confirmPasswordEl, 'Confirm password does not match');
+    } else {
+        showSuccess(confirmPasswordEl);
+        valid = true;
+    }
+
+    return valid;
+};
+
+form.addEventListener('input', function (e) {
+    switch (e.target.id) {
+        case 'username':
+            checkUsername();
+            break;
+        // case 'email':
+        //     checkEmail();
+            break;
+        case 'password':
+            checkPassword();
+            break;
+        case 'confirm-password':
+            checkConfirmPassword();
+            break;
+    }
+});
 
 // function checkEmail(){
 //     const emailStringArray = emailValue.split("");
@@ -86,10 +163,10 @@ function checkPassword(){
 //     }
 // }
 
-function setErrorFor(message){
-const errorMessage = document.getElementById("error").textContent;
-errorMessage = message;
-}
+// function setErrorFor(message){
+// const errorMessage = document.getElementById("error").textContent;
+// errorMessage = message;
+// }
 
 //  var submit = document.getElementById("submit"); //working
 // submit.onclick = function() {

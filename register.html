@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+qq<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <header></header>
 <head>
     <link rel="stylesheet" href="../CSS/loginPage.css">
     <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/register.css">
     <script src="https://kit.fontawesome.com/e9f29bfa82.js" crossorigin="anonymous"></script>
     <meta charset="utf-8" />
     <nav>
@@ -34,12 +35,12 @@
 <form id="form" onsubmit="validateForm()">
     <div class="container">
     <i class="fa-solid fa-user"></i>
-    <br/>
-    <div id="error"></div>
+
+    <div class="form-field error">
     <label for="username" id="username"><b>Please Enter a Username</b></label>
-    <br/>
-    <input type="text" class="textBox" placeholder="Username" onchange="checkUsername()" minlength="2" maxlength="20" required>
-    <br/>
+    <input type="text" class="textBox" placeholder="Username" onchange="checkUsername()" minlength="3" maxlength="20" required>
+    <small></small>
+</div>
      
     <!-- <i class="fa-solid fa-envelopes-bulk"></i>
     <br/>
@@ -49,22 +50,27 @@
     <input type="text" class="textBox" placeholder="Email Address" required>
     <br/> 
 </div> -->
+<div class="form-field error">
     <i class="fa-solid fa-lock-open"></i>
-    <br/>
     <label for="password" id="password"><b>Please Enter a Password</b></label>
-    <br/>
     <input class="textBox" type="password" placeholder="Password" onchange="checkPassword()" required minlength="8" maxlength="30">
-    <br/>
+    <i class="fa-solid fa-eye" id="togglePassword"></i> 
+<small></small>
+</div>
+
+    <div class="form-field error">
     <label for="password" id="password2"><b>Please Re-enter the Password</b></label>
-    <br/>
     <input class="textBox" type="password" placeholder="Password" onchange="checkPassword()" required >
-    <br/>
+    <i class="fa-solid fa-eye" id="togglePassword"></i> 
+<small></small>
+</div>
+
 <button class="submit u-url" id="submit"> <a  href="index.html"> Register <img src="../Images/TypeWriter.png" alt="pixel art typewriter" width="15%"> </a> </button>
- <br/>
     </form>
  
 </div>
 <script src="../JS/validation.js"></script>
+<script src="../JS/togglePassword.js"></script>
 </body>
 <footer></footer>
 </html>

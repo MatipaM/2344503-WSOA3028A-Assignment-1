@@ -8,6 +8,10 @@
       font-size: 500%;
   }
 
+  .fa-user{
+    font-size: 300%;
+  }
+
   .helloUser{
     font-family: Lemon_Tuesday;
     font-size: 500%;
@@ -55,3 +59,22 @@
     justify-content: center;
     /* margin-top: 30%; */
   }
+
+  @media (max-width: 500){
+  }
+
+  @media (max-width: 1680){
+    .fa-user{
+      margin-left: 100%;
+      font-size: 300%;
+    }
+  }
+
+    @media (max-width: 2048){
+      .fa-user{
+        margin-left: 2500%;
+        font-size: 300%;
+      }
+    }
+
+  
