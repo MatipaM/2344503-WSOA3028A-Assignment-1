@@ -5,3 +5,27 @@
 p{
     font-size: 150%;
 }
+
+.ReflectionPixelArt{
+    height: 5%;
+}
+
+body{
+    font-size: 75%;
+}
+
+@media (max-width: 516){
+    .ReflectionPixelArt{
+        width: 60%;
+    }
+}
+
+@media (max-width: 1024){
+    .ReflectionPixelArt{
+        width: 80%;
+    }
+}
+
+  @media (max-width: 2048){
+
+  }

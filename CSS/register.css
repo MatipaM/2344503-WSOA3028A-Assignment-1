@@ -5,3 +5,13 @@
 .success{
     border-color: green;
 }
+
+.submit{
+    height: 10%;
+    font-size: 90%;
+    margin-top: 0%;
+}
+
+.container{
+    padding-bottom: 5%;
+}

@@ -13,9 +13,17 @@ nav{
 }
 
 .submit{
-    font-size: 150%;
+    font-size: 100%;
+    width: 20%;
+    height: 10%;
+    text-align: center;
+    margin-left: 40%;
 }
 
 .container{
     margin-bottom: 5%;
+}
+
+.doveArt{
+    width: 15%;
 }

@@ -1,10 +1,5 @@
-const form = document.getElementById("form");
-const username = document.getElementById("username");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
-const password2 = document.getElementById("password2");
-const helloUser = document.getElementById("helloUser");
-var loggedIn = false;
+
+    const form = document.getElementById("form").innerHTML;
 
 var usernameValid = true;
 var emailValid = true;
@@ -24,6 +19,16 @@ var passwordValid = true;
 // })
 
 form.addEventListener('submit', function (e) {
+
+
+const username = document.getElementById("username").innerHTML;
+console.log(username);
+const email = document.getElementById("email").innerHTML;
+const password = document.getElementById("password").innerHTML;
+const password2 = document.getElementById("password2").innerHTML;
+const helloUser = document.getElementById("helloUser").innerHTML;
+var loggedIn = false;
+
     // prevent the form from submitting
     e.preventDefault();
 
