@@ -18,7 +18,7 @@ body {
 }
 
 p{
-  font-size: 125%;
+  font-size: 115%;
   margin-left: 10%;
   text-align: left;
 }
@@ -35,11 +35,13 @@ ul{
 
 h1{
   text-align: center;
+  margin-top: -5%;
 }
 
 .text{
-  font-family: Lemon_Tuesday;
+  /* font-family: Lemon_Tuesday; */
   text-transform: uppercase;
+  margin-left: -50%;
 }
 
 .heading1{
@@ -80,4 +82,8 @@ h1{
 
 .gameLink{
   font-size: 150%;
+}
+
+.exampleImg{
+  width: 100%;
 }

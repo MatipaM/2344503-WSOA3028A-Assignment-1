@@ -1,18 +1,30 @@
 .navMenu{
     font-size: 300%;
+    margin-top: 0%;
+    margin: 5%;
 }
 
 p{
     font-size: 150%;
 }
 
-.ReflectionPixelArt{
-    height: 5%;
+i{
+    margin-top: -2%;
 }
 
-body{
-    font-size: 75%;
+li{
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
+
+.ReflectionPixelArt{
+    height: 5%;
+    margin-top: 5%;
+}
+
+/* body{
+    font-size: 75%;
+} */
 
 @media (max-width: 516){
     .ReflectionPixelArt{

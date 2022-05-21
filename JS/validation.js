@@ -1,34 +1,16 @@
 
-    const form = document.getElementById("form").innerHTML;
-
-var usernameValid = true;
-var emailValid = true;
-var passwordValid = true;
-
-// form.addEventListener("submit", (e)=>{
-//     e.preventDefault();
-//     console.log("button is working");
-//     if((usernameValid === true) && (passwordValid===true)){
-//         loggedIn = true;
-//         console.log("is working");
-//     }
-//     else{
-//         console.log("prevent default");
-//         e.preventDefault();
-//     }
-// })
-
-form.addEventListener('submit', function (e) {
+    const form = document.getElementById("form");
+form.addEventListener('submit', (e) => {
 
 
 const username = document.getElementById("username").innerHTML;
 console.log(username);
 const email = document.getElementById("email").innerHTML;
-const password = document.getElementById("password").innerHTML;
-const password2 = document.getElementById("password2").innerHTML;
 const helloUser = document.getElementById("helloUser").innerHTML;
 var loggedIn = false;
 
+console.log(password);
+console.log(password2);
     // prevent the form from submitting
     e.preventDefault();
 
@@ -45,12 +27,30 @@ var loggedIn = false;
 
     // submit to the server if the form is valid
     if (isFormValid) {
-
+        localStorage.setItem('username1', 'username');
+        localStorage.setItem('password', 'password');
+        const username1 = localStorage.getItem('username1');
+        console.log(username1)
     }
     else{
-        e.preventDefault();
+       // e.preventDefault();
     }
 });
+
+//just added
+function validateForm(){
+    let isUsernameValid = checkUsername(),
+    // isEmailValid = checkEmail(),
+    isPasswordValid = checkPassword(),
+    isConfirmPasswordValid = checkConfirmPassword();
+    console.log(password);
+    console.log(password2);
+
+let isFormValid = isUsernameValid &&
+    // isEmailValid &&
+    isPasswordValid &&
+    isConfirmPasswordValid;
+}
 
 function checkUsername(){
     console.log("is checking username");
@@ -61,12 +61,12 @@ function checkUsername(){
     if(usernameValue < 3){
         console.log("is under 3 character");
         message = "This username is too short";
-        return setErrorFor(message);
+        return showError(message);
     }
     else if(usernameValue>20)
     {
         message = "This username is too long";
-        return setErrorFor(message);
+        return showError(message);
     }
     else{
         localStorage.setItem("Username",usernameValue);
@@ -83,17 +83,28 @@ const isPasswordSecure = (password) => {
 
 const showError = (input, message) => {
 
-    const formField = input.parentElement;
-    formField.classList.remove('success');
-    formField.classList.add('error');
-    const error = formField.querySelector('small');
+    //const formField = input.parentElement;
+    const formField = document.getElementsByClassName("form-field");
+    formField.className = "error";
+    var errorLabel = document.getElementsByClassName('passwordLabel');
+    console.log(errorLabel);
+    // errorLabel.setAttribute('id', 'error')
+    //var errorLabel2 = document.getElementsByClassName('passwordLabel2'); intro.setAttribute('id', 'error')
+    // console.log(formField);
+    // console.log(formField.outerHTML);
+    // formField.classList.remove('success');
+    errorLabel.classList.add('error');
+    //const error = formField.querySelector('small');
+    const error = formField.getElementById("error").innerHTML;
     error.textContent = message;
 };
 
 const showSuccess = (input, message) => {
 
-    const formField = input.parentElement;
-    formField.classList.remove('error');
+    //const formField = input.parentElement;
+    const formField = document.getElementsByClassName("form-field");
+    formField.className = 'foo';
+    //formField.classList.remove('error');
     formField.classList.add('success');
     const error = formField.querySelector('small');
     error.textContent = message;
@@ -103,12 +114,14 @@ const checkPassword = () => {
 
     let valid = false;
 
-    const password = passwordEl.value.trim();
+    const password = document.getElementById("password").innerHTML;
 
     if (!isPasswordSecure(password)) {
-        showError(passwordEl, 'Password must has at least 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special character in (!@#$%^&*)');
+        console.log(password);
+        showError(password, 'Password must have at least 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special character in (!@#$%^&*)');
     } else {
-        showSuccess(passwordEl);
+        showSuccess(password);
+        console.log(password);
         valid = true;
     }
 
@@ -118,15 +131,14 @@ const checkPassword = () => {
 const checkConfirmPassword = () => {
     let valid = false;
     // check confirm password
-    const confirmPassword = confirmPasswordEl.value.trim();
-    const password = passwordEl.value.trim();
+    const password2 = document.getElementById("password2").innerHTML;
 
-    if (!isRequired(confirmPassword)) {
-        showError(confirmPasswordEl, 'Please enter the password again');
-    } else if (password !== confirmPassword) {
-        showError(confirmPasswordEl, 'Confirm password does not match');
+    if (!isRequired(password2)) {
+        showError(password2, 'Please enter the password again');
+    } else if (password !== password2) {
+        showError(password2, 'Confirm password does not match');
     } else {
-        showSuccess(confirmPasswordEl);
+        showSuccess(password2);
         valid = true;
     }
 
@@ -185,7 +197,3 @@ form.addEventListener('input', function (e) {
 //   console.log("Button pressed!");
 // }
 
-if(loggedIn == true)
-{
-    helloUser.textContent = "hello" + usernameValue+ ", My name is Matipa";
-}

@@ -1,6 +1,7 @@
-const password = document.getElementById("password");
-const password2 = document.getElementById("password2");
-const form = document.getElementById("form");
+const password = document.getElementById("password").innerHTML;
+const password2 = document.getElementById("password2").innerHTML;
+
+togglePassword = document.getElementById("togglePassword");
 
 togglePassword.addEventListener("click", function () {
     // toggle the type attribute
@@ -8,9 +9,10 @@ togglePassword.addEventListener("click", function () {
     password.setAttribute("type", type);
     
     // toggle the icon
-    this.classList.toggle("fa-eye");
+    this.classList.toggle("eye"); //eye disappeaing after moving to second input label
 });
 
+togglePassword2 = document.getElementById("togglePassword2");
 
 togglePassword2.addEventListener("click", function () {
     // toggle the type attribute
@@ -18,9 +20,6 @@ togglePassword2.addEventListener("click", function () {
     password2.setAttribute("type", type);
     
     // toggle the icon
-    this.classList.toggle("fa-eye");
+    this.classList.toggle("eye2");
 });
 
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
-});

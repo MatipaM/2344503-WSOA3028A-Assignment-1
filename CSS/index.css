@@ -1,20 +1,6 @@
-  html{
+   html{
       font-family: Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-
-  #sentence{
-    font-family: Lemon_Tuesday;
-    font-size: 300%;
-    text-align: center;
-    font-weight: bold;
-    /* margin-left: 50%;
-    margin-right: -10%; */
-    justify-content: center;
-    margin-top: -20%;
-    padding-top: 5%;
-    margin-bottom: 0%;
-  }
+  } 
 
   
 #helloUser{
@@ -23,12 +9,26 @@
   text-align: center;
   font-weight: bold;
   justify-content: center;
-  margin-top: -40%;
+  margin-top: -5%;
+}
+
+
+#sentence{
+  font-family: Lemon_Tuesday;
+  font-size: 300%;
+  text-align: center;
+  font-weight: bold;
+  /* margin-left: 50%;
+  margin-right: -10%; */
+  justify-content: center;
+  margin-top: 5%;
+  /* padding-top: -15%; */
+  margin-bottom: 0%;
 }
 
   .homeImage{
       margin-top: -10%;
-      height: 30%;
+      width: 40%;
       bottom: 0%;
   }
 
@@ -73,6 +73,7 @@
       .fa-user{
         margin-left: 2500%;
         font-size: 300%;
+        width: 80%;
       }
     }
 

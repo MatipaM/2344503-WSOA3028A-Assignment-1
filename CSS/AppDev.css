@@ -8,8 +8,15 @@
     /*changed from body*/
   }
 
+footer{
+    background-image:  rgba(90,146,107,0.9);
+    /*changed from body*/
+}
+
   p{
       font-size: 150%;
+      margin-left: 5%;
+      margin-right: 5%;
   }
 
 .row{
@@ -24,6 +31,11 @@
 
 .columnSmallImg{
     width: 25%;
+}
+
+.logos{
+    width: 20%;
+    margin-left: 15%;
 }
 
 .SmallImg{
@@ -93,10 +105,11 @@ nav{
     font-size: 200%;
 }
 
+/*
 .concept2{
     margin-left: 10%;
 }
-
+*/
 
 @media (max-width: 1300px){
     #check:checked ~ .slideshow-container .mySlides1 .next .prev{

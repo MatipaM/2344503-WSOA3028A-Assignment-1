@@ -1,10 +1,38 @@
 html{
     background-image: url(../Images/WebsiteBackground.png);
+    background-color: rgba(71,91,127,0.1);
     /* height: 100vh; */
     /* width: 200vh; */
   background-size: cover;
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body{
+    font-family: Calibri;
     cursor: pointer;
+}
+
+
+cite{
+    background-color: rgba(71,91,127,1);
+    color: black;
+}
+
+.a{
+    font-family: Calibri;
+    margin-top: 10%;
+}
+
+i{
+    margin-top: 5%;
+    font-size: 200%;
+    color: black;
+   
+}
+
+a{
+    margin-right: 10%;
+    margin-left: 5%;
 }
 
 @font-face {
@@ -14,23 +42,35 @@ html{
 
 nav{
     text-align: left;
-    font-size:200%;
+    font-size:150%;
     font-weight: bold;
     margin-top: 0%;
-    display: inline-block;
+    /* display: inline-block; */
     height: 10%;
+   color: black;
 }
 
 ul{
-    display: inline-block;
+    /* display: inline-block; */
     /* margin-right: 10%; */
+    overflow: hidden;
+    margin-top: 5%;
+    font-size: 50%;
+    margin-right: 5%;
+}
+
+li{
+    word-break: break-all;
+    display: inline-block;
+    padding-right: 1%;
+    padding-left: 1%;
 }
 
 .loginIcon{ 
     /* not rendering */
-    font-size: 250%;
+    font-size: 100%;
     float: right;
-    margin-top: -3%;
+    margin-top: -5%;
     margin-right: 5%;
     color: rgba(76, 25, 126, 255);
 }
@@ -59,7 +99,7 @@ h1{
 }
 
 #helloUser{
-    margin-top: 10%;
+    margin-top: 35%;
     font-family: Lemon_Tuesday;
     font-size: 200%;
     text-align: center;
@@ -81,7 +121,7 @@ h1{
     display:none;
 }
 
-/* @media (max-width: 500){
+ @media (max-width: 500px){
 
     .bars{
         display: block;
@@ -119,6 +159,6 @@ h1{
     #check:checked ~ ul{
         left: 0%;
     }
-} */
+} 
 
 
