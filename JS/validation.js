@@ -93,10 +93,11 @@ const showError = (input, message) => {
     // console.log(formField);
     // console.log(formField.outerHTML);
     // formField.classList.remove('success');
-    errorLabel.classList.add('error');
+    //errorLabel.classList.add('error');
     //const error = formField.querySelector('small');
-    const error = formField.getElementById("error").innerHTML;
-    error.textContent = message;
+    const error = formField.className;
+    error.innerHTML = message; //not showing in error.innerHTML
+    console.log(message);
 };
 
 const showSuccess = (input, message) => {
@@ -105,12 +106,12 @@ const showSuccess = (input, message) => {
     const formField = document.getElementsByClassName("form-field");
     formField.className = 'foo';
     //formField.classList.remove('error');
-    formField.classList.add('success');
+    //formField.classList.add('success');
     const error = formField.querySelector('small');
     error.textContent = message;
 };
 
-const checkPassword = () => {
+const checkPassword = () => { //is working
 
     let valid = false;
 
@@ -119,6 +120,7 @@ const checkPassword = () => {
     if (!isPasswordSecure(password)) {
         console.log(password);
         showError(password, 'Password must have at least 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special character in (!@#$%^&*)');
+        valid = false;
     } else {
         showSuccess(password);
         console.log(password);
@@ -142,7 +144,11 @@ const checkConfirmPassword = () => {
         valid = true;
     }
 
+    console.log(password);
+    console.log(password2);
+
     return valid;
+  
 };
 
 form.addEventListener('input', function (e) {
