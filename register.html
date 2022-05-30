@@ -1,4 +1,4 @@
-qq<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <header></header>
@@ -34,15 +34,15 @@ qq<!DOCTYPE html>
     <h1>Please fill in the form below</h1>
 </head>
 <body>
-<form id="form" onsubmit="validateForm()">
+<form id="form" onSubmit="validateForm()">
+    <!-- too out onchange="validateForm()" from form -->
     <div class="container">
 
 <div class="usernameLabel">
     <i class="fa-solid fa-user"></i>
-    <div class="form-field error">
+    <div id="form-field-1">
     <label for="username"><b>Please Enter a Username</b></label> <br/>
     <input type="text" id="username" class="textBox" placeholder="Username" onchange="checkUsername()" minlength="3" maxlength="20" required>
-    <small></small>
     </div>
 </div>
      
@@ -55,7 +55,7 @@ qq<!DOCTYPE html>
     <br/> 
 </div> -->
 <div class="passwordLabel">
-<div class="form-field error success">
+<div class="error success">
     <i class="fa-solid fa-lock-open"></i>
     <br/>
     <label for="password" ><b>Please Enter a Password</b></label> <br/>
@@ -66,15 +66,16 @@ qq<!DOCTYPE html>
 </div>
 
 <div class="passwordLabel2">
-    <div class="form-field error success">
+    <div class="error success">
     <label for="password" ><b>Please Re-enter the Password</b></label> <br/>
-    <input class="textBox"id="password2"  type="password" placeholder="Password"required >
+    <input class="textBox"id="password2"  type="password" placeholder="Password"required>
     <i class="eye2" id="togglePassword2"></i> 
 <small></small>
 </div>
 </div>
 
-<button class="submit u-url" id="submit" onclick="validateForm()"> <a  href="index.html"> Register <img src="../Images/TypeWriter.png" alt="pixel art typewriter" width="10%" class="typewriterIcon"> </a> </button>
+<button class="submit" type="submit" id="submit" > <a  href="index.html"> Register <img src="../Images/TypeWriter.png" alt="pixel art typewriter" width="10%" class="typewriterIcon"> </a> </button> 
+<!-- took out onclick="validateForm()" from button -->
     </form>
  
 </div>

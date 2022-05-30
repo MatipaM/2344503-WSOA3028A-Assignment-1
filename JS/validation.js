@@ -1,77 +1,47 @@
 
-    const form = document.getElementById("form");
-form.addEventListener('submit', (e) => {
-
-
-const username = document.getElementById("username").innerHTML;
-console.log(username);
-const email = document.getElementById("email").innerHTML;
-const helloUser = document.getElementById("helloUser").innerHTML;
-var loggedIn = false;
-
-console.log(password);
-console.log(password2);
-    // prevent the form from submitting
-    e.preventDefault();
-
-    // validate forms
-    let isUsernameValid = checkUsername(),
-        // isEmailValid = checkEmail(),
-        isPasswordValid = checkPassword(),
-        isConfirmPasswordValid = checkConfirmPassword();
-
-    let isFormValid = isUsernameValid &&
-        // isEmailValid &&
-        isPasswordValid &&
-        isConfirmPasswordValid;
-
-    // submit to the server if the form is valid
-    if (isFormValid) {
-        localStorage.setItem('username1', 'username');
-        localStorage.setItem('password', 'password');
-        const username1 = localStorage.getItem('username1');
-        console.log(username1)
-    }
-    else{
-       // e.preventDefault();
-    }
-});
+const form = document.getElementById("form");
+form.onsubmit = submit;
 
 //just added
 function validateForm(){
-    let isUsernameValid = checkUsername(),
+    let isUsernameValid = checkUsername();
     // isEmailValid = checkEmail(),
-    isPasswordValid = checkPassword(),
-    isConfirmPasswordValid = checkConfirmPassword();
-    console.log(password);
-    console.log(password2);
+    // isPasswordValid = checkPassword(),
+    // isConfirmPasswordValid = checkConfirmPassword();
+    // console.log(password);
+    // console.log(password2);
 
-let isFormValid = isUsernameValid &&
-    // isEmailValid &&
-    isPasswordValid &&
-    isConfirmPasswordValid;
+//let isFormValid = isUsernameValid
+// &&
+//     // isEmailValid &&
+//     isPasswordValid &&
+//     isConfirmPasswordValid;
 }
 
 function checkUsername(){
+    usernameValid = false;
     console.log("is checking username");
-    const usernameValue = username.value;
+    const username = document.getElementById("username").value;
+    console.log(username);
     // const emailValue = Object.values(email);
+    var usernameError;
 
-
-    if(usernameValue < 3){
+    if(username.length < 3){
         console.log("is under 3 character");
         message = "This username is too short";
-        return showError(message);
+        showError(message);
+        return usernameValid = false;
     }
-    else if(usernameValue>20)
+    else if(username.length>=20)
     {
         message = "This username is too long";
-        return showError(message);
+        showError(message);
+        return usernameValid = false;
     }
     else{
-        localStorage.setItem("Username",usernameValue);
-        return usernameValid = true;
-        
+        usernameValid = true;  
+        showSuccess();
+        return usernameValid = true;   
     }
 }
 
@@ -81,41 +51,42 @@ const isPasswordSecure = (password) => {
     return re.test(password);
 };
 
-const showError = (input, message) => {
+const showError = (message) => {
+    if(usernameValid == false)
+    {
+        const formField = document.getElementById("form-field-1");
 
-    //const formField = input.parentElement;
-    const formField = document.getElementsByClassName("form-field");
-    formField.className = "error";
-    var errorLabel = document.getElementsByClassName('passwordLabel');
-    console.log(errorLabel);
-    // errorLabel.setAttribute('id', 'error')
-    //var errorLabel2 = document.getElementsByClassName('passwordLabel2'); intro.setAttribute('id', 'error')
-    // console.log(formField);
-    // console.log(formField.outerHTML);
-    // formField.classList.remove('success');
-    //errorLabel.classList.add('error');
-    //const error = formField.querySelector('small');
-    const error = formField.className;
-    error.innerHTML = message; //not showing in error.innerHTML
-    console.log(message);
+        formField.classList.remove("success-1");
+        formField.classList.add('error-1'); //working
+        const error = document.getElementsByClassName("error-1");
+        error.textContent = message;
+        error.innerHTML = message;
+        console.log(message);
+        console.log(usernameValid);
+    }
+
+
 };
 
-const showSuccess = (input, message) => {
-
-    //const formField = input.parentElement;
-    const formField = document.getElementsByClassName("form-field");
-    formField.className = 'foo';
-    //formField.classList.remove('error');
-    //formField.classList.add('success');
-    const error = formField.querySelector('small');
-    error.textContent = message;
+const showSuccess = () => { //not running
+    if(usernameValid == true)
+    {
+        console.log("succesful username")
+        console.log("show success is running")
+        const formField = document.getElementById("form-field-1");
+        formField.classList.remove('error-1'); 
+        formField.classList.add("success-1");  //should work outside this if/else function
+    }
 };
 
 const checkPassword = () => { //is working
 
     let valid = false;
 
-    const password = document.getElementById("password").innerHTML;
+    const password = document.getElementById("password").value;
+    const password2 = document.getElementById("password2").value;
+    console.log(password);
+    console.log(password2);
 
     if (!isPasswordSecure(password)) {
         console.log(password);
@@ -133,12 +104,10 @@ const checkPassword = () => { //is working
 const checkConfirmPassword = () => {
     let valid = false;
     // check confirm password
-    const password2 = document.getElementById("password2").innerHTML;
+    const password2 = document.getElementById("password2").value;
 
-    if (!isRequired(password2)) {
-        showError(password2, 'Please enter the password again');
-    } else if (password !== password2) {
-        showError(password2, 'Confirm password does not match');
+    if (password !== password2) {
+        showError(password2, 'Passwords do not match');
     } else {
         showSuccess(password2);
         valid = true;
@@ -151,22 +120,37 @@ const checkConfirmPassword = () => {
   
 };
 
-form.addEventListener('input', function (e) {
-    switch (e.target.id) {
-        case 'username':
-            checkUsername();
-            break;
-        // case 'email':
-        //     checkEmail();
-            break;
-        case 'password':
-            checkPassword();
-            break;
-        case 'confirm-password':
-            checkConfirmPassword();
-            break;
-    }
+
+form.addEventListener('input', (e) => {
+    checkUsername();
 });
+
+form.addEventListener('submit', (e) => {
+    console.log("is working");
+    
+        // e.preventDefault();
+    
+        let isUsernameValid = checkUsername(); //added in semi colon
+        console.log(isUsernameValid);
+            // isPasswordValid = checkPassword(),
+            // isConfirmPasswordValid = checkConfirmPassword();
+    
+        //let isFormValid = isUsernameValid
+            //  &&
+            // isPasswordValid &&
+            // isConfirmPasswordValid;
+    
+        if (isUsernameValid == true) { //changed from isFormValid
+            localStorage.setItem('username1', 'username');
+            console.log("registration was succesgul");
+            // localStorage.setItem('password', 'password');
+            // const username1 = localStorage.getItem('username1');
+            // console.log(username1)
+        }
+        else{
+            e.preventDefault();
+        }
+    });
 
 // function checkEmail(){
 //     const emailStringArray = emailValue.split("");
@@ -186,20 +170,4 @@ form.addEventListener('input', function (e) {
 //     }
 // }
 
-// function setErrorFor(message){
-// const errorMessage = document.getElementById("error").textContent;
-// errorMessage = message;
-// }
-
-//  var submit = document.getElementById("submit"); //working
-// submit.onclick = function() {
-    
-//     console.log("is working");
-//     checkUsername();
-//     checkPassword();
-
-//     checkValidity();
-
-//   console.log("Button pressed!");
-// }
 

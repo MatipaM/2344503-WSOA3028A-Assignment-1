@@ -3,9 +3,9 @@
   src: url("../Fonts/lemon_tuesday/Lemon Tuesday.otf");
 }
 
-html{
-background-image: linear-gradient(rgba(88,111,145,0.9), rgba(90,146,107,0.9));
-} 
+/* html{
+  background-image: linear-gradient(rgba(236,236,219,1), rgba(255,255,255,0.9));
+}  */
 
 body {
   text-align: center;
@@ -25,12 +25,12 @@ p{
 
 nav {
   text-align: left;
-  margin-left: -80%;
+  margin-left: -5%;
 
 }
 
 ul{
-  margin-top: -40%;
+  margin-top: 0%;
 }
 
 h1{

@@ -1,11 +1,13 @@
 html{
     background-image: url(../Images/WebsiteBackground.png);
-    background-color: rgba(71,91,127,0.1);
     /* height: 100vh; */
     /* width: 200vh; */
   background-size: cover;
 }
 
+h1{
+    margin-top: 20%;
+}
 
 body{
     font-family: Calibri;
@@ -14,7 +16,7 @@ body{
 
 
 cite{
-    background-color: rgba(71,91,127,1);
+    background-color: rgba(236,236,219,1);
     color: black;
 }
 
@@ -27,7 +29,6 @@ i{
     margin-top: 5%;
     font-size: 200%;
     color: black;
-   
 }
 
 a{
@@ -44,7 +45,7 @@ nav{
     text-align: left;
     font-size:150%;
     font-weight: bold;
-    margin-top: 0%;
+    margin-top:-2%;
     /* display: inline-block; */
     height: 10%;
    color: black;
@@ -62,7 +63,7 @@ ul{
 li{
     word-break: break-all;
     display: inline-block;
-    padding-right: 1%;
+    padding-right: 2%;
     padding-left: 1%;
 }
 
