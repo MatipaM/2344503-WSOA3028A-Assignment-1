@@ -48,7 +48,15 @@ a:hover{
 
 .loginIcon{
     margin-top: -20%;
-    margin-left: 90%;
+    margin-left: 0%;
+}
+
+.fa-readme{
+    margin-top: -100%;
+}
+
+.fa-brands{
+    margin-top: -100%;
 }
 
 
@@ -130,7 +138,7 @@ h1{
     font-size: 100%;    
     float: left;
     margin-left: 2%;
-    /* display: none; */
+    display: none;
 }
 
 #check{

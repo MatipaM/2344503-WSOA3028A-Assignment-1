@@ -34,8 +34,9 @@
 
 .fa-user{
   margin-top: 5%;
-  font-size: 130%;
+  font-size: 75%;
 }
+
 
   .typing-container {
     display: flex;
@@ -70,10 +71,12 @@
     }
   }
 
-    @media (max-width: 2048px){
+
+/* is working! */
+    @media (max-width: 2048px){ 
       .fa-user{
-        margin-left: 2500%;
-        font-size: 300%;
+        margin-right: 5%;
+        font-size: 150%;
         width: 80%;
       }
     }

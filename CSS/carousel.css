@@ -9,7 +9,7 @@
 }
 
 /* Hide the images by default */
-.mySlides1 {
+.slides-1 {
   display: none;
   margin-top: 5%;
   /* width: 5%; */
@@ -18,7 +18,7 @@
   margin-left: 10%;
 }
 
-.mySlides2 {
+.slides-2 {
   display: none;
   /* width: 10%;
   text-align: center; */
