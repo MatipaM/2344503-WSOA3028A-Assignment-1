@@ -1,5 +1,6 @@
    html{
       font-family: Calibri, 'Trebuchet MS', sans-serif;
+      
   } 
 
 #helloUser{ 
@@ -58,10 +59,7 @@
     100% {opacity: 0;}
   }
 
-  @media (max-width: 516){
-  }
-
-  @media (max-width: 1024){
+  @media (max-width: 1024px){
     .fa-user{
       margin-left: 100%;
       font-size: 100%;
@@ -72,7 +70,7 @@
     }
   }
 
-    @media (max-width: 2048){
+    @media (max-width: 2048px){
       .fa-user{
         margin-left: 2500%;
         font-size: 300%;
