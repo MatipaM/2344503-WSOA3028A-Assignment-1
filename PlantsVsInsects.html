@@ -3,12 +3,15 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <header>
       <nav>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="Bars"> <i class="fa-solid fa-bars"></i> </label>
+
         <ul> 
-          <li> <a href="Firtech.html" class="u-url"> <i class="fa-solid fa-tablet-screen-button">  </i> <br/> App Dev </a> </li> 
+          <li> <a href="Firtech.html" class="u-url"> <i class="fa-solid fa-tablet-screen-button">  </i> <br/> Apps </a> </li> 
            <li><a href="blogPosts.html" class="u-url"><i class="fa-brands fa-readme">  </i> <br/> Blogs </a> </li> 
-           <li><a href="contactMe.html" class="u-url"> <i class="fa-solid fa-address-book"> </i> <br/> Contact Me </a></li> 
-           <li><a href="reflections.html" class="u-url"><i class="fa-solid fa-book-open-reader">  </i> <br/> Reflections </a></li> 
-           <li><a href="login.html" class="u-url"><i class="fa-solid fa-user">  </i> <br/> Login </a> </li> 
+           <li><a href="contactMe.html" class="u-url"> <i class="fa-solid fa-address-book"> </i> <br/> Contacts </a></li> 
+           <li><a href="reflections.html" class="u-url"><i class="fa-solid fa-book-open-reader">  </i> <br/> Reflections </a></li>  
           </ul>
     </nav>
     </header>
@@ -24,6 +27,17 @@
     <title>Matipa's Portfolio Website</title>
   
 </head>
+
+<span class="LoginIcon">
+  <a href="login.html">
+  <i class="fa-solid fa-user"></i>
+  <br/>
+  <div class="LoginText p-login">
+  Login!
+  </a>
+</div>
+</span>
+
 <body>
   <h1>Plants vs Insects</h1>
 <span class="p-gameDescription">
@@ -32,30 +46,31 @@
 </span>
 
 
-<div class="slideshow-container">
+<div class=".SlideshowContainer {
+  ">
 
     <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
+    <div class="MySlides Fade">
       <img src="Images/PlantsVsInsects V1.png" alt="Variation 1 of prototype" class="exampleImg">
       <br/>
       <!-- <div class="text">Variation One. </div> -->
       <p> Normal/base variation. Both attacking and defense plants are available in the shop for the player to buy. The player wins when all of the insects have been destroyed. The player loses when the insect crosses the red line.</p>
     </div>
   
-    <div class="mySlides fade">
+    <div class="MySlides Fade">
      <img src="Images/PlantsVsInsects V2.png" alt="Variation 1 of prototype" class="exampleImg">
       <!-- <div class="text">Variation Two</div> -->
       <p>Only attack plants are available for purchase for the player. </p>
     </div>
   
-    <div class="mySlides fade">
+    <div class="MySlides Fade">
         <img src="Images/PlantsVsInsects V3.png" alt="Variation 1 of prototype" class="exampleImg">
         <br/>
       <!-- <div class="text">Variation Three</div> -->
       <p>Insects have the ability to eat plant slots but large volume of money supplied at the beginning. Slots are can not be re-purchased/re-activated.</p>
     </div>
 
-    <div class="mySlides fade">
+    <div class="MySlides Fade">
         <img src="Images/PlantsVsInsects V4.png" alt="Variation 1 of prototype" class="exampleImg">
       <!-- <div class="text">Variation Four</div> -->
       <p>Only defense plants are available for purchase for the player. The player wins when all of the insects are present on the screen at the same time. The player loses when the insect crosses the red line. (had to change win state slightly).</p>
@@ -69,32 +84,32 @@
   
   <!-- The dots/circles -->
   <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="Dot" onclick="currentSlide(1)"></span>
+    <span class="Dot" onclick="currentSlide(2)"></span>
+    <span class="Dot" onclick="currentSlide(3)"></span>
+    <span class="Dot" onclick="currentSlide(4)"></span>
   </div>
 
-  <img class="pixelArt1" src="Images/Plant pixel art.png" alt="Pixel art of a plant" width="15%">
-<img class="pixelArt2" src="Images/insectPixelArt.png" alt="Pixel art of an insect" width="15%">
+  <img class="PixelArt1" src="Images/Plant pixel art.png" alt="Pixel art of a plant" width="15%">
+<img class="PixelArt2" src="Images/insectPixelArt.png" alt="Pixel art of an insect" width="15%">
 
 <br/><br/>
 
-<a href="WebGLBuild-PlantsVsInsects/PlantsVsInsects(Online)/index.html" class="gameLink">Link to the game</a>
+<a href="WebGLBuild-PlantsVsInsects/PlantsVsInsects(Online)/index.html" class="GameLink">Link to the game</a>
 
 <article>
-  <h2 class="heading">
+  <h2 class="Heading">
   My Reflection + Observationsssss
   </h2>
 
 
 
 <section>
-  <h3 class="heading1">
+  <h3 class="Heading1">
 Process 
   </h3>
 
-<h4 class="heading2">
+<h4 class="Heading2">
 Overall Improvements 
 </h4>
 
@@ -104,7 +119,7 @@ The You won panel comes up too early which results in the panel not visually com
 The hexagon design for the plant plots was inspired by the game plant plants by Nigel on Itch. 		<br/><br/>
 </p>
 		
-<h4 class="heading2">
+<h4 class="Heading2">
 Variation 1 (Base Game) 
 </h4>
 
@@ -115,20 +130,20 @@ I chose not to disable the plant weapons when insects are eating the plants, bec
 </p>
 
 
-<h4 class="heading2">
+<h4 class="Heading2">
 Variation 2 
 </h4>
 <p>
 In variation 2, I took out the defense plant and only made the attack plants available in the shop. I found that this variation required less money from the player even though the defense plant was neither the cheapest nor the most expensive plant. This seems to reflect that the defense plant is not the best value for money between all of the plants. I tried to make the costs more balanced with value by reducing the cost of the defense plant from R180 to R100. I could have improved the money imbalance reducing the amount of money plants instantiate per second. 
 </p>
 
-<h4 class="heading2">
+<h4 class="Heading2">
 Variation 3 
 </h4>
 <p>
 In variation 3, I altered what the insects could interact with. The insects can only attack/eat the plant slots instead of the plants. This introduces a new way of challenge for players, as once a plant slot is eaten, it is not regenerated. The insects destroying slots made the game more challenging as the more the insects attacked, the less chance the player had of being able to make a come back. I think this was one of the best variations in terms of challenge as it made it less likely for the player to fill out all the slots near the beginning of the level and then only have to re-purchase plants for the same slot repeatedly until they had defeated all of the insects. As in other variations, once a player has filled all the slots with plants, the money being generated per second is high enough to rule out money as a sense of conflict for the player. 
 </p>
-<h4 class="heading2">
+<h4 class="Heading2">
 Variation 4 
 </h4>
 <p>
@@ -139,12 +154,12 @@ Variation 4 replaces the challenge of money with the intensity of the insect ins
 I increased the money required in this level from R50 to R5000 as I felt limiting the money would have made the level too difficult and the level could have had unlimited money and still have been challenging. Too many areas of the game would be demanding the player's attention at once, that is, placing the defense plants as well as being distracted by the rate of money generation from the plants. The challenge stems from the rate of instantiation of the insects. Because they can not be attacked from afar, the player needs to keep them away from the red line as long as possible. A sort of race against time. Player must keep insects off red line until all have the insects have been instantiated onto the scene. The overall goal is to have all 16 insects on the screen at the same time.
  </p>
 </section>
-<h3 class="heading1">
+<h3 class="Heading1">
   <section></section>
 Reflections 
 </h3>
 
-<h4 class="heading2">
+<h4 class="Heading2">
 Overall 
 </h4>
 <p>
@@ -162,10 +177,10 @@ I also felt that because all of the variations had insects moving at the same pa
 <p>
 The most complex system for me to build was the shop system. The first issue I had was figuring out the most efficient way for the player to select which way to place a plant. Initially, I thought of creating a drag and drop system but decided against it and opted for one where the player can purchase a plant and then click on the slot they would like to place it (like the original plants vs zombies). Then I struggled to prevent the player from placing multiple plants onto one slot as well as how to prevent the player from paying for multiple slots before they had placed the first one. I managed to fix this by going through each gameObject’s script specifying each slot as non-placable until certain requirements were met. 
 </p>
-<h3 class="heading1">
+<h3 class="Heading1">
 </h3>
 </section>
-Credits 
+<h2>Credits</h2> 
 </div>
 <p>
 (Plant Sprites)

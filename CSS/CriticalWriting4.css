@@ -1,0 +1,45 @@
+h1{
+    margin-top: 0%;
+}
+
+.ComputerPixelArt{
+    margin-top: -10%;
+}
+
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    font-size: 100%;
+}
+
+.Heading{
+    font-family: Lemon_Tuesday;
+    font-size: 125%;
+    text-align: center;
+    color: black;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+    margin-top: 0%;
+}
+
+.References{
+    text-align: center;
+}
+
+p{
+    font-size: 125%;
+}
+
+.PLeft{
+    margin-right: 55%;
+    margin-left: 5%;
+}
+
+.PRight{
+    margin-left: 55%;
+    margin-right: 5%;
+    margin-top: -33%;
+    margin-bottom: 20%;
+}

@@ -19,32 +19,24 @@ body {
 
 p{
   font-size: 125%;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   text-align: left;
 }
 
-nav {
-  text-align: left;
-  margin-left: -5%;
-
-}
-
-ul{
-  margin-top: 0%;
-}
 
 h1{
   text-align: center;
-  margin-top: -5%;
+  margin-top: 2%;
 }
 
-.text{
+.Text{
   /* font-family: Lemon_Tuesday; */
   text-transform: uppercase;
   margin-left: -50%;
 }
 
-.heading1{
+.Heading1{
   font-size: 150%;
   text-align: center;
   font-weight: bold;
@@ -52,22 +44,22 @@ h1{
   margin-bottom: 2%;
 }
 
-.heading2{
+.Heading2{
   font-size: 150%;
   text-align: center;
   font-weight: bold;
   margin-bottom: 2%;
 }
 
-.pixelArt1{
+.PixelArt1{
   float: left;
 }
 
-.pixelArt2{
+.PixelArt2{
   float: right;
 }
 
-.heading{
+.Heading{
   margin-top: 2%;
   margin-bottom: 2%;
   font-size: 200%;
@@ -75,15 +67,15 @@ h1{
   text-transform: uppercase;
 }
 
-.reflectionText{
+.ReflectionText{
   font-size: 200%;
 }
 
 
-.gameLink{
+.GameLink{
   font-size: 150%;
 }
 
-.exampleImg{
+.ExampleImg{
   width: 100%;
 }

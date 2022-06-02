@@ -9,7 +9,7 @@ togglePassword.addEventListener("click", function () {
     password.setAttribute("type", type);
     
     // toggle the icon
-    this.classList.toggle("eye"); //eye disappeaing after moving to second input label
+    this.classList.toggle("Eye"); //eye disappeaing after moving to second input label
 });
 
 togglePassword2 = document.getElementById("togglePassword2");

@@ -3,7 +3,7 @@ const hidden = document.getElementById("toggleText1");
 hidden.onmouseout = toggleText;
 
 function toggleText(){
-    hidden.classList.remove("hide-text");
+    hidden.classList.remove("HideText");
     console.log("hiding text");g
 };
 

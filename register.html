@@ -10,25 +10,25 @@
     <meta charset="utf-8" />
     <nav>
         <input type="checkbox" id="check">
-        <label for="check" class="bars"> <i class="fa-solid fa-bars"></i> </label>
+        <label for="check" class="Bars"> <i class="fa-solid fa-bars"></i> </label>
         <ul>
-            <li>  <a href="PlantsVsInsects.html" class="u-url"> <i class="fa-solid fa-gamepad"></i> <br/> Game Dev </a>  </li> 
-            <li> <a href="Firtech.html" class="u-url"> <i class="fa-solid fa-tablet-screen-button">  </i> <br/> App Dev </a> </li> 
+            <li>  <a href="PlantsVsInsects.html" class="u-url"> <i class="fa-solid fa-gamepad"></i> <br/> Games </a>  </li> 
+            <li> <a href="Firtech.html" class="u-url"> <i class="fa-solid fa-tablet-screen-button">  </i> <br/> Apps </a> </li> 
              <li><a href="blogPosts.html" class="u-url"><i class="fa-brands fa-readme">  </i> <br/> Blogs </a> </li> 
-             <li><a href="contactMe.html" class="u-url"> <i class="fa-solid fa-address-book"> </i> <br/> Contact Me </a></li> 
+             <li><a href="contactMe.html" class="u-url"> <i class="fa-solid fa-address-book"> </i> <br/> Contacts </a></li> 
              <li><a href="reflections.html" class="u-url"><i class="fa-solid fa-book-open-reader">  </i> <br/> Reflections </a></li> 
         </ul>
     </nav>
 
-    <span class="loginIcon">
+    <!-- <span class="LoginIcon">
         <a href="login.html">
         <i class="fa-solid fa-user"></i>
         <br/>
-        <div class="loginText">
+        <div class="LoginText">
         Log Out!
         </a>
     </div>
-    </span>
+    </span> -->
 
     <title>Matipa's Portfolio Website</title>
     <h1>Please fill in the form below</h1>
@@ -36,13 +36,13 @@
 <body>
 <form id="form" onSubmit="validateForm()">
     <!-- too out onchange="validateForm()" from form -->
-    <div class="container">
+    <div class="Container">
 
-<div class="usernameLabel">
+<div class="UsernameLabel">
     <i class="fa-solid fa-user"></i>
-    <div id="form-field-1">
+    <div id="FormField1">
     <label for="username"><b>Please Enter a Username</b></label> <br/>
-    <input type="text" id="username" class="textBox" placeholder="Username" onchange="checkUsername()" minlength="3" maxlength="20" required>
+    <input type="text" id="username" class="TextBox" placeholder="Username" onchange="checkUsername()" minlength="3" maxlength="20" required>
     </div>
 </div>
      
@@ -54,27 +54,27 @@
     <input type="text" class="textBox" placeholder="Email Address" required>
     <br/> 
 </div> -->
-<div class="passwordLabel">
-<div class="error success">
+<div class="PasswordLabel">
+<div class="Error Success">
     <i class="fa-solid fa-lock-open"></i>
     <br/>
     <label for="password" ><b>Please Enter a Password</b></label> <br/>
-    <input class="textBox" id="password" type="password" placeholder="Password" required minlength="8" maxlength="30">
-    <i class="eye" id="togglePassword"></i> 
+    <input class="TextBox" id="password" type="password" placeholder="Password" required minlength="8" maxlength="30">
+    <i class="Eye" id="togglePassword"></i> 
 <small></small>
 </div>
 </div>
 
-<div class="passwordLabel2">
-    <div class="error success">
+<div class="PasswordLabel2">
+    <div class="Error Success">
     <label for="password" ><b>Please Re-enter the Password</b></label> <br/>
-    <input class="textBox"id="password2"  type="password" placeholder="Password"required>
+    <input class="TextBox"id="password2"  type="password" placeholder="Password"required>
     <i class="eye2" id="togglePassword2"></i> 
 <small></small>
 </div>
 </div>
 
-<button class="submit" type="submit" id="submit" > <a  href="index.html"> Register <img src="../Images/TypeWriter.png" alt="pixel art typewriter" width="10%" class="typewriterIcon"> </a> </button> 
+<button class="Submit" type="submit" id="submit" > <a  href="index.html"> Register <img src="../Images/TypeWriter.png" alt="pixel art typewriter" width="10%" class="TypewriterIcon"> </a> </button> 
 <!-- took out onclick="validateForm()" from button -->
     </form>
  
@@ -83,7 +83,7 @@
 
 </body>
 <footer>
-    
+    <cite></cite>
 </footer>
 <script src="../JS/validation.js"></script>
 <script src="../JS/togglePassword.js"></script>

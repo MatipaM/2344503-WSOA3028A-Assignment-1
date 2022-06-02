@@ -1,9 +1,9 @@
-.hypertext {
+.Hypertext {
   text-align: underline;
 }
 
-.container{
-  width: 60%;
+.Container{
+  width: 80%;
   background-color: rgba(127, 134, 123, 0.6);
   color: black;
   text-align: center;
@@ -12,11 +12,12 @@
 font-size: 125%;
 border-radius: 10%;
 margin-bottom: 2%;
-margin-left: 15%
+margin-left: 10%;
+margin-right: 10%;
 }
 
 h1{
-  margin-top: 4%;
+  margin-top: 20%;
   font-size: 300%;
 }
 
@@ -27,7 +28,7 @@ label{
   font-size: 100%;
 }
 
-.textBox{
+.TextBox{
   margin-bottom: 5%;
   width: 80%;
   height:2rem;
@@ -43,13 +44,13 @@ label{
   background-color: rgba(26, 67, 128, 0.5);
 } */
 
-.createAccount{
+.CreateAccount{
   font-size: 125%;
   color: black;
   padding-bottom:5%;
 }
 
-.createAccount:hover{
+.CreateAccount:hover{
 color: rgba(172, 115, 0, 1);
 }
 
@@ -57,22 +58,22 @@ color: rgba(172, 115, 0, 1);
   color: red;
 }
 
-.emailLabel{
+.EmailLabel{
   margin-top: -2%;
   margin-bottom: -5%;
   font-weight: 200;
   /* font-size: 75%; */
 }
 
-.icon{
+.Icon{
   font-size: 105%;
 }
 
-.typewriter{
+.Typewriter{
   width: 20%;
 }
 
-.submit{
+.Submit{
   position:relative;
   display:inline-block;
   margin:5%;
@@ -83,20 +84,21 @@ color: rgba(172, 115, 0, 1);
   height: 2%;
 }
 
-.submit{
+.Submit{
   color:black;
   font-family:Helvetica, sans-serif;
   font-weight:bold;
-  font-size:100%;
+  font-size:150%;
   text-align: center;
   text-decoration:none;
   background-color:rgba(236,236,219,1);
   display:block;
   position:relative;
-  padding:2%;
+  padding:1%;
   padding-left: 0%;
   padding-right: 0%;
   width: 20%;
+  height: 3%;
   margin-left: 40%;
   
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -112,7 +114,7 @@ color: rgba(172, 115, 0, 1);
   border-radius: 5%;
 }
 
-.submit:hover{
+.Submit:hover{
   /* top:10px; */
   background-color:rgba(230,212,168,1);
   color: white;
@@ -122,7 +124,7 @@ color: rgba(172, 115, 0, 1);
   box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 rgba(236,236,219,1);
 }
 
-.submit:after{
+.Submit:after{
   content:"";
   /* height:100%;
   width:100%; */
@@ -137,12 +139,21 @@ color: rgba(172, 115, 0, 1);
   border-radius: 5px;
 }
 
+cite{
+  font-size: 125%;
+  font-weight: none;
+}
+
+footer{
+  font-weight: none;
+}
+
 @media (max-width: 500px){
 h1{
   margin-top: 5%;
 }
 
-.submit{
+.Submit{
   height: 5%;
 }
 

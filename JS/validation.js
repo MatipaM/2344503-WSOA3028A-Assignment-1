@@ -5,7 +5,6 @@ form.onsubmit = submit;
 //just added
 function validateForm(){
     let isUsernameValid = checkUsername();
-    // isEmailValid = checkEmail(),
     // isPasswordValid = checkPassword(),
     // isConfirmPasswordValid = checkConfirmPassword();
     // console.log(password);
@@ -13,7 +12,6 @@ function validateForm(){
 
 //let isFormValid = isUsernameValid
 // &&
-//     // isEmailValid &&
 //     isPasswordValid &&
 //     isConfirmPasswordValid;
 }
@@ -23,8 +21,6 @@ function checkUsername(){
     console.log("is checking username");
     const username = document.getElementById("username").value;
     console.log(username);
-    // const emailValue = Object.values(email);
-    var usernameError;
 
     if(username.length < 3){
         console.log("is under 3 character");
@@ -54,11 +50,11 @@ const isPasswordSecure = (password) => {
 const showError = (message) => {
     if(usernameValid == false)
     {
-        const formField = document.getElementById("form-field-1");
+        const formField = document.getElementById("FormField1");
 
-        formField.classList.remove("success-1");
-        formField.classList.add('error-1'); //working
-        const error = document.getElementsByClassName("error-1");
+        formField.classList.remove("Success1");
+        formField.classList.add('Error1'); //working
+        const error = document.getElementsByClassName("Error1");
         error.textContent = message;
         error.innerHTML = message;
         console.log(message);
@@ -73,9 +69,9 @@ const showSuccess = () => { //not running
     {
         console.log("succesful username")
         console.log("show success is running")
-        const formField = document.getElementById("form-field-1");
-        formField.classList.remove('error-1'); 
-        formField.classList.add("success-1");  //should work outside this if/else function
+        const formField = document.getElementById("FormField1");
+        formField.classList.remove('Error1'); 
+        formField.classList.add("Success1");  //should work outside this if/else function
     }
 };
 
@@ -152,22 +148,5 @@ form.addEventListener('submit', (e) => {
         }
     });
 
-// function checkEmail(){
-//     const emailStringArray = emailValue.split("");
-
-//     atpos = emailStringArray.indexOf("@");
-//     dotpos = emailVemailStringArrayalue.lastIndexOf(".");
-
-//     if (atpos < 1 || ( dotpos - atpos < 2 )) {
-//         e.preventDefault();
-//         messsage = "Please enter a valid email address";
-//         return setErrorFor(message);
-//       }
-//       else{
-       
-//         localStorage.setItem(emailValid);
-//         return emailValid = true;
-//     }
-// }
 
 

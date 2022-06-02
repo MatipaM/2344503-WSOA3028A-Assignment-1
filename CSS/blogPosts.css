@@ -3,25 +3,6 @@
     src: url("../Fonts/lemon_tuesday/Lemon Tuesday.otf");
   }
 
-  .heading{
-    font-family: Lemon_Tuesday;
-    font-size: 150%;
-    text-align: center;
-    color: black;
-    letter-spacing: 2%;
-    text-transform: uppercase;
-    margin-bottom: 5%;
-}
-
-
-.references{
-    margin-bottom: 5%;
-    text-decoration: underline;
-    font-weight: bold;
-    text-align: center;
-    font-size: 200%;
-}
-
 p{
     margin-bottom: 2%;
     margin-right: 5%;
@@ -29,40 +10,13 @@ p{
     font-size: 100%;
 }
 
-.ComputerPixelArt{
-    width: 10%;
-    margin-top: -0%;
-    margin-left: 10%
-}
-
-/* .row{
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    grid-template-columns: (3, 30%);
-    margin-top: 20%;
-    margin-left: -150%;
-    column-gap: 5%; 
-} */
-
-/* .container{
-    display: flex;
-} */
-/* 
-.box1{
-    background-color: black;
-    border-radius: 5%;
-    margin-top: 20%;
-    margin-left: -100%;
-    width: 60%;
-} */
 
 .fa-user{
     font-size: 140%;    
 }
 
-.loginIcon{
-    margin-top: 3%;
+.LoginIcon{
+    margin-top: 3%; 
 margin-left: 150%;
 }
 
@@ -71,65 +25,63 @@ margin-left: 150%;
     border: 10%;
     border-width: 20%;
     border-color: black;
-    /* margin-bottom: 5%;
-
-    margin-top: 20%;
-    margin-left: -190%; */
 }
 
-.text-1{
+.Text1{
     width: 70%;
     margin-left: -190%;
     margin-top: -80%;
 }
 
-.hide-text{
+.HideText{
     display: none;
 }
 
-.Img-1:hover{
+.Img1:hover{
     opacity: 25%;
     /*show text on hover*/  
   }
 
-.Img-1{
+.Img1{
     width: 70%;
     margin-left: -190%;
     margin-top: 30%;
     border: 5% black;
+    padding: 0%;
 }
 
-.Img-2{
+.Img2{
     width: 100%;
     height: 80%;
     margin-left: -110%;
-    margin-top: -90%;
+    margin-top: -610%;
+    margin-bottom: -17%;
 }
 
 
-.Img-3{
+.Img3{
     height: 50%;
     margin-left: 0%;
     margin-top: -175%;
 }
 
 
-
-.h1{
+h1{
     font-size: 50%;
     margin-top: 0%;
 }
 
-.subtitle1{
+.Subtitle1{
     margin-left: -160%;
-    padding-bottom: -10%;
+    padding-bottom: -100%;
 }
 
-.subtitle2{
+.Subtitle2{
+    margin-top: 10%;
     margin-left: -65%;
 }
 
-.subtitle3{
+.Subtitle3{
     margin-left: 50%;
 }
 
