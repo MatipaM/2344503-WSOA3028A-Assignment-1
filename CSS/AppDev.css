@@ -3,11 +3,8 @@
     src: url("../Fonts/lemon_tuesday/Lemon Tuesday.otf");
   }
 
-  p{
-      font-size: 125%;
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-bottom: 2%;
+  h1{
+      margin-top: 5%;
   }
 
   .LogoDescription1{
@@ -170,11 +167,6 @@ h3{
     #check:checked ~ .slideshow-container .mySlides1 .next .prev{
         display: hidden;
         left: -1200%;
-    }
-
-    
-    nav ul{
-        margin-top: 30%;
     }
 
     html{

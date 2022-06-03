@@ -11,9 +11,9 @@ p{
 }
 
 
-.fa-user{
+/* .fa-user{
     font-size: 140%;    
-}
+} */
 
 .LoginIcon{
     margin-top: 3%; 
@@ -37,14 +37,14 @@ margin-left: 150%;
     display: none;
 }
 
-.Img1:hover{
+.Img:hover{
     opacity: 25%;
     /*show text on hover*/  
   }
 
 .Img1{
     width: 70%;
-    margin-left: -190%;
+    margin-left: -100%;
     margin-top: 30%;
     border: 5% black;
     padding: 0%;
@@ -53,7 +53,7 @@ margin-left: 150%;
 .Img2{
     width: 100%;
     height: 80%;
-    margin-left: -110%;
+    margin-left: -20%;
     margin-top: -610%;
     margin-bottom: -17%;
 }
@@ -61,33 +61,33 @@ margin-left: 150%;
 
 .Img3{
     height: 50%;
-    margin-left: 0%;
+    margin-left: 90%;
     margin-top: -175%;
 }
 
 
-h1{
-    font-size: 50%;
-    margin-top: 0%;
-}
+/* h1{
+    font-size: 500%;
+    margin-top: 20%;
+} */
 
 .Subtitle1{
-    margin-left: -160%;
+    margin-left: 10%;
     padding-bottom: -100%;
 }
 
 .Subtitle2{
-    margin-top: 10%;
-    margin-left: -65%;
+    margin-top: 30%;
+    margin-left: 40%;
 }
 
 .Subtitle3{
-    margin-left: 50%;
+    margin-left: 150%;
 }
 
 footer{
     margin-top: 5%;
-    margin-left: -150%;
+    margin-left: -70%;
     padding-bottom: 2%;
     margin-bottom: 5%;
 }
@@ -102,7 +102,6 @@ body{
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 60%;
-    text-transform: uppercase;
     letter-spacing: 2%;
     margin-bottom: -5%;
 }
