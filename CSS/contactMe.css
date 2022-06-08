@@ -1,7 +1,6 @@
 h1{
-    margin-top: 5%;
-    font-size: 300%;
-    margin-top: 0%;
+    margin-top: 10%;
+    font-size: 250%;
 }
 
 body{
@@ -10,8 +9,26 @@ body{
     font-size: 125%;
 }
 
+/* .fa-solid{
+    font-size: 100%;
+} */
+
 .Bars{
     margin-top:-15%;
+}
+
+.FormIcons{
+    font-size: 100%;
+}
+
+label{
+    margin-top: -5%;
+}
+
+.TextBox{
+    margin-bottom: -5%;
+    margin-right: -5%;
+    margin-left: -5%;
 }
 
 .Submit{
@@ -20,6 +37,8 @@ body{
     height: 10%;
     text-align: center;
     margin-left: 40%;
+    margin-top: 2%;
+    margin-bottom: -2%;
 }
 
 .Container{
@@ -34,7 +53,7 @@ body{
 }
 
 cite{
-    font-size: 125%;
+    font-size: 100%;
 }
 
 .Submit{

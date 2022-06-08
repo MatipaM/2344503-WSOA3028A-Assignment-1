@@ -65,7 +65,7 @@
 }
 
 h1{
-    margin-top: 0%;
+    margin-top:10%;
     padding-bottom: -2%;
     font-size: 350%;
 }
@@ -98,7 +98,7 @@ h3{
 .Slides2{
     grid-column-start: 2;
     margin-top: -8%;
-    width:49%;
+    width:75%;
     margin-bottom: -20%;
     margin-left: 100%;
     /* margin-top: -100%; */
@@ -173,9 +173,6 @@ h3{
     }
 
     
-    nav ul{
-        margin-top: 30%;
-    }
 
     html{
         background-color: rgba(88,111,145,1);

@@ -24,6 +24,7 @@
   margin-top: 5%;
   /* padding-top: -15%; */
   margin-bottom: 0%;
+  color: maroon;
 }
 
   .HomeImage{
@@ -71,7 +72,33 @@
     }
   }
 
+  @media (max-width: 250px){ 
+    h1{
+      font-size: 120%;
+    }
 
+    #sentence{
+      font-size: 120%;
+    }
+  }
+
+  @media (max-width: 512px){ 
+    #helloUser{
+      margin-top: 20%;
+      margin-left: 15%;
+    }
+
+    #sentence{
+      margin-left: 25%;
+    }
+  }
+
+  @media (max-width: 1024px){ 
+    #helloUser{
+      margin-top: 20%;
+      margin-left: 15%;
+    }
+  }
 /* is working! */
     @media (max-width: 2048px){ 
       .fa-user{
