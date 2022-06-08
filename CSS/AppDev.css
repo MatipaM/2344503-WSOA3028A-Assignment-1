@@ -3,11 +3,8 @@
     src: url("../Fonts/lemon_tuesday/Lemon Tuesday.otf");
   }
 
-  p{
-      font-size: 125%;
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-bottom: 2%;
+  h1{
+      margin-top: 5%;
   }
 
   .LogoDescription1{
@@ -172,9 +169,7 @@ h3{
         left: -1200%;
     }
 
-    
-
-    html{
+        html{
         background-color: rgba(88,111,145,1);
     }
 

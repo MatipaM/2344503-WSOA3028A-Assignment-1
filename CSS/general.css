@@ -3,12 +3,19 @@
     src: url("../Fonts/lemon_tuesday/Lemon Tuesday.otf");
   }
 
+  @font-face {
+    font-family: Assistant;
+    src: url("/Fonts/Assistant/Assistant-VariableFont_wght.ttf");
+  }
+
 html{
     background-image: url(../Images/WebsiteBackground.png);
     /* height: 100vh; */
     /* width: 200vh; */
   background-size: cover;
   cursor: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 nav{
