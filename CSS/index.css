@@ -80,6 +80,10 @@
     #sentence{
       font-size: 120%;
     }
+
+    body{
+      margin-right: 0%;
+    }
   }
 
   @media (max-width: 512px){ 

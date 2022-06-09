@@ -165,7 +165,39 @@ h3{
 }
 */
 
-@media (max-width: 1300px){
+@media (max-width: 512px){
+    .Heading1{
+  font-size: 125%;
+    }
+    
+    .Heading2{
+        /* grid-column-start: 2; */
+        font-size: 125%;
+        margin-top: -180%;
+    }
+
+    p{
+        font-size: 100%;
+    }
+
+    .Slides2{
+        margin-top: -10%;
+    }
+
+    .DocuLogo{
+        margin-top:-125%;
+    }
+
+    .FirtechLogo{
+        margin-left: 5%;
+    }
+
+    .Logos{
+        margin-top:-5%;
+    }
+}
+
+@media (max-width: 1024px){
     #check:checked ~ .slideshow-container .mySlides1 .next .prev{
         display: hidden;
         left: -1200%;
@@ -175,26 +207,25 @@ h3{
         background-color: rgba(88,111,145,1);
     }
 
-    .slides-1{
+    .Slides1{
         grid-column-start: 1;
-        width: 75%;
     }
     
-    .slides-2{
+    .Slides2{
         grid-column-start: 2;
-        width: 100%;
         margin-left: 100%;
         /* margin-top: -100%; */
     }
 
-    .heading-1{
+    .Heading1{
         /* margin-left: -50%; */
         column-gap: 10%;
         grid-column-start: 1;
     }
     
-    .heading-2{
+    .Heading2{
         grid-column-start: 2;
+        margin-top: -59%;
     }
 
     .prev{
@@ -204,5 +235,7 @@ h3{
     .next{
         grid-column-start: 2;
     }
+
+
     
 }

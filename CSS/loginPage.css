@@ -70,13 +70,12 @@ color: rgba(172, 115, 0, 1);
 }
 
 .Typewriter{
-  width: 15%;
+  width: 10%;
 }
 
 .Submit{
   color:black;
   font-family:Helvetica, sans-serif;
-  font-weight:bold;
   font-size:100%;
   text-align: center;
   text-decoration:none;
@@ -84,9 +83,8 @@ color: rgba(172, 115, 0, 1);
   display:block;
   position:relative;
   padding:1%;
-  padding-left: 0%;
-  padding-right: 0%;
-  width: 15%;
+  padding-right: -50%;
+  /* width: 15%; */
   height: 3%;
   margin-left: 40%;
   margin-bottom: 2%;
@@ -115,7 +113,7 @@ color: rgba(172, 115, 0, 1);
 }
 
 .Submit:after{
-  content:"";
+  /* content:""; */
   /* height:100%;
   width:100%; */
   padding:4px;
@@ -145,6 +143,7 @@ h1{
 
 .Submit{
   height: 5%;
+  font-size: 75%;
 }
 
 } 

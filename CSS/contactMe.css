@@ -13,7 +13,7 @@ body{
 } */
 
 .Bars{
-    margin-top:-15%;
+    margin-top:5%;
 }
 
 .FormIcons{
@@ -37,7 +37,7 @@ label{
     text-align: center;
     margin-left: 40%;
     margin-top: 2%;
-    margin-bottom: -2%;
+    margin-bottom: 2%;
 }
 
 .Container{
@@ -106,8 +106,16 @@ cite{
     border-radius: 5px;
   }
 
-  @media (max-width: 500px){
+  @media (max-width: 512px){
       cite{
-          font-size: 5%;
+          font-size: 15%;
+      }
+
+      body{
+          font-size: 75%;
+      }
+
+      .TextBox{
+          height: 2%;
       }
   }
