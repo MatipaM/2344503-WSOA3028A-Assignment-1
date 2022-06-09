@@ -106,6 +106,23 @@ cite{
     border-radius: 5px;
   }
 
+  @media (max-width: 1024px)
+  {
+    .DoveArt{
+        width: 5%;
+    }
+
+    .Submit{
+        font-size: 75%;
+
+    }
+
+    h1{
+        margin-left: -5%;
+        font-size: 200%;
+    }
+  }
+
   @media (max-width: 512px){
       cite{
           font-size: 15%;
@@ -143,15 +160,5 @@ cite{
         width: 50%;
     }
 
-      @media (max-width: 1024px)
-      {
-        .DoveArt{
-            width: 5%;
-        }
 
-        .Submit{
-            font-size: 50%;
-
-        }
-      }
   }
