@@ -5,6 +5,7 @@ form.onsubmit = submit;
 //just added
 function validateForm(){
     let isUsernameValid = checkUsername();
+
     // isPasswordValid = checkPassword(),
     // isConfirmPasswordValid = checkConfirmPassword();
     // console.log(password);

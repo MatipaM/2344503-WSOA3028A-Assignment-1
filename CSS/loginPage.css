@@ -147,21 +147,45 @@ footer{
   font-weight: none;
 }
 
-@media (max-width: 500px){
-h1{
-  margin-top: 5%;
-}
 
-.Submit{
-  height: 5%;
-  font-size: 75%;
-}
-
-} 
 
 @media (max-width: 2048px){
   h1{
     margin-top: 10%;
   }
 }
+
+
+@media (max-width: 1024px)
+{
+    
+  .Container{
+    margin-left: 20%;
+  }
+
+  h1{
+    margin-left: 30%;
+  }
+
+  .Submit{
+    font-size: 100%;
+  }
+
+  .CreateAccount{
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 512px){
+  h1{
+    margin-top: 5%;
+  }
+  
+  .Submit{
+    height: 5%;
+    font-size: 75%;
+  }
+
+
+  } 
 

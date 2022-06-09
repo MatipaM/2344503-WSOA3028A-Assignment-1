@@ -76,9 +76,31 @@ h1{
   font-size: 150%;
 }
 
+cite{
+  text-align: justify;
+  margin-bottom: 5%;
+}
+
+
+
+
+  @media (max-width: 1024px){
+    .ExampleImg{
+      width: 100%;
+    }
+
+    h1{
+      font-size: 300%;
+      margin-top: 12%;
+    }
+}
 
 @media (max-width: 512px){
   .ExampleImg{
     width: 200%;
+  }
+
+  nav{
+    margin-top:-30%;
   }
 }
