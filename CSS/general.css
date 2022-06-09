@@ -170,41 +170,33 @@ h1{
     margin-left: 2%;
     display: none;
 }
-
+/* 
 #check{
     display:none;
-}
+} */
 
- @media (max-width: 500px){
+ @media (max-width: 512px){
 
-    .Bars{
+    /* .Bars{
         margin-top: 5%;
-        /* display: block; */
-    }
+         display: block; 
+    } */
 
-    nav ul{
-        /* display: inline-block; */
+    /* nav ul{
         position: fixed; 
         width: 100%;
         margin-top: 0%;
         font-size: 75%;
         background-color: rgba(236,236,219,1);
-        /* height: 100vh; */
         text-align: center;
         left: -120%;
         transition: all 0.5s;
         margin-bottom: 5%;
     }
 
-    .Submit{
-        left: -120%;
-    }
-
     nav ul li a{ 
         font-size: 200%;
-        /* display: block; */
         padding: 5% 0%;
-        /* text-transform: uppercase; */
     }
 
     nav a{
@@ -217,6 +209,14 @@ h1{
 
     #check:checked ~ ul{
         left: 0%;
+    } */
+
+    /* .Submit{
+        left: -120%;
+    } */
+
+    i{
+        font-size: 250%;
     }
 } 
 

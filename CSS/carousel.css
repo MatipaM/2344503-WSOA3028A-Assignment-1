@@ -137,6 +137,10 @@ h2{
       left: -1200%;
   }
 
+  /* .SlideshowContainer{} */
+  .MySlides{
+    width: 50%;
+  }
   
   nav ul{
       margin-top: 30%;
@@ -144,5 +148,9 @@ h2{
 
   html{
       background-color: rgba(88,111,145,1);
+  }
+
+  p{
+    margin-right: -50%;
   }
 }
