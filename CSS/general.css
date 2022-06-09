@@ -182,12 +182,12 @@ h1{
     }
 
     nav ul{
-        display: inline-block;
+        /* display: inline-block; */
         position: fixed; 
         width: 80%;
         margin-top: 0%;
         font-size: 100%;
-        background-color: rgba(88,111,145,1);
+        background-color: rgba(236,236,219,1);
         height: 100vh;
         text-align: center;
         left: -120%;
@@ -204,6 +204,10 @@ h1{
         display: block;
         padding: 5% 0%;
         text-transform: uppercase;
+    }
+
+    nav a{
+        display: block;
     }
 
     .LoginIcon{

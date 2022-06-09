@@ -90,14 +90,16 @@ h3{
 .Slides1{
     grid-column-start: 1;
     width: 75%;
+    margin-top: -10%;
+    margin-left: 70%;
 }
 
 .Slides2{
     grid-column-start: 2;
-    margin-top: -8%;
-    width:75%;
+    margin-top: 1%;
+    width:115%;
     margin-bottom: -20%;
-    margin-left: 100%;
+    margin-left: 200%;
     /* margin-top: -100%; */
 }
 
@@ -126,15 +128,15 @@ h3{
     margin-left: -50%;
     column-gap: 10%;
     grid-column-start: 1;
+    margin-left: 10%;
 }
 
 .Heading2{
     /* 
     margin-top: -49%; */
     grid-column-start: 2;
-    margin-top: -37%;
+    margin-top: -55%;
     margin-left: 40%;
-    margin-left: 50%;
 }
 
 .SlideshowContainer{
