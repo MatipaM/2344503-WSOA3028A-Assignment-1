@@ -1,0 +1,21 @@
+h1{
+    font-size: 500%;
+}
+
+@media (max-width: 2048px){
+    h1{
+        font-size: 600%;
+    }
+}
+
+@media (max-width: 1024px){
+    h1{
+        font-size: 400%;
+    }
+}
+
+@media (max-width: 512px){
+    h1{
+        font-size: 400%;
+    }
+}
