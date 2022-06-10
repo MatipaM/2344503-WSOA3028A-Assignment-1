@@ -89,17 +89,18 @@ h3{
 
 .Slides1{
     grid-column-start: 1;
-    width: 75%;
+    width: 35%;
     margin-top: -10%;
-    margin-left: 70%;
+    margin-bottom:50%;
 }
 
 .Slides2{
     grid-column-start: 2;
     margin-top: 1%;
-    width:115%;
-    margin-bottom: -20%;
-    margin-left: 200%;
+    width:54%;
+    margin-left:-100%;
+
+    /* margin-left: 200%; */
     /* margin-top: -100%; */
 }
 
@@ -121,27 +122,30 @@ h3{
 }
 
 .Logos{
-    margin-top: -5%;
+    margin-top: -55%;
+}
+
+.logoHeading{
+    margin-top: -15%;
 }
 
 .Heading1{
     margin-left: -50%;
-    column-gap: 10%;
-    grid-column-start: 1;
+    /* column-gap: 10%; */
+    /* grid-column-start: 1; */
     margin-left: 10%;
 }
 
 .Heading2{
-    /* 
-    margin-top: -49%; */
-    grid-column-start: 2;
+    /* margin-top: 55%; */
+    /* grid-column-start: 2;
     margin-top: -55%;
-    margin-left: 40%;
+    margin-left: 40%; */
 }
 
 .SlideshowContainer{
-    display: grid;
-    grid-template-columns: 45% 45%;
+    /* display: grid;
+    grid-template-columns: 45% 45%; */
     align-items: center;
     margin-top: 5%;
 }
@@ -152,6 +156,12 @@ h3{
     font-size:150%;
     margin-bottom: -2%;
     margin-left: 5%;
+}
+
+@media (max-width: 2100px){
+    .Heading2{
+        margin-top: -48%;
+    }
 }
 
 @media (max-width: 1024px){
@@ -165,11 +175,11 @@ h3{
     }
 
     .Slides1{
-        grid-column-start: 1;
+
     }
     
     .Slides2{
-        grid-column-start: 2;
+     
         margin-left: 100%;
         /* margin-top: -100%; */
     }
@@ -177,12 +187,10 @@ h3{
     .Heading1{
         /* margin-left: -50%; */
         column-gap: 10%;
-        grid-column-start: 1;
     }
     
     .Heading2{
-        grid-column-start: 2;
-        /* margin-top: -75%; */
+        margin-top: -auto;
     }
 
     .prev{
@@ -191,6 +199,12 @@ h3{
     
     .next{
         grid-column-start: 2;
+    }
+
+    h1{
+        margin-top:10%;
+        font-size: 200%;
+        /* margin-left: -20%; */
     }
 }
 
@@ -202,15 +216,20 @@ h3{
     .Heading2{
         /* grid-column-start: 2; */
         font-size: 125%;
-        margin-top: -180%;
     }
 
     p{
         font-size: 100%;
     }
 
+    .Slides1{
+        width: 45%;
+    }
+
     .Slides2{
-        margin-top: -10%;
+
+        width: 70%;
+        margin-left: -500%;
     }
 
     .DocuLogo{
@@ -224,4 +243,12 @@ h3{
     .Logos{
         margin-top:-5%;
     }
+    h1{
+        margin-top: 20%;
+    }
+
+    nav{
+        margin-top: -25%;
+    }
+
 }

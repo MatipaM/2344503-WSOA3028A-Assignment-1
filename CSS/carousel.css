@@ -40,7 +40,7 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   background-color: black;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 
 .Prev{
@@ -51,7 +51,7 @@
   right: 55%; 
   /* was 57.75% */
   border-radius: 3px 0 0 3px;
-  margin-right: 17%;
+  margin-right: 9%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -72,7 +72,7 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   background-color: black;
-  margin-left: 50%;
+  margin-left: 10%;
 }
 
 .Prev2{
@@ -83,7 +83,7 @@
   right: 55%; 
   /* was 57.75% */
   border-radius: 3px 0 0 3px;
-  margin-right: -35%;
+  margin-right: 2%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -165,7 +165,7 @@ h2{
   
 }
 
-@media (max-width: 500px){
+@media (max-width: 512px){
   #check:checked ~ .slideshow-container .mySlides1 .next .prev html{
       display: hidden;
       left: -1200%;

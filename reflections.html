@@ -28,18 +28,29 @@
 
     <article>
         <h2 class="Heading">
+            Critical Reflection
+                    </h2>
+                    <p>Overall, I think my submission for assignment 2 is a lot better than for assignment 1. With this current submission, I focused on improving the experience for my user. I did this by designing my user interface with three different viewports in mind. One for a large screen (desktop), a tablet and a small mobile device. Having three concise viewports in mind made it easier to test.  </p>
+                    <p>I also worked on a contact me form, so that when a user enters their information. I am forwarded their email address as well as the message they attached to the contact form. Initially I was working on a login form, but I decided to change it into a contact form as a login did not seem appropriate for a portfolio website.</p>
+                <p> With this assignment, I spent most of my time working on feedback from my last assignment. Which I think was beneficial as I managed to fix everything that I received a comment on. I also spent a lot of time redesigning the blog posts page, so that  the user could select which reflection they wanted to read instead of having to scroll through every single one like before. </p>    
+                </article>
+
+                    <article>
+        <h2 class="Heading">
 Technical Reflection
         </h2>
+<p>I made the navigation bar position fixed so that no matter how far the user scrolls down on a the page, they can use the navigation bar immediately as it will always be positioned at the top of the screen. I also made sure to only use one script to control where the navigation bar was positioned to prevent it from moving around. 
+    I decided to add text to the bottom of my icons, as I received feedback that my icons were not distinctive enough to be used without text. I managed to scale this efficiently for a smaller device and was happy with how the navigation bar looked on all three devices. 
+    </p>
 
-<p>For this assignment, I really struggled with replicating the nav bar which would turn into a menu when the screen width was smaller than a certain size (In my case would have been around 1000px). I was trying to make it so that when the screen width was small the user could select the bars icon and then a horizontal menu of the navigation bar would appear. However, the (unordered) list elements in the navigation bar would render on top of one another instead of directly beneath. This made it too difficult to read any of the text, let alone click on the desired hyperlink, as it would just redirect you to the hyperlink which was rendered on top. I also had added a background which rendered underneath the top layer of text but above the rest of the links. I decided to take out the media query code and instead use a nav menu of icons as it took up less space and was more visually appealing than the text. </p>
-
-<p>My concern with the icons that I used in place of the text in the navigation bar is that they are a bit ambiguous at the beginning. However, I saw through time, users would become familiar with the icons and navigation would become much easier over time. I also chose icons which I thought users would more naturally associate with the title of the webpage. </p>
-
-<p>I also struggled to get the gradient background to cover the background image, as at the edges there is a sharp transition into my default background. However, I attempted to use box-shadow, etc. to try make this transition more subtle by making the gradient fade off. </p>
-
+    <p>I tried positioning the carousels on the app dev page side by side but struggled, as even with flexboxes the wireframes would move out of position when resized. This looked very noticeable on a phone, where one of the wireframes was clashing with the text. I then changed it back to the original designed, where the carousels are on top of one another. However, this looks better on a smaller device then on a desktop. </p>
+<p>I also struggled with flexboxes when designing the blog posts page which is why I decided to have each reading on a vertical layout. As opposed to a 2x3 grid which would have been preferable as that way all the posts would be visible on a single page and the user would not have to scroll down to see all the reflections available.</p>
+<p>
+    I also decided to completely take out the login/registration pages, as even though I managed to get the page to not go through if there was an error. My error messages would not be shown to the user, despite me using alert to display my messages instead of an element.innerHTML/.value. I also thought it having a login page would not be that appropriate for a portfolio website.
+    </p>
 <p>When it came to semantic markup I did make an effort to mark all elements on my page with tags that I thought were most appropriate. These tags also made it easier for me to alter text elements with the appropriate css. Initially, I wasn't too sure what content to place in the header and footer section of my website. After doing some research I decided to add references/citations of pixel art from other artists which I had added to my website as well the contact details I was comfortable with recruiters seeing. In the header of each webpage I added the navigation bar.  </p>
 
-<p>(The app has responsive design for devices of minimum width: 300px)
+
 </p>
 </article>
 <article>
@@ -56,9 +67,9 @@ Creative Reflection
 
 <p>I decided to only use two primary fonts as I wanted my website to contain some form of consistency. This is also why I used similar saturation in colours and my main colours only consisted of red, blue and purple. I chose the background to be a screenshot of my code because I thought it would be fitting on the first page. That way recruiters can get an idea of what type of portfolio they are looking at before diving into the main content. </p>
 
-<p>I also created a Contact Form which is not yet functional as I have not coded the JavaScript for it yet. I thought this would be useful in cases where a recruiter may have questions or further queries that my website may have not been able to answer.
-
-<p>For my text heavy pages such as my blog posts page and  reflection page. I included a background gradient as the solid colours make it much easier to see the text. I also thought the transition between the two solid colours was beautiful yet subtle enough to not draw too much attention away from the text.
+<p>
+    I changed the background colour of my website from blue to a lighter yellow, so that text on top could be seen more clearly. I also changed the overall colour of the website to a more neutral colour palette, as I thought it looked more professional, in comparison to the more saturated blues and greens I had used before. I also wanted to have a more high contrast web page to improve accessibility for those with colour blindness/ visual disbilties. I placed the blog posts on separate pages to make it easier for viewers to quickly shift through reflections they are most interested in. 
+    </p>
 </p>
 </article>
 
@@ -77,12 +88,21 @@ Style Guide
 <p class="Titles">General Text. </p>
 
 <p class="Titles"> 
-    Colour Scheme: 
+    Assignment 1 Colour Scheme: 
     <br/>
 <img src="Images/WireframesAndColour/red.png" alt="red" width="5%">
 <img src="Images/WireframesAndColour/blue.png" alt="blue" width="5%">
 <img src="Images/WireframesAndColour/purple.png" alt="purple" width="5%">
 <img src="Images/WireframesAndColour/green.png" alt="green" width="5%">
+</p>
+
+<p class="Titles"> 
+    Assignment 2 Colour Scheme: 
+    <br/>
+<img src="Images/white.png" alt="white" width="5%">
+<img src="Images/yellow.png" alt="yellow" width="5%">
+<img src="Images/green.png" alt="green" width="5%">
+
 </p>
 
 <button class="u-url Submit" >Buttons: <img src="Images/DovePixelArt.png" alt="pixel art typewriter" class="PixelArtTypewriter" width="5%"> </button>
@@ -117,6 +137,15 @@ Nav Menu (fontawesome Icons):
     <img src="Images/WireframesAndColour/Wireframe2.png" alt="App/Game Development Wireframe" width="75%">
     <img src="Images/WireframesAndColour/Wireframe3.png" alt="Blog Posts Wireframe" width="75%">
     <img src="Images/WireframesAndColour/Wireframe4.png" alt="Contact Page Wireframe" width="75%">
+</div>
+
+<h2 class="Heading WireframeUpdates">
+    Updates to Wireframes
+ </h2>
+ <div class="WireframeImg">
+    <img src="Images/UpdatedBlogPosts.png" alt="Updated Blog Posts Wireframe" width="75%">
+    <p>This image also shows the updated navigation bar, which is fixed when the user scrolls</p>
+
 </div>
 
 </section>
