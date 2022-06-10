@@ -18,6 +18,12 @@ html{
   /* font-family: Calibri, 'Trebuchet MS', sans-serif; */
 }
 
+*{
+    font-family: Tahoma;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+}
+
 nav{
     position: fixed;
     top: 0;
@@ -35,6 +41,7 @@ nav{
     font-weight: bold;
     margin-top:-2%;
    color: black;
+   /* text-transform: uppercase; */
 }
 
 h1{

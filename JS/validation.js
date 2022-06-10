@@ -17,30 +17,30 @@ function validateForm(){
 //     isConfirmPasswordValid;
 }
 
-function checkUsername(){
-    usernameValid = false;
-    console.log("is checking username");
-    const username = document.getElementById("username").value;
-    console.log(username);
+// function checkUsername(){
+//     usernameValid = false;
+//     console.log("is checking username");
+//     const username = document.getElementById("username").value;
+//     console.log(username);
 
-    if(username.length < 3){
-        console.log("is under 3 character");
-        message = "This username is too short";
-        showError(message);
-        return usernameValid = false;
-    }
-    else if(username.length>=20)
-    {
-        message = "This username is too long";
-        showError(message);
-        return usernameValid = false;
-    }
-    else{
-        usernameValid = true;  
-        showSuccess();
-        return usernameValid = true;   
-    }
-}
+//     if(username.length < 3){
+//         console.log("is under 3 character");
+//         message = "This username is too short";
+//         showError(message);
+//         return usernameValid = false;
+//     }
+//     else if(username.length>=20)
+//     {
+//         message = "This username is too long";
+//         showError(message);
+//         return usernameValid = false;
+//     }
+//     else{
+//         usernameValid = true;  
+//         showSuccess();
+//         return usernameValid = true;   
+//     }
+// }
 
 
 const isPasswordSecure = (password) => {
@@ -76,48 +76,6 @@ const showSuccess = () => { //not running
     }
 };
 
-const checkPassword = () => { //is working
-
-    let valid = false;
-
-    const password = document.getElementById("password").value;
-    const password2 = document.getElementById("password2").value;
-    console.log(password);
-    console.log(password2);
-
-    if (!isPasswordSecure(password)) {
-        console.log(password);
-        showError(password, 'Password must have at least 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special character in (!@#$%^&*)');
-        valid = false;
-    } else {
-        showSuccess(password);
-        console.log(password);
-        valid = true;
-    }
-
-    return valid;
-};
-
-const checkConfirmPassword = () => {
-    let valid = false;
-    // check confirm password
-    const password2 = document.getElementById("password2").value;
-
-    if (password !== password2) {
-        showError(password2, 'Passwords do not match');
-    } else {
-        showSuccess(password2);
-        valid = true;
-    }
-
-    console.log(password);
-    console.log(password2);
-
-    return valid;
-  
-};
-
-
 form.addEventListener('input', (e) => {
     checkUsername();
 });
@@ -148,6 +106,50 @@ form.addEventListener('submit', (e) => {
             e.preventDefault();
         }
     });
+
+// const checkPassword = () => { //is working
+
+//     let valid = false;
+
+//     const password = document.getElementById("password").value;
+//     const password2 = document.getElementById("password2").value;
+//     console.log(password);
+//     console.log(password2);
+
+//     if (!isPasswordSecure(password)) {
+//         console.log(password);
+//         showError(password, 'Password must have at least 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special character in (!@#$%^&*)');
+//         valid = false;
+//     } else {
+//         showSuccess(password);
+//         console.log(password);
+//         valid = true;
+//     }
+
+//     return valid;
+// };
+
+// const checkConfirmPassword = () => {
+//     let valid = false;
+//     // check confirm password
+//     const password2 = document.getElementById("password2").value;
+
+//     if (password !== password2) {
+//         showError(password2, 'Passwords do not match');
+//     } else {
+//         showSuccess(password2);
+//         valid = true;
+//     }
+
+//     console.log(password);
+//     console.log(password2);
+
+//     return valid;
+  
+// };
+
+
+
 
 
 

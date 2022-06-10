@@ -27,7 +27,7 @@
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.Prev, .Next {
   position: absolute;
   top: 50%;
   width: auto;
@@ -40,20 +40,54 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   background-color: black;
+  margin-left: 2%;
 }
 
-.prev{
+.Prev{
   left: -2%;
 }
 /* Position the "next button" to the right */
-.next {
+.Next {
   right: 55%; 
   /* was 57.75% */
   border-radius: 3px 0 0 3px;
+  margin-right: 17%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.Prev:hover, .Next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.Prev2, .Next2 {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 150%;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: black;
+  margin-left: 50%;
+}
+
+.Prev2{
+  left: -2%;
+}
+/* Position the "next button" to the right */
+.Next2 {
+  right: 55%; 
+  /* was 57.75% */
+  border-radius: 3px 0 0 3px;
+  margin-right: -35%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.Prev2:hover, .Next2:hover {
   background-color: rgba(0,0,0,0.8);
 }
 

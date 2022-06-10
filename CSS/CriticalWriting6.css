@@ -1,5 +1,7 @@
 h1{
-    margin-top: 0%;
+    margin-top: 10%;
+    font-size: 200%;
+    text-transform: uppercase;
 }
 
 .ComputerPixelArt{
@@ -26,4 +28,17 @@ body{
 
 .References{
     text-align: center;
+}
+
+cite{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+@media (max-width:512px)
+{
+    h1{
+        margin-top: 20%;
+    }
+    
 }

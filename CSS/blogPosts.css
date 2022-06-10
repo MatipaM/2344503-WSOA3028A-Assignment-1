@@ -20,12 +20,6 @@ p{
 margin-left: 150%;
 }
 
-.Img{
-    border-radius: 10%;
-    border: 10%;
-    border-width: 20%;
-    border-color: black;
-}
 
 .Text1{
     width: 70%;
@@ -53,7 +47,8 @@ margin-left: 150%;
 .Img2{
     width: 100%;
     margin-left: -70%;
-    height: 50%;
+    height: 20%;
+    margin-bottom: 25%;
     /* margin-top: -610%;
     margin-bottom: -17%;  */
 }
@@ -64,24 +59,64 @@ margin-left: 150%;
     /* margin-top: -175%; */
 }
 
+.Img4{
+    width: 50%;
+    margin-left: -70%;
+    margin-top: 5%;
+    border: 5% black;
+    padding: 0%;
+}
 
-/* h1{
-    font-size: 500%;
+.Img5{
+    width: 100%;
+    margin-left: -70%;
+    height: 20%;
+}
+
+
+.Img6{
+    margin-left: -70%;
     margin-top: 20%;
-} */
+}
+
+
+.Img{
+    border-radius: 10%;
+    border: 10%;
+    border-width: 20%;
+    border-color: black;
+    width: 100%;
+}
 
 .Subtitle1{
-    margin-left: 10%;
-    padding-bottom: -100%;
+    margin-left: 60%;
 }
 
 .Subtitle2{
-    margin-top: 30%;
-    margin-left: 40%;
+    margin-top: -20%;
+    margin-left: 60%;
 }
 
 .Subtitle3{
     margin-left: 150%;
+}
+
+.Subtitle4{
+    margin-left: 10%;
+}
+
+.Subtitle5{
+    margin-top: -20%;
+    
+}
+
+.Subtitle6{
+    margin-left: 150%;
+}
+
+.BlogPostHeading{
+    margin-left: 150%;
+    font-size: 125%;
 }
 
 footer{
@@ -94,7 +129,7 @@ footer{
 cite{
     margin-left: -15%;
     margin-top: -5%;
-    /* padding-right: 100%; */
+    padding-right: 100%;
 }
 
 body{
@@ -105,11 +140,29 @@ body{
     margin-bottom: -5%;
 }
 
-@media (max-width: 516px){
+footer{
+    width: 200%;
+    margin-left: -35%;
+}
+
+@media (max-width: 512px){
+    .BlogPostHeading{
+        margin-left: 125%;
+    }
+
+    .Img{
+        width: 120%;
+    }
 }
 
 @media (max-width: 1024px){
+    .BlogPostHeading{
+        margin-left: 150%;
+    }
 
+    .Img{
+        width: 110%;
+    }
 }
 
   @media (max-width: 2048px){

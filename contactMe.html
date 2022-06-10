@@ -8,7 +8,6 @@
                 <li> <a href="Firtech.html" class="u-url"> <i class="fa-solid fa-tablet-screen-button">  </i> <br/> Apps </a> </li> 
                  <li><a href="blogPosts.html" class="u-url"><i class="fa-brands fa-readme">  </i> <br/> Blogs </a> </li> 
                  <li><a href="reflections.html" class="u-url"><i class="fa-solid fa-book-open-reader">  </i> <br/> Reflections </a></li>
-                 <li> <a href="login.html" class="u-url LoginIcon p-login"> <i class="fa-solid fa-user"></i> <br/> <span class="LoginText"> Login! </span> </a></li> 
             </ul>
      
         </nav>
@@ -25,30 +24,35 @@
     <title>Matipa's Portfolio Website</title>
     </head>
  
-    <h1>Please fill in the form below</h1>
+    <h1>Please get in touch!</h1>
 </head>
 <body>
-<form onsubmit="">
+    <form action="https://formsubmit.co/ocmatipa@gmail.com" method="POST">
     <div class="Container">
+        <input type="hidden" name="_subject" value="A new user wants to stay in contact!">
+        <input type="hidden" nme="_next" value="ContactThanks.html">
     <i class="fa-solid fa-envelopes-bulk FormIcons"></i>
     <br/>
-    <label for="email" required><b>Please Enter Your Email</b></label>
+    <label for="email" required>Please Enter Your Email</label>
     <br/>
-    <input type="text" class="TextBox" id="email" placeholder="Username/Email Address" required>
+    <input type="email" class="TextBox" id="email" placeholder="Email Address" required>
     <br/>
     <i class="fa-solid fa-message FormIcons"></i>
     <br/>
-    <label for="message"><b>Please Enter Your Enquiry</b></label>
+    <label for="message">Please Enter Your Enquiry</label>
     <br/>
-    <input class="TextBox" type="text" id="message" placeholder="Enter Your Message..." required>
+    <input class="TextBox" type="text" id="message" placeholder="Enter Your Message..." required minlength="5">
     <br/>
-<button href="index.html " class="u-url Submit" onclick="sencContact()">Send  </button>
+<button href="ContactThanks.html" class="u-url Submit">Send  </button>
  <br/>
     </form>
  
 </div>
 <script src="JS/contactForm.js"></script>
+<!-- <script src="JS/ContactFormValidation.js"></script> -->
+
 </body>
+
 <footer>
     <!-- <cite>
         Istockphoto.com. (2022). [online] Available at: https://media.istockphoto.com/vectors/vector-pixel-art-isolated-cartoon-vector-id956352962?k=20&m=956352962&s=612x612&w=0&h=40UCal7R64sCXqvBD0-wbUvG4hd5dK9GtPoNr8oScvY= [Accessed 21 Apr. 2022].
