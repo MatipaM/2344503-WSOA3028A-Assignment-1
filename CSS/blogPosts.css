@@ -37,46 +37,47 @@ margin-left: 150%;
   }
 
 .Img1{
-    width: 50%;
-    margin-left: -70%;
-    margin-top: 30%;
-    border: 5% black;
-    padding: 0%;
+    max-height: 95%;
+    max-width: 50%;
+    height: auto;
+    width: auto;
 }
 
 .Img2{
-    width: 100%;
-    margin-left: -70%;
-    height: 20%;
-    margin-bottom: 25%;
-    /* margin-top: -610%;
-    margin-bottom: -17%;  */
+    max-height: 100%;
+    max-width: 80%;
+    height: auto;
+    width: auto;
 }
 
 
 .Img3{
-    margin-left: -70%;
-    /* margin-top: -175%; */
+    max-height: 95%;
+    max-width: 90%;
+    height: auto;
+    width: auto;
 }
 
 .Img4{
-    width: 50%;
-    margin-left: -70%;
-    margin-top: 5%;
-    border: 5% black;
-    padding: 0%;
+    max-height: 95%;
+    max-width: 90%;
+    height: auto;
+    width: auto;
 }
 
 .Img5{
-    width: 100%;
-    margin-left: -70%;
-    height: 20%;
+    max-height: 95%;
+    max-width: 90%;
+    height: auto;
+    width: auto;
 }
 
 
 .Img6{
-    margin-left: -70%;
-    margin-top: 20%;
+    max-height: 95%;
+    max-width: 90%;
+    height: auto;
+    width: auto;
 }
 
 
@@ -86,32 +87,7 @@ margin-left: 150%;
     border-width: 20%;
     border-color: black;
     width: 100%;
-}
-
-.Subtitle1{
-    margin-left: 60%;
-}
-
-.Subtitle2{
-    margin-top: -20%;
-    margin-left: 60%;
-}
-
-.Subtitle3{
-    margin-left: 150%;
-}
-
-.Subtitle4{
-    margin-left: 10%;
-}
-
-.Subtitle5{
-    margin-top: -20%;
-    
-}
-
-.Subtitle6{
-    margin-left: 150%;
+    margin-top: 2%;
 }
 
 .BlogPostHeading{
@@ -132,17 +108,126 @@ cite{
     padding-right: 100%;
 }
 
-body{
+/* body{
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 60%;
     letter-spacing: 2%;
     margin-bottom: -5%;
-}
+} */
 
 footer{
     width: 200%;
-    margin-left: -35%;
+    margin-left: -170%;
+    margin-top: 10%;
+}
+
+.grid{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-rows: repeat(2, 1.5fr);
+}
+
+.BlogPostsSection{
+    margin-top: 10%;
+}
+
+.BlogPostsSection div:nth-child(1)
+{
+    background-color: white;
+    border-radius: 5%;
+
+    -moz-box-shadow: 0 0 10px gray;
+-webkit-box-shadow: 0 0 10px gray;
+box-shadow: 0 0 10px gray;
+}
+
+
+.BlogPostsSection div text:nth-child(1)
+{
+    /* text-align: center; */
+}
+
+.BlogPostsSection div:nth-child(2)
+{
+    background-color: white;
+    border-radius: 5%;
+
+    -moz-box-shadow: 0 0 10px gray;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+}
+
+.BlogPostsSection div:nth-child(3)
+{
+    background-color: white;
+    border-radius: 5%;
+
+    -moz-box-shadow: 0 0 10px gray;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+}
+
+.BlogPostsSection div:nth-child(4)
+{
+    background-color: white;
+    border-radius: 5%;
+
+    -moz-box-shadow: 0 0 10px gray;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+}
+
+.BlogPostsSection div:nth-child(5)
+{
+    background-color: white;
+    border-radius: 5%;
+
+    -moz-box-shadow: 0 0 10px gray;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+}
+
+.BlogPostsSection div:nth-child(6)
+{
+    background-color: white;
+    border-radius: 5%;
+
+    -moz-box-shadow: 0 0 10px gray;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+}
+
+.text{
+    text-align: center;
+    margin-left: 35%;
+}
+
+.Text1{
+    margin-top: 25%;
+}
+
+.Text2{
+    
+}
+
+.Text3{
+    
+}
+
+.Text4{
+    
+}
+
+.Text5{
+    
+}
+
+.Text6{
+    
 }
 
 @media (max-width: 512px){
@@ -152,6 +237,15 @@ footer{
 
     .Img{
         width: 120%;
+    }
+
+    .grid{
+        display: grid;
+        gap: 5rem;
+        /* grid-template-columns: repeat(3, 1fr); */
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-template-rows: repeat(6, 1.5fr);
     }
 }
 
