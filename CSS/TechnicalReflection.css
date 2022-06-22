@@ -1,0 +1,83 @@
+h1{
+    margin-top: 5%;
+    font-size: 300%;
+}
+
+.grid{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.TechnicalReflectionSection div:nth-child(1)
+{
+    grid-column: 1;
+}
+
+
+.TechnicalReflectionSection div:nth-child(2)
+{
+    grid-column: 2;
+    width: 100%;
+    margin-top: 2%;
+}
+
+section{
+    margin-top: 10%;
+}
+
+@media (max-width: 512px){
+
+    .CriticalReflectionSection{
+        display: block;
+    }
+
+    .grid{
+        display: none;
+    }
+
+    body{
+        font-size: 10%;
+    }
+
+        body div:nth-child(2)
+    {
+        grid-column: 2;
+        width: 75%
+    }
+
+    img{
+        display: none;
+    }
+
+    h1{
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 1024px){
+    body{
+        font-size: 40%;
+    }
+
+    body div:nth-child(2)
+{
+    grid-column: 2;
+    width: 75%
+}
+}
+
+@media (max-width: 2048px){
+        body{
+            font-size: 80%;
+        }
+
+        body div:nth-child(2)
+    {
+        grid-column: 2;
+        width: 70%
+        
+    }
+}

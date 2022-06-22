@@ -2,166 +2,61 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <header>
-        <nav>
-    
+        <nav> 
             <ul>
-                <li>  <a href="PlantsVsInsects.html" class="u-url"> <i class="fa-solid fa-gamepad"></i> <br/> Games </a>  </li> 
-                <li> <a href="Firtech.html" class="u-url"> <i class="fa-solid fa-tablet-screen-button">  </i> <br/> Apps </a> </li> 
-                 <li><a href="blogPosts.html" class="u-url"><i class="fa-brands fa-readme">  </i> <br/> Blogs </a> </li> 
-                 <li><a href="contactMe.html" class="u-url"> <i class="fa-solid fa-address-book"> </i> <br/> Contacts </a></li>
-                            </ul>
+                <li><a href="index.html" class="u-url"><i class="fa-solid fa-house-chimney"> </i>  <br/> Home </a>  </li> 
+            <li><a href="Development.html" class="u-url"><i class="fa-solid fa-gamepad"> </i>  <br/> Development </a>  </li> 
+            <li> <a href="contactMe.html" class="u-url"><i class="fa-solid fa-address-book"></i> <br/> Contact </a></li> 
+            <li> <a href="blogPosts.html" class="u-url"><i class="fa-solid fa-book-open-reader"></i><br/> Blogs </a></li> 
         </nav>
     </header>
 <head>
-    <meta name="description" content="This is the reflections page of portolfio. This page speaks to how I created this website via wireframes, technical and creative reflections.">
+    <meta name="description" content="This page contain blog posts. These posts are a critical reflection/response to the history and development of the world wide web">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="CSS/general.css">
-     <link rel="stylesheet" href="CSS/reflections.css"> 
+    <link rel="stylesheet" href="CSS/Reflections.css">
+   
     <script src="https://kit.fontawesome.com/e9f29bfa82.js" crossorigin="anonymous"></script>
-    <meta charset="utf-8" />   
+    <meta charset="utf-8" />
     <title>Matipa's Portfolio Website</title>
 </head>
 
-<section>
+<body>
 
-    <img src="Images/ReflectionPixelArt.gif" alt="Pixel art of a woman studying in the rain" class="ReflectionPixelArt"> 
+<!-- <h1>Blog Posts!</h1> -->
+<section class="ReflectionsSection grid ">
+ 
+            
+           <a href="CriticalReflection.html" onmouseover="changeToVideo3()">
+        <img src="Images/ReflectionsImages/Critical_Error_Frame1.png" id="CodeImage3" alt="Image of code art" class="Img1 Img">
+        <img src="Images/ReflectionsImages/Critical_Error.gif" id="CodeVideo3" alt="Video of code art" class="Img1 Img hide">
+    </a> 
 
-    <article>
-        <h2 class="Heading">
-            Critical Reflection
-                    </h2>
-                    <p>Overall, I think my submission for assignment 2 is a lot better than for assignment 1. With this current submission, I focused on improving the experience for my user. I did this by designing my user interface with three different viewports in mind. One for a large screen (desktop), a tablet and a small mobile device. Having three concise viewports in mind made it easier to test.  </p>
-                    <p>I also worked on a contact me form, so that when a user enters their information. I am forwarded their email address as well as the message they attached to the contact form. Initially I was working on a login form, but I decided to change it into a contact form as a login did not seem appropriate for a portfolio website.</p>
-                <p> With this assignment, I spent most of my time working on feedback from my last assignment. Which I think was beneficial as I managed to fix everything that I received a comment on. I also spent a lot of time redesigning the blog posts page, so that  the user could select which reflection they wanted to read instead of having to scroll through every single one like before. </p>    
-                </article>
+        <a href="CreativeReflection.html" onmouseover="changeToVideo2()">
+        <img src="Images/ReflectionsImages/Creative_Anim_Frame1.png" id="CodeImage2" alt="Image of code art" class="Img2 Img">
+        <img src="Images/ReflectionsImages/Creative_Anim.gif" id="CodeVideo2" alt="Video of code art" class="Img2 Img hide">
+        </a>
 
-                    <article>
-        <h2 class="Heading">
-Technical Reflection
-        </h2>
-<p>I made the navigation bar position fixed so that no matter how far the user scrolls down on a the page, they can use the navigation bar immediately as it will always be positioned at the top of the screen. I also made sure to only use one script to control where the navigation bar was positioned to prevent it from moving around. 
-    I decided to add text to the bottom of my icons, as I received feedback that my icons were not distinctive enough to be used without text. I managed to scale this efficiently for a smaller device and was happy with how the navigation bar looked on all three devices. 
-    </p>
+        <a href="TechnicalReflection.html" onmouseover="changeToVideo()">
+        <img src="Images/ReflectionsImages/Code_Anim_Frame1.png" alt="Image of code art" id="CodeImage" class="Img Img3">
+        <img src="Images/ReflectionsImages/Code_Anim.gif" alt="Video of code art" id="CodeVideo" class="Img Img3 hide">
+        </a>
 
-    <p>I tried positioning the carousels on the app dev page side by side but struggled, as even with flexboxes the wireframes would move out of position when resized. This looked very noticeable on a phone, where one of the wireframes was clashing with the text. I then changed it back to the original designed, where the carousels are on top of one another. However, this looks better on a smaller device then on a desktop. </p>
-<p>I also struggled with flexboxes when designing the blog posts page which is why I decided to have each reading on a vertical layout. As opposed to a 2x3 grid which would have been preferable as that way all the posts would be visible on a single page and the user would not have to scroll down to see all the reflections available.</p>
-<p>
-    I also decided to completely take out the login/registration pages, as even though I managed to get the page to not go through if there was an error. My error messages would not be shown to the user, despite me using alert to display my messages instead of an element.innerHTML/.value. I also thought it having a login page would not be that appropriate for a portfolio website.
-    </p>
-<p>When it came to semantic markup I did make an effort to mark all elements on my page with tags that I thought were most appropriate. These tags also made it easier for me to alter text elements with the appropriate css. Initially, I wasn't too sure what content to place in the header and footer section of my website. After doing some research I decided to add references/citations of pixel art from other artists which I had added to my website as well the contact details I was comfortable with recruiters seeing. In the header of each webpage I added the navigation bar.  </p>
-
-
-</p>
-</article>
-<article>
-
-    <h2 class="Heading">
-Creative Reflection
-    </h2>
-
-<p>I decided to import a font I found online, 'Lemon Tuesday' which I used throughout my website for headings and important text. I then used an already imported text as my secondary font. I did not want to use Lemon Tuesday throughout  my blog (add image) as it can be difficult to read especially when printed too small and I did not want to overwhelm my user with large sections of text.</p>
-
-<p>I liked the idea of adding pixel art consistently throughout my website as I thought it made my website more visually appealing. The increased visual appeal helped because the purpose of my portfolio website was to show off my skills as a developer as opposed to an artist. Therefore I found, pages were not as attractive as they could be if they were filled with my art. I considered using pixel art to design more detailed icons for my navigation bar as the lack of text requires less ambiguous icons. However, I did enjoy the sleek designs of the icons I got from font awesome. </p>
-
-<p>On my app development page where I speak about the internship I am currently doing at 'Firtech', a software development/automation company. I decided to use two carousels side by side and tried to align the pages I had designed using Miro with the pages I had built in visual studio. I did this because I wanted recruiters to be able to see how each page had developed from my planning process to the current outcome (as I am still improving the pages). This was quite challenging as during the development process, pages had been moved, deleted and/or added which made it difficult to compare pages exactly. This is also why I decided to use back and forward buttons instead of two automatic carousels so the user can skip extra pages if they would like to see the exact page in planning versus in development. </p>
-
-<p>I decided to only use two primary fonts as I wanted my website to contain some form of consistency. This is also why I used similar saturation in colours and my main colours only consisted of red, blue and purple. I chose the background to be a screenshot of my code because I thought it would be fitting on the first page. That way recruiters can get an idea of what type of portfolio they are looking at before diving into the main content. </p>
-
-<p>
-    I changed the background colour of my website from blue to a lighter yellow, so that text on top could be seen more clearly. I also changed the overall colour of the website to a more neutral colour palette, as I thought it looked more professional, in comparison to the more saturated blues and greens I had used before. I also wanted to have a more high contrast web page to improve accessibility for those with colour blindness/ visual disbilties. I placed the blog posts on separate pages to make it easier for viewers to quickly shift through reflections they are most interested in. 
-    </p>
-</p>
-</article>
-
-<article class="StyleGuide">
-    <p>
-    <h2 class="Heading">
-Style Guide
-    </h2>
-    <br/>
-<h1>Main Headings</h1>
-<br/>
-<h2 class="SecondaryHeading">Secondary Headings</h2> </p>
-<br/>
-<h3 class="TertiaryHeading" >Tertiary Headings</h3>
-
-<p class="Titles">General Text. </p>
-
-<p class="Titles"> 
-    Assignment 1 Colour Scheme: 
-    <br/>
-<img src="Images/WireframesAndColour/red.png" alt="red" width="5%">
-<img src="Images/WireframesAndColour/blue.png" alt="blue" width="5%">
-<img src="Images/WireframesAndColour/purple.png" alt="purple" width="5%">
-<img src="Images/WireframesAndColour/green.png" alt="green" width="5%">
-</p>
-
-<p class="Titles"> 
-    Assignment 2 Colour Scheme: 
-    <br/>
-<img src="Images/white.png" alt="white" width="5%">
-<img src="Images/yellow.png" alt="yellow" width="5%">
-<img src="Images/green.png" alt="green" width="5%">
-
-</p>
-
-<button class="u-url Submit" >Buttons: <img src="Images/DovePixelArt.png" alt="pixel art typewriter" class="PixelArtTypewriter" width="5%"> </button>
-
-<p class="Titles">
-Nav Menu (fontawesome Icons):
-</p> 
-
-<div class="NavMenu">
-    <ul>
-        <i class="fa-solid fa-gamepad DisplayIcons"></i>
-<i class="fa-solid fa-tablet-screen-button DisplayIcons"></i>  
-<i class="fa-brands fa-readme DisplayIcons"></i>
-<i class="fa-solid fa-address-book DisplayIcons"></i>
-<i class="fa-solid fa-house DisplayIcons"></i>
-</ul>
-</div>
-</p>
-
-<p>
-    My colour scheme was inspired by the background image I chose throughout the website. That is the screenshot of some code. I liked the blue of the IDE and then used the same saturation for the other colours. I thought the purple and red stood out on top of the blue but still worked well with the blue. The green just looked really lovely as part of the transition and was light enough to let the text over it stand out.</p>
-<p>
-    I wanted to keep the layout of my index page, simple as it is the first page my user sees when entering my website. So I just added a welcome note as well as some pixel art which I used throughout my website. With the text heavy pages, I centered the text and added a gradient background to allow the text to stand out. For my portfolio pages, I placed images above text, to indicate that the text was more of a support to the items I had developed. I did not want recruiters who have multitudes of portoflios to scan to feel the need to scan through all of the text just to find the game link/images. 
-</p>
-</article>
-
-<h2 class="Heading Wireframe">
-   Wireframes
-</h2>
-<div class="WireframeImg">
-    <img src="Images/WireframesAndColour/WireFrame1.png" alt="Index Page Wireframe" width="75%">
-    <img src="Images/WireframesAndColour/Wireframe2.png" alt="App/Game Development Wireframe" width="75%">
-    <img src="Images/WireframesAndColour/Wireframe3.png" alt="Blog Posts Wireframe" width="75%">
-    <img src="Images/WireframesAndColour/Wireframe4.png" alt="Contact Page Wireframe" width="75%">
-</div>
-
-<h2 class="Heading WireframeUpdates">
-    Updates to Wireframes
- </h2>
- <div class="WireframeImg">
-    <img src="Images/UpdatedBlogPosts.png" alt="Updated Blog Posts Wireframe" width="75%">
-    <p>This image also shows the updated navigation bar, which is fixed when the user scrolls</p>
-
-</div>
+<span class="text"> <b>Critical Reflection</b></span>
+<span class="text"><b>Creative Reflection</b></span>
+<span class="text"><b>Technical Reflection</b></span>
 
 </section>
+<script src="JS/ImageToVideo.js"></script>
 
-<!-- <script src="../JS/validation.js"></script> -->
-
-<body>
-<article>
-    <section>
-
-    </section>
-</article>
 </body>
 <footer>
-    <cite>
-        Tenor. 2022. Pixel Study GIF - Pixel Study - Discover & Share GIFs. [online] Available at: <https://tenor.com/view/pixel-study-gif-20419806> [Accessed 22 April 2022].
-    </cite>
+    <cite>Cloudinary.com. (2022). [online] Available at: https://res.cloudinary.com/indysigner/image/upload/v1600878227/8_avckve.gif.</cite>
+<cite>dribbble.com. (n.d.). ‘Code’ animation. [online] Available at: https://dribbble.com/shots/4569474--Code-animation [Accessed 17 Jun. 2022].
+</cite>
+<cite>GIPHY (n.d.). Technical Difficulties Error GIF - Find & Share on GIPHY. [online] giphy.com. Available at: https://giphy.com/gifs/1RkDDoIVs3ntm [Accessed 17 Jun. 2022].
+</cite>
+
 </footer>
+
 </html>

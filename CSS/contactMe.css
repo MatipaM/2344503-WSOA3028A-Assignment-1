@@ -16,36 +16,10 @@ body{
     margin-top:5%;
 }
 
-.FormIcons{
-    font-size: 100%;
-}
-
 label{
     margin-top: -5%;
 }
 
-.TextBox{
-    margin-bottom: -5%;
-    margin-right: -5%;
-    margin-left: -5%;
-}
-
-.Submit{
-    font-size: 100%;
-    width: 20%;
-    height: 10%;
-    text-align: center;
-    margin-left: 40%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.Container{
-    margin-bottom: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
-    width: 80%;
-}
 
 .DoveArt{
     width: 25%;
@@ -56,55 +30,6 @@ cite{
     font-size: 100%;
 }
 
-.Submit{
-    color:black;
-    font-family:Helvetica, sans-serif;
-    font-size:150%;
-    text-align: center;
-    text-decoration:none;
-    background-color:rgba(236,236,219,1);
-    display:block;
-    position:relative;
-    padding:2%;
-    padding-left: 0%;
-    padding-right: 0%;
-    /* width: 20%; */
-    margin-left: 40%;
-    
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    
-    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #A17A69;
-    -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 rgba(230,212,168,1);
-    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 rgba(230,212,168,1);
-    
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5%;
-  }
-
-.Submit:hover{
-    /* top:10px; */
-    background-color:rgba(230,212,168,1);
-    color: white;
-    
-    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 rgba(236,236,219,1);
-    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 rgba(236,236,219,1);
-    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 rgba(236,236,219,1);
-  }
-  
-  .Submit:after{
-    content:"";
-    /* height:100%;
-    width:100%; */
-    padding:4px;
-    position: absolute;
-    bottom:-15px;
-    left:-4px;
-    z-index:-1;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-  }
 
   @media (max-width: 1024px)
   {

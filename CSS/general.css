@@ -9,7 +9,7 @@
   }
 
 html{
-    background-image: url(../Images/WebsiteBackground.png);
+    background-image: url(../Images/Background/WebsiteBackground.png);
     /* height: 100vh; */
     /* width: 200vh; */
   background-size: cover;
@@ -227,6 +227,24 @@ h1{
     }
 } 
 
+@media (max-width: 512px){ 
+    #helloUser{
+      margin-top: 20%;
+      margin-left: 15%;
+    }
+
+    nav li{
+        font-size: 60%;
+    }
+
+    body{
+        font-size: 10%;
+        letter-spacing: 0.5px;
+        word-spacing: -2px;
+    }
+
+  }
+
 @media (max-width: 1024px){ 
     #helloUser{
       margin-top: 20%;
@@ -236,6 +254,10 @@ h1{
     nav li{
         font-size: 60%;
     }
+
+    /* p{
+        font-size: 100%;
+    } */
   }
 /* is working! */
     @media (max-width: 2048px){ 
