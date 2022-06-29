@@ -8,24 +8,6 @@
   margin: auto;
 }
 
-/* Hide the images by default */
-.Slides1 {
-  display: none;
-  margin-top: 5%;
-  /* width: 5%; */
-  /* height: 50%; */
-  /* text-align: center; */
-  margin-left: 10%;
-}
-
-.Slides2 {
-  display: none;
-  /* width: 10%;
-  text-align: center; */
-  margin-left: 10%;
-  padding-bottom: 20%;
-}
-
 /* Next & previous buttons */
 .Prev, .Next {
   position: absolute;
@@ -41,18 +23,18 @@
   user-select: none;
   background-color: black;
   margin-left: 5%;
+  margin-top: 25%;
+}
+
+.Next{
+  margin-left: 20%;
+  border-radius: 3px 0 0 3px;
 }
 
 .Prev{
-  left: -2%;
+  margin-left: 0%;
 }
 /* Position the "next button" to the right */
-.Next {
-  /* right: 55%;  */
-  /* was 57.75% */
-  border-radius: 3px 0 0 3px;
-  margin-right: 9%;
-}
 
 /* On hover, add a black background color with a little bit see-through */
 .Prev:hover, .Next:hover {
@@ -72,16 +54,15 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   background-color: black;
-  margin-left: 10%;
+  margin-left: 25%;
+  margin-top: -19%;
 }
 
 .Prev2{
-  left: -2%;
+margin-left: 4%;
 }
 /* Position the "next button" to the right */
 .Next2 {
-  right: 55%; 
-  /* was 57.75% */
   border-radius: 3px 0 0 3px;
   margin-right: 2%;
 }
@@ -165,6 +146,26 @@ h2{
   
 }
 
+@media (max-width: 1024px){
+  .Next{
+    width: 3%;
+  }
+
+  .Prev{
+    width: 3%;
+    margin-left: -2%;
+  }
+
+  .Next2{
+    width: 3%;
+  }
+
+  .Prev2{
+    width: 3%;
+    margin-left: 1%;
+  }
+}
+
 @media (max-width: 512px){
   #check:checked ~ .slideshow-container .mySlides1 .next .prev html{
       display: hidden;
@@ -187,4 +188,31 @@ h2{
   p{
     margin-right: -50%;
   }
+
+  .Next {
+    width: 3%;
+    margin-top: -70%;
+    margin-left: 70%;
+  }
+
+  .Prev{
+    width: 3%;
+    /* margin-left: -2%; */
+    margin-top: -70%;
+    margin-left: 12%;
+  }
+
+  .Next2 {
+    width: 3%;
+    margin-top: -50%;
+    margin-left: 75%;
+  }
+
+  .Prev2{
+    width: 3%;
+    /* margin-left: -2%; */
+    margin-top: -50%;
+    margin-left: 12%;
+  }
 }
+
