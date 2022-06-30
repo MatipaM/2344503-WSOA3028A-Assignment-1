@@ -58,6 +58,11 @@ body{
     margin-top: -15%;
 }
 
+.mainHeadings{
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
 .Heading{
     font-family: Lemon_Tuesday;
     font-size: 150%;
@@ -65,7 +70,7 @@ body{
     color: black;
     letter-spacing: 2%;
     text-transform: uppercase;
-    margin-bottom: 1%; 
+    margin-bottom: 2%; 
 }
 
 .SecondaryHeading{
@@ -105,60 +110,32 @@ i{
 .PixelArtTypewriter{
     width: 5%;
 }
+.Submit {
+    font-size: 100%;
+    width: 8%;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    display: inline-block;
+    padding: 0.4em 1em;
+    border: 0.1em solid rgba(230,212,168,1);
+    border-radius: 0.38em;
+    background-image: linear-gradient(rgba(230,212,168,1), rgba(235,194,83,1)); 
+    margin-top: 4%;
+    -moz-box-shadow: 0 0 10px rgba(230,212,168,1);
+    -webkit-box-shadow: 0 0 10px rgba(230,212,168,1);
+    box-shadow: 0 0 10px rgba(230,212,168,1);
+    margin-left: 46%;
+  }
 
-.Submit{
-    color:black;
-    font-family:Helvetica, sans-serif;
-    font-weight:bold;
-    font-size:150%;
-    text-align: center;
-    text-decoration:none;
-    background-color:rgba(236,236,219,1);
-    display:block;
-    position:relative;
-    padding:2%;
-    padding-left: 0%;
-    padding-right: 0%;
-    width: 20%;
-    height: 5%;
-    margin-left: 40%;
-    
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    text-shadow: 0px 1px 0px #000;
-    filter: dropshadow(color=#000, offx=0px, offy=1px);
-    
-    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 rgba(230,212,168,1);
-    -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 rgba(230,212,168,1);
-    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 rgba(230,212,168,1);
-    
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5%;
+  .Submit:hover {
+    background-image: linear-gradient(black, black); 
+    color: white; 
   }
   
-  .Submit:hover{
-    /* top:10px; */
-    background-color:rgba(230,212,168,1);
-    color: white;
-    
-    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 rgba(236,236,219,1);
-    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 rgba(236,236,219,1);
-    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 rgba(236,236,219,1);
-  }
-  
-  .Submit:after{
-    content:"";
-    /* height:100%;
-    width:100%; */
-    padding:4px;
-    position: absolute;
-    bottom:-15px;
-    left:-4px;
-    z-index:-1;
-    background-color:#2B1800;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+  .Submit:active {
+    background-image: linear-gradient(rgba(230,212,168,1), rgba(222,178, 59,1)); 
   }
 
 h1{
