@@ -1,3 +1,6 @@
+html{
+    background-image: linear-gradient(rgba(236,236,219,1), rgba(255,255,255,1));
+}
 h1{
     margin-top: 10%;
     font-size: 200%;
@@ -30,9 +33,10 @@ body{
     text-align: center;
 }
 
-cite{
+cite footer{
     margin-bottom: 2%;
     margin-top: 2%;
+    background-color: white;
 }
 
 @media (max-width:512px)
