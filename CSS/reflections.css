@@ -89,6 +89,7 @@ box-shadow: 0 0 10px rgba(230,212,168,1);
 
 .text{
     font-family: Lemon_Tuesday;
+    text-transform: uppercase;
     text-align: center;
     margin-left: 0%;
 }
@@ -126,28 +127,47 @@ box-shadow: 0 0 10px rgba(230,212,168,1);
     }
 
     .Img{
-        max-height: 20%;
-        max-width: 20%;
+        max-height: 50%;
+        max-width: 50%;
         height: auto;
         width: auto;
-        /* margin-bottom: 5%; */
+        margin-left: 25%;
+        margin-bottom: 5%;
     }
 
     .grid{
         display: block;
-        gap: 5rem;
+        /* gap: 5rem;
         grid-template-columns: repeat(1, 3fr);
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 5%;
-        grid-template-rows: repeat(3, 0.25fr);
+        grid-template-rows: repeat(3, 0.25fr); */
     }
 
+    .text{
+        margin-top: -50%;
+    }
+
+    .heading1{
+        margin-top: -50%;
+    }
+
+    .heading2{
+
+    }
+
+
+    .heading3{
+
+    }
+
+
     .ReflectionsSection div
-{
-margin-bottom: 5%;
-padding-right: -500%;
-}
+    {
+    margin-bottom: 5%;
+    padding-right: -500%;
+    }
 
 }
 
