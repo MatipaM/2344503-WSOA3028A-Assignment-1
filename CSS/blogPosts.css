@@ -12,12 +12,14 @@ p{
 
 h3{
     text-decoration: none;
+    text-transform: uppercase;
     margin-left: 5%;
+    font-family: Lemon_Tuesday;
 }
 
 h4{
     text-decoration: none;
-    font-weight: none;
+    font-weight: 600;
     margin-left: 5%;
 }
 
@@ -42,6 +44,7 @@ h4{
     height: auto;
     width: auto;
     margin-left: 5%;
+    margin-bottom: 30%;
 }
 
 .Img2{
@@ -49,6 +52,7 @@ h4{
     max-width: 80%;
     height: auto;
     width: auto;
+    margin-bottom: 22%;
  
 }
 
@@ -58,6 +62,7 @@ h4{
     max-width: 90%;
     height: auto;
     width: auto;
+    margin-bottom: 50%;
 }
 
 .Img4{
@@ -65,6 +70,7 @@ h4{
     max-width: 90%;
     height: auto;
     width: auto;
+    margin-bottom: 42%;
 }
 
 .Img5{
@@ -73,6 +79,7 @@ h4{
     height: auto;
     width: auto;
     margin-left: 5%;
+    margin-bottom: 38%;
 }
 
 
@@ -139,7 +146,7 @@ footer{
 
 .BlogPostsSection a:nth-child(1)
 {
-    background-color: white;
+    background-color: rgba(255,255,255,0.7);
     border-radius: 5%;
 
     -moz-box-shadow: 0 0 10px rgba(230,212,168,1);
@@ -147,15 +154,9 @@ footer{
 box-shadow: 0 0 10px rgba(230,212,168,1);
 }
 
-
-.BlogPostsSection a text:nth-child(1)
-{
-    /* text-align: center; */
-}
-
 .BlogPostsSection a:nth-child(2)
 {
-    background-color: white;
+    background-color: rgba(255,255,255,0.7);
     border-radius: 5%;
 
     -moz-box-shadow: 0 0 10px rgba(230,212,168,1);
@@ -165,7 +166,7 @@ box-shadow: 0 0 10px rgba(230,212,168,1);
 
 .BlogPostsSection a:nth-child(3)
 {
-    background-color: white;
+    background-color: rgba(255,255,255,0.7);
     border-radius: 5%;
 
     -moz-box-shadow: 0 0 10px rgba(230,212,168,1);
@@ -175,7 +176,7 @@ box-shadow: 0 0 10px rgba(230,212,168,1);
 
 .BlogPostsSection a:nth-child(4)
 {
-    background-color: white;
+    background-color: rgba(255,255,255,0.7);
     border-radius: 5%;
 
     -moz-box-shadow: 0 0 10px rgba(230,212,168,1);
@@ -185,7 +186,7 @@ box-shadow: 0 0 10px rgba(230,212,168,1);
 
 .BlogPostsSection a:nth-child(5)
 {
-    background-color: white;
+    background-color: rgba(255,255,255,0.7);
     border-radius: 5%;
 
     -moz-box-shadow: 0 0 10px rgba(230,212,168,1);
@@ -195,7 +196,7 @@ box-shadow: 0 0 10px rgba(230,212,168,1);
 
 .BlogPostsSection a:nth-child(6)
 {
-    background-color: white;
+    background-color: rgba(255,255,255,0.7);
     border-radius: 5%;
 
     -moz-box-shadow: 0 0 10px rgba(230,212,168,1);
@@ -243,25 +244,6 @@ box-shadow: 0 0 10px rgba(230,212,168,1);
     margin-top: 25%;
 }
 
-.Text2{
-    
-}
-
-.Text3{
-    
-}
-
-.Text4{
-    
-}
-
-.Text5{
-    
-}
-
-.Text6{
-    
-}
 
 .FlipCard {
     background-color: transparent;

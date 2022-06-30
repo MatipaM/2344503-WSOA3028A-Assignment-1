@@ -25,6 +25,7 @@ html{
 }
 
 nav{
+    font-family: Tahoma;
     position: fixed;
     top: 0;
     left: 0;
@@ -177,6 +178,58 @@ h1{
     margin-left: 2%;
     display: none;
 }
+
+.postsBtn {
+    font-size: 100%;
+    font-weight: 600;
+    font-family: Tahoma;
+    text-align: center;
+    width: 10%;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    display: inline-block;
+    padding: 0.4em 1em;
+    border: 0.1em solid rgba(230,212,168,1);
+    border-radius: 0.38em;
+    background-image: linear-gradient(rgba(230,212,168,1), rgba(235,194,83,1)); 
+    margin-top: 4%;
+    -moz-box-shadow: 0 0 10px rgba(230,212,168,1);
+    -webkit-box-shadow: 0 0 10px rgba(230,212,168,1);
+    box-shadow: 0 0 10px rgba(230,212,168,1);
+    margin-bottom: 5%;
+  }
+  .postsBtn:hover {
+    background-image: linear-gradient(black, black); 
+    color: white; 
+  }
+  .postsBtn:active {
+    background-image: linear-gradient(rgba(230,212,168,1), rgba(222,178, 59,1)); 
+  }
+
+  .nextBtn{
+    margin-left: 20%;
+    grid-column: 3;
+  }
+
+  .topBtn{
+    grid-column: 2;
+    /* margin-left: 45%; */
+  }
+  
+  .prevBtn{
+    grid-column: 1;
+    margin-right: 20%;
+  }
+
+
+  .gridBtns{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 /* 
 #check{
     display:none;
