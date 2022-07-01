@@ -4,11 +4,13 @@
     <header>
         <nav> 
             <ul>
-                <li><a href="index.html" class="u-url"><i class="fa-solid fa-house-chimney"> </i>  <br/> Home </a>  </li> 
-            <li><a href="Development.html" class="u-url"><i class="fa-solid fa-code"> </i>  <br/> Development </a>  </li> 
-            <li> <a href="contactMe.html" class="u-url"><i class="fa-solid fa-address-book"></i> <br/> Contact </a></li> 
-            <li> <a href="reflections.html" class="u-url"><i class="fa-solid fa-book-open-reader"></i><br/> Reflections </a></li> 
-            <li><a href="blogPosts.html" class="u-url"><i class="fa-brands fa-readme">  </i> <br/> Blogs </a> </li>
+                <li><a onclick="Index()" class="u-url"><i class="fa-solid fa-house-chimney"> </i>   Home </a>  </li> 
+            <li><a onclick="Development()" class="u-url"><i class="fa-solid fa-code"> </i>  Development </a>  </li> 
+            <li> <a onclick="ContactMe()" class="u-url"><i class="fa-solid fa-address-book"></i>  Contact </a></li> 
+            <li> <a onclick="Reflections()" class="u-url"><i class="fa-solid fa-book-open-reader"></i> Reflections </a></li> 
+            <li><a onclick="BlogPosts()" class="u-url"><i class="fa-brands fa-readme">  </i> Blogs </a> </li>
+            <li><a onclick="Profile()" class="u-url"><i class="fa-solid fa-id-card-clip"></i>About Me </a></li>  
+            
         </nav>
     </header>
 <head>
@@ -47,20 +49,21 @@ Critical Writing Week 2 - Alan Turing, Computing Machinery and Intelligence Refl
 </section>
 
 <span class="h-entry">
-    <a href="CriticalWriting14.html" id="BtnFadeIn" class="postsBtn prevBtn u-url">Previous</a>
-    <a href="CriticalWriting2.html" id="BtnFadeIn" class="postsBtn topBtn u-url">Top</a>
-<a href="CriticalWriting4.html" id="BtnFadeIn" class="postsBtn nextBtn u-url">Next</a>
+    <a onclick="CriticalWriting14()" id="BtnFadeIn" class="PostsBtn PrevBtn u-url">Previous</a>
+    <a onclick="CriticalWriting2()" id="BtnFadeIn" class="PostsBtn TopBtn u-url">Top</a>
+<a onclick="CriticalWriting4()" id="BtnFadeIn" class="PostsBtn NextBtn u-url">Next</a>
 </span>
     </article>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="JS/headings.js"></script>
+    <script src="JS/Navigation.js"></script>
 </body>
 <footer>
         <h3 class="References"> References 
         </h3>
 
     <cite>TURING,A. 1950. Computing Machinery and Intelligence. <em> MIND </em>, 59,433-460</cite>
-    <br/>
+
     <cite>
         PROUDFOOT, D. 2013. The Journal of Philosophy.<em> Rethinking Turing’s Test. </em> Vol. 110. No. 7. July.    
     </cite>

@@ -3,7 +3,7 @@
     src: url("../Fonts/lemon_tuesday/Lemon Tuesday.otf");
   }
 
-.hide{
+.Hide{
     display: none;
 }
 
@@ -44,7 +44,7 @@
     font-size: 125%;
 }
 
-.grid{
+.Grid{
     display: grid;
     gap: 5rem;
     grid-template-columns: repeat(3, 2fr);
@@ -135,7 +135,7 @@ box-shadow: 0 0 10px rgba(230,212,168,1);
         margin-bottom: 5%;
     }
 
-    .grid{
+    .Grid{
         display: block;
         /* gap: 5rem;
         grid-template-columns: repeat(1, 3fr);
@@ -145,20 +145,20 @@ box-shadow: 0 0 10px rgba(230,212,168,1);
         grid-template-rows: repeat(3, 0.25fr); */
     }
 
-    .text{
+    .Text{
         margin-top: -50%;
     }
 
-    .heading1{
+    .Heading1{
         margin-top: -50%;
     }
 
-    .heading2{
+    .Heading2{
 
     }
 
 
-    .heading3{
+    .Heading3{
 
     }
 

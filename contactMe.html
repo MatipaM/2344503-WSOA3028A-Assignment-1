@@ -4,10 +4,11 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" class="u-url"><i class="fa-solid fa-house-chimney"> </i>  <br/> Home </a>  </li> 
-                <li>  <a href="Development.html" class="u-url"> <i class="fa-solid fa-code"></i> <br/> Development </a>  </li> 
-                 <li><a href="blogPosts.html" class="u-url"><i class="fa-brands fa-readme">  </i> <br/> Blogs </a> </li> 
-                 <li><a href="Reflections.html" class="u-url"><i class="fa-solid fa-book-open-reader">  </i> <br/> Reflections </a></li>
+                <li><a class="u-url" onclick="Index()"><i class="fa-solid fa-house-chimney"> </i>  Home </a>  </li> 
+                <li>  <a class="u-url" onclick="Development()"> <i class="fa-solid fa-code"></i>  Development </a>  </li> 
+                 <li><a class="u-url" onclick="BlogPosts()"><i class="fa-brands fa-readme">  </i>  Blogs </a> </li> 
+                 <li><a class="u-url" onclick="Reflections()"><i class="fa-solid fa-book-open-reader">  </i> Reflections </a></li>
+                 <li><a onclick="Profile()" class="u-url"><i class="fa-solid fa-id-card-clip"></i>About Me </a></li>  
             </ul>
      
         </nav>
@@ -34,7 +35,7 @@
         <input type="hidden" name="_captcha" value="false">
     <i class="fa-solid fa-envelopes-bulk FormIcons"></i>
     <br/>
-    <label for="email" class="p-label" required>Please Enter Your Email</label>
+    <label for="email" required>Please Enter Your Email</label>
     <br/>
     <input type="email" class="TextBox" id="email" placeholder="Email Address" required>
     <br/>
@@ -48,9 +49,9 @@
     </form>
  
 </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="JS/Navigation.js"></script>
 <script src="JS/contactForm.js"></script>
-<!-- <script src="JS/ContactFormValidation.js"></script> -->
-
 </body>
 
 <footer class="p-References">

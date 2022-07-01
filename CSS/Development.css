@@ -103,7 +103,7 @@ footer{
     margin-top: 10%;
 }
 
-.grid{
+.Grid{
     display: grid;
     gap: 5rem;
     grid-template-columns: repeat(3, 1fr);
@@ -175,7 +175,7 @@ box-shadow: 0 0 10px rgba(230,212,168,1);
         width: 110%;
     }
 
-    .grid{
+    .Grid{
         margin-top: 15%;
         gap: 2rem;
     }
@@ -191,7 +191,7 @@ box-shadow: 0 0 10px rgba(230,212,168,1);
       width: 120%;
   }
 
-  .grid{
+  .Grid{
       display: block;
       gap: 5rem;
       grid-template-columns: repeat(1, 1fr);

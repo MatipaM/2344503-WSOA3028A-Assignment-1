@@ -7,7 +7,7 @@
       margin-top: 5%;
   }
 
-  .grid{
+  .Grid{
     display: grid;
     gap: 5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -45,7 +45,7 @@ h2:nth-child(2)
 }
 
 
-.grid2{
+.Grid2{
     display: grid;
     gap: 5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -261,11 +261,11 @@ p{
         grid-column: 1/1;
     } */
 
-    .grid{
+    .Grid{
         display: block;
     }
 
-    .grid2{
+    .Grid2{
         display: block;
     }
 
@@ -282,7 +282,7 @@ p{
         margin-top: 0%;
     }
 
-    .logoHeading{
+    .LogoHeading{
         font-size: 850%;
     }
 

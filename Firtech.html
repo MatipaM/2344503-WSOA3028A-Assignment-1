@@ -6,11 +6,12 @@
 
       <nav>
         <ul>
-          <li><a href="index.html" class="u-url"><i class="fa-solid fa-house-chimney"> </i>  <br/> Home </a>  </li> 
-          <li>  <a href="Development.html" class="u-url"> <i class="fa-solid fa-code"></i> <br/> Development </a>  </li> 
-           <li><a href="blogPosts.html" class="u-url"><i class="fa-brands fa-readme">  </i> <br/> Blogs </a> </li> 
-           <li><a href="contactMe.html" class="u-url"> <i class="fa-solid fa-address-book"> </i> <br/> Contact </a></li> 
-           <li><a href="Reflections.html" class="u-url"><i class="fa-solid fa-book-open-reader">  </i> <br/> Reflections </a></li> 
+          <li><a onclick="Index()" class="u-url"><i class="fa-solid fa-house-chimney"> </i>  Home </a>  </li> 
+          <li>  <a onclick="Development()" class="u-url"> <i class="fa-solid fa-code"></i> Development </a>  </li> 
+           <li><a onclick="BlogPosts()" class="u-url"><i class="fa-brands fa-readme">  </i> Blogs </a> </li> 
+           <li><a onclick="ContactMe()" class="u-url"> <i class="fa-solid fa-address-book"> </i> Contact </a></li> 
+           <li><a onclick="Reflections()" class="u-url"><i class="fa-solid fa-book-open-reader">  </i> Reflections </a></li> 
+           <li><a onclick="Profile()" class="u-url"><i class="fa-solid fa-id-card-clip"></i>About Me </a></li>  
         </ul>
     </nav>
     </header>
@@ -38,7 +39,7 @@
   
 </span>
 </div>    
-  <article class="grid">
+  <article class="Grid">
 
     <section  class="SlideshowContainer h-entry"></section>
 <h2 class="MainHeadings Heading1">Wireframes:</h2>
@@ -280,27 +281,22 @@
 
         <div class="Slides2">
           <img src="Images/FirtechActualImages/SPD8.png" style="width:55%" alt="Submit Physical Documents part 8" class="u-photo">
-          <!-- <div class="text1 column">Submit Physical Documents Screen</div> -->
         </div>
 
         <div class="Slides2">
           <img src="Images/FirtechActualImages/Settings.png" style="width:55%" alt="Settings" class="u-photo">
-          <!-- <div class="text1 column">Settings Screen</div> -->
         </div>
 
         <div class="Slides2">
           <img src="Images/FirtechActualImages/Profile.png" style="width:55%" alt="Profile part 1" class="u-photo">
-          <!-- <div class="text1 column">Profile Screen</div> -->
         </div>
 
         <div class="Slides2">
           <img src="Images/FirtechActualImages/personalInfo.png" style="width:55%" alt="Personal Information Screen" class="u-photo">
-          <!-- <div class="text1 column">Personal Information Screen</div> -->
         </div>
 
         <div class="Slides2">
           <img src="Images/FirtechActualImages/notificationsPage.png" style="width:55%" alt="Notifications Screen" class="u-photo">
-          <!-- <div class="text1 column">Notifications Screen</div> -->
         </div>
 
 
@@ -308,29 +304,32 @@
         <a class="Next2" onclick="plusSlides(1,1)">&#10095;</a>
     </section>
     </article>
-    <h2 class="MainHeadings logoHeading">Logo Design</h2>
-    <article class="grid2 h-entry">
+    <h2 class="MainHeadings LogoHeading">Logo Design</h2>
+    <article class="Grid2 h-entry">
 
-<img src="Images/DocuVaultLogo.png" class="Logo1 u-photo">" alt="DocuVault Logo" width="25%">
+<img src="Images/DocuVaultLogo.png" class="Logo1 u-photo" alt="DocuVault Logo">
   <p class="LogoDescription1">
   When designing the DocuVault logo, I knew from the start I wanted it to be quite dependent on visual communication. My first decision was whether to incorporate the image of a vault or that of a lock. A vault made more sense because its in the name, but a lock was simpler and therefore easier for users to recognise. I decided to go with the vault and then tried to highlight a D and V shape from that image.
 </p>
-  <img src="Images/DocuVaultLogoConceptSketches/DVConcept.png" alt="DocuVault Concept 1" width="60%" class="Logo2 u-photo">"> 
+  <img src="Images/DocuVaultLogoConceptSketches/DVConcept.png" alt="DocuVault Concept 1" class="Logo2 u-photo">
   <p class="Text2"> 
   I enjoyed the concept but thought it looked a bit overwhelming and would be too much for consumers to refer back to easily. I then removed the V shape. I considered using the D I had highlighted from the vault to spell DocuVault. 
   </p>
-  <img src="Images/DocuVaultLogoConceptSketches/DConcept.png" class="Logo3 u-photo">" alt="DocuVault Concept 2" width="40%"> 
+  <img src="Images/DocuVaultLogoConceptSketches/DConcept.png" class="Logo3 u-photo" alt="DocuVault Concept 2" width="40%"> 
   <p class="Text3">
     I changed this and added the full name DocuVault underneath the logo. As the app is not known, I thought having the name underneath would make the logo more recognisable. 
 </p>
 </article>
 
 <span class="h-entry">
-  <a href="BakeryGame.html" class="postsBtn prevBtn u-url">Previous</a>
-  <a href="Firtech.html" class="postsBtn topBtn u-url">Top</a>
-<a href="PlantsVsInsects.html" class="postsBtn nextBtn u-url">Next</a>
+  <a onclick="BakeryGame()" class="PostsBtn PrevBtn u-url">Previous</a>
+  <a onclick="Firtech()" class="PostsBtn TopBtn u-url">Top</a>
+<a onclick="PlantsVsInsects()" class="PostsBtn NextBtn u-url">Next</a>
 </span>
             <script src="JS/carousel.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="JS/headings.js"></script>
+            <script src="JS/Navigation.js"></script>
 </body>
 
 <footer>
@@ -338,7 +337,7 @@
     Sponsored by:
 </h3> 
 <span class="Logos h-entry">
-    <img src="Images/DocuVaultLogo.png" alt="DocuVault Logo" class="DocuLogo u-photo">" width="15%"> 
+    <img src="Images/DocuVaultLogo.png" alt="DocuVault Logo" class="DocuLogo u-photo" width="15%"> 
     <img src="Images/FirtechLogo.png" alt="Firtech Logo" class="FirtechLogo u-photo">
 </span>
  </footer>

@@ -4,11 +4,11 @@
     <header>
         <nav> 
             <ul>
-                <li><a href="index.html" class="u-url"><i class="fa-solid fa-house-chimney"> </i>  <br/> Home </a>  </li> 
-            <li><a href="Development.html" class="u-url"><i class="fa-solid fa-code"> </i>  <br/> Development </a>  </li> 
-            <li> <a href="contactMe.html" class="u-url"><i class="fa-solid fa-address-book"></i> <br/> Contact </a></li> 
-            <li> <a href="Reflections.html" class="u-url"><i class="fa-solid fa-book-open-reader"></i><br/> Reflections </a></li> 
-            <li><a href="blogPosts.html" class="u-url"><i class="fa-brands fa-readme">  </i> <br/> Blogs </a> </li>
+                <li><a onclick="index()" class="u-url"><i class="fa-solid fa-house-chimney"> </i>  Home </a>  </li> 
+            <li><a onclick="Development()" class="u-url"><i class="fa-solid fa-code"> </i>  Development </a>  </li> 
+            <li> <a onclick="ContactMe()" class="u-url"><i class="fa-solid fa-address-book"></i>  Contact </a></li> 
+            <li> <a onclick="Reflections()" class="u-url"><i class="fa-solid fa-book-open-reader"></i> Reflections </a></li> 
+            <li><a onclick="blogPosts()" class="u-url"><i class="fa-brands fa-readme">  </i> Blogs </a> </li>
         </nav>
     </header>
 <head>
@@ -53,20 +53,22 @@ My website makes use of a singular column layout. I chose this over a multi-colu
 <p class="e-content">I added an option for the user to sign in as well as leave a review after playing the game on their version of the site i.e. other users will not be able to see their reviews, as the login is implemented through local storage not a database. I thought this would add another personalised touch (as well as the welcome sign which ‘types’ out the user’s name when they enter the site). When the user registers for an account I only ask for a username/email and a password which must contain a special character, lowercase letter, uppercase, letter, number and at least 8 characters. This increases the complexity of the password making it more difficult to be guessed by another user who does not own/ has not been given access to that account.</p>
 
 <span class="h-entry">
-    <a href="CriticalWriting9.html" class="postsBtn prevBtn u-url">Previous</a>
-    <a href="CriticalWriting11.html" class="postsBtn topBtn u-url">Top</a>
-<a href="CriticalWriting14.html" class="postsBtn nextBtn u-url">Next</a>
+    <a onclick="CriticalWriting9()" class="PostsBtn PrevBtn u-url">Previous</a>
+    <a onclick="CriticalWriting11()" class="PostsBtn TopBtn u-url">Top</a>
+<a onclick="CriticalWriting14()" class="PostsBtn NextBtn u-url">Next</a>
 </span>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="JS/headings.js"></script>
+    <script src="JS/Navigation.js"></script>
 </body>
     <footer>
         <h3 class="References"> References 
         </h3>
 
-        <cite>Accessibility at Penn Strate. 2022. Multiple Columns in HTML. [online] Available at: <https://accessibility.psu.edu/multicolumn/> [Accessed 23 May 2022].</cite> <br/>
-    <cite>BLAIR-EARLY, A. & ZENDER, M. 2008. User Interface Design Principles for Interaction Design. Design Issues, Vol. 24, No. 3, Summer,  pp. 85-107 </cite> <br/>
-<cite>FRANCISCO-REVILLA, L. & CROW, J. 2009. Interpreting the Layout of Web Pages. School of Information. 1 University Station: University of Texas. </cite> <br/>
-<cite>TOPPANO, E. & ROBERTO V. 2009. Semiotic Design and Analysis of Hypermedia. Department of Mathematics and Computer Science. Udine, Italy.</cite> <br/>
+        <cite>Accessibility at Penn Strate. 2022. Multiple Columns in HTML. [online] Available at: <https://accessibility.psu.edu/multicolumn/> [Accessed 23 May 2022].</cite> 
+    <cite>BLAIR-EARLY, A. & ZENDER, M. 2008. User Interface Design Principles for Interaction Design. Design Issues, Vol. 24, No. 3, Summer,  pp. 85-107 </cite> 
+<cite>FRANCISCO-REVILLA, L. & CROW, J. 2009. Interpreting the Layout of Web Pages. School of Information. 1 University Station: University of Texas. </cite> 
+<cite>TOPPANO, E. & ROBERTO V. 2009. Semiotic Design and Analysis of Hypermedia. Department of Mathematics and Computer Science. Udine, Italy.</cite>
 <cite>HASSENZAHL, M. & TRACTINSKY, N. 2006. User Experience – a research agenda. Department of Psychology, Social Psychology and Decision-Making. Darmstadt, Germany: Ben-Gurion University.</cite>    
 </footer>

@@ -4,10 +4,11 @@
     <header>
         <nav> 
             <ul>
-                <li><a href="index.html" class="u-url"><i class="fa-solid fa-house-chimney"> </i>  <br/> Home </a>  </li> 
-            <li><a href="Development.html" class="u-url"><i class="fa-solid fa-code"> </i>  <br/> Development </a>  </li> 
-            <li> <a href="contactMe.html" class="u-url"><i class="fa-solid fa-address-book"></i> <br/> Contact </a></li> 
-            <li> <a href="blogPosts.html" class="u-url"><i class="fa-solid fa-book-open-reader"></i><br/> Blogs </a></li> 
+                <li><a onclick="Index()" class="u-url"><i class="fa-solid fa-house-chimney"> </i>  Home </a>  </li> 
+            <li><a onclick="Development()" class="u-url"><i class="fa-solid fa-code"> </i> Development </a>  </li> 
+            <li> <a onclick="ContactMe()" class="u-url"><i class="fa-solid fa-address-book"></i> Contact </a></li> 
+            <li> <a onclick="BlogPosts()" class="u-url"><i class="fa-solid fa-book-open-reader"></i>Blogs </a></li> 
+            <li><a onclick="Profile()" class="u-url"><i class="fa-solid fa-id-card-clip"></i>About Me </a></li>  
         </nav>
     </header>
 <head>
@@ -24,31 +25,33 @@
 <body>
 
 <!-- <h1>Blog Posts!</h1> -->
-<section class="ReflectionsSection grid h-entry">
+<section class="ReflectionsSection Grid h-entry">
  
             
-           <a href="CriticalReflection.html" onmouseover="changeToVideo3()" class="u-url">
+           <a onclick="CriticalReflection()" onmouseover="changeToVideo3()" class="u-url">
         <img src="Images/ReflectionsImages/Critical_Error_Frame1.png" id="CodeImage3" alt="Image of code art" class="Img1 Img">
-        <img src="Images/ReflectionsImages/Critical_Error.gif" id="CodeVideo3" alt="Video of code art" class="Img1 Img hide">
+        <img src="Images/ReflectionsImages/Critical_Error.gif" id="CodeVideo3" alt="Video of code art" class="Img1 Img Hide">
     </a> 
 
-        <a href="CreativeReflection.html" onmouseover="changeToVideo2()" class="u-url">
+        <a onclick="CreativeReflection()" onmouseover="changeToVideo2()" class="u-url">
         <img src="Images/ReflectionsImages/Creative_Anim_Frame1.png" id="CodeImage2" alt="Image of code art" class="Img2 Img">
-        <img src="Images/ReflectionsImages/Creative_Anim.gif" id="CodeVideo2" alt="Video of code art" class="Img2 Img hide">
+        <img src="Images/ReflectionsImages/Creative_Anim.gif" id="CodeVideo2" alt="Video of code art" class="Img2 Img Hide">
         </a>
 
-        <a href="TechnicalReflection.html" onmouseover="changeToVideo()" class="u-url">
+        <a onclick="TechnicalReflection()" onmouseover="changeToVideo()" class="u-url">
         <img src="Images/ReflectionsImages/Code_Anim_Frame1.png" alt="Image of code art" id="CodeImage" class="Img Img3">
-        <img src="Images/ReflectionsImages/Code_Anim.gif" alt="Video of code art" id="CodeVideo" class="Img Img3 hide">
+        <img src="Images/ReflectionsImages/Code_Anim.gif" alt="Video of code art" id="CodeVideo" class="Img Img3 Hide">
         </a>
 
-<span class="text heading1">Critical Reflection</span>
-<span class="text heading2">Creative Reflection</span>
-<span class="text heading3">Technical Reflection</span>
+<span class="Text Heading1">Critical Reflection</span>
+<span class="Text Heading2">Creative Reflection</span>
+<span class="Text Heading3">Technical Reflection</span>
 
 </section>
 <script src="JS/ImageToVideo.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="JS/headings.js"></script>
+<script src="JS/Navigation.js"></script>
 </body>
 <footer>
     <cite>Cloudinary.com. (2022). [online] Available at: https://res.cloudinary.com/indysigner/image/upload/v1600878227/8_avckve.gif.</cite>

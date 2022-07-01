@@ -7,7 +7,7 @@ h1{
     font-size: 300%;
 }
 
-.grid{
+.Grid{
     display: grid;
     gap: 5rem;
     grid-template-columns: repeat(2, 1fr);

@@ -8,10 +8,6 @@ body{
     margin-left: 5%;
 }
 
-/* .fa-solid{
-    font-size: 100%;
-} */
-
 .Bars{
     margin-top:5%;
 }
@@ -83,6 +79,10 @@ cite{
 
       .DoveArt{
         width: 50%;
+    }
+
+    .Container{
+        margin-left: 10%;
     }
 
 

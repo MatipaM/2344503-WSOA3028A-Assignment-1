@@ -5,11 +5,12 @@
         <nav>
     
             <ul>
-                <li><a href="index.html" class="u-url"><i class="fa-solid fa-house-chimney"> </i>  <br/> Home </a>  </li> 
-                <li>  <a href="Development.html" class="u-url"> <i class="fa-solid fa-code"></i> <br/> Development </a>  </li> 
-                 <li><a href="blogPosts.html" class="u-url"><i class="fa-brands fa-readme">  </i> <br/> Blogs </a> </li> 
-                 <li><a href="contactMe.html" class="u-url"> <i class="fa-solid fa-address-book"> </i> <br/> Contact </a></li>
-                 <li><a href="Reflections.html" class="u-url"> <i class="fa-solid fa-address-book"> </i> <br/> Reflections </a></li>
+                <li><a class="u-url"><i class="fa-solid fa-house-chimney" onclick="Index()"> </i>   Home </a>  </li> 
+                <li>  <a class="u-url"> <i class="fa-solid fa-code" onclick="Development()"></i> Development </a>  </li> 
+                 <li><a class="u-url"><i class="fa-brands fa-readme" onclick="BlogPosts()">  </i> Blogs </a> </li> 
+                 <li><a class="u-url"> <i class="fa-solid fa-address-book" onclick="ContactMe()"> </i> Contact </a></li>
+                 <li><a class="u-url"> <i class="fa-solid fa-address-book" onclick="Reflections()"> </i>  Reflections </a></li>
+                 <li><a onclick="Profile()" class="u-url"><i class="fa-solid fa-id-card-clip"></i>About Me </a></li>  
                             </ul>
         </nav>
     </header>
@@ -79,7 +80,7 @@ Style Guide
 
 </p>
 
-<p class="Titles -item"> 
+<p class="Titles h-item"> 
    Exam Colour Scheme: 
  
 <img src="Images/WireframesAndColour/White.png" alt="white" width="5%" class="u-photo">
@@ -128,17 +129,21 @@ Nav Menu (fontawesome Icons):
  <div class="WireframeImg h-item">
     <img src="Images/UpdatedBlogPosts.png" alt="Updated Blog Posts Wireframe" width="75%" class="u-photo">
     <p>This image also shows the updated navigation bar, which is fixed when the user scrolls</p>
-
 </div>
 
 </article>
 
 <span h-event>
-    <a href="TechnicalReflection.html" class="postsBtn prevBtn u-url">Previous</a>
-    <a href="CreativeReflection.html" class="postsBtn topBtn u-url">Top</a>
-<a href="CriticalReflection.html" class="postsBtn nextBtn u-url">Next</a>
+    <a onclick="TechnicalReflection()" class="PostsBtn PrevBtn u-url">Previous</a>
+    <a onclick="CreativeReflection()" class="PostsBtn TopBtn u-url">Top</a>
+<a onclick="CriticalReflection()" class="PostsBtn NextBtn u-url">Next</a>
 </span>
 
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="JS/Navigation.js"></script>
+
+</body>
 <footer>
     <cite>
         Tenor. 2022. Pixel Study GIF - Pixel Study - Discover & Share GIFs. [online] Available at: <https://tenor.com/view/pixel-study-gif-20419806> [Accessed 22 April 2022].

@@ -57,9 +57,12 @@ body{
 
 
 cite{
-    background-color: rgba(236,236,219,1);
+    /* background-color: rgba(236,236,219,1); */
     color: black;
+    margin-bottom: 4%;
+    padding-bottom: 4%;
 }
+
 
 a{
     font-family: Calibri;
@@ -179,7 +182,7 @@ h1{
     display: none;
 }
 
-.postsBtn {
+.PostsBtn {
     font-size: 100%;
     font-weight: 600;
     font-family: Tahoma;
@@ -200,31 +203,31 @@ h1{
     box-shadow: 0 0 10px rgba(230,212,168,1);
     margin-bottom: 5%;
   }
-  .postsBtn:hover {
+  .PostsBtn:hover {
     background-image: linear-gradient(black, black); 
     color: white; 
   }
-  .postsBtn:active {
+  .PostsBtn:active {
     background-image: linear-gradient(rgba(230,212,168,1), rgba(222,178, 59,1)); 
   }
 
-  .nextBtn{
+  .NextBtn{
     margin-left: 20%;
     grid-column: 3;
   }
 
-  .topBtn{
+  .TopBtn{
     grid-column: 2;
     /* margin-left: 45%; */
   }
   
-  .prevBtn{
+  .PrevBtn{
     grid-column: 1;
     margin-right: 20%;
   }
 
 
-  .gridBtns{
+  .GridBtns{
     display: grid;
     gap: 5rem;
     grid-template-columns: repeat(3, 1fr);
@@ -286,8 +289,14 @@ h1{
       margin-left: 15%;
     }
 
-    nav li{
-        font-size: 60%;
+    nav{
+        font-size: 30%;
+        letter-spacing: 0.5px;
+        word-spacing: 1px;
+    }
+
+    i{
+        font-size: 100%;
     }
 
     body{
