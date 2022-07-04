@@ -2,47 +2,206 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <header>
+      <nav>
 
-
-        <!-- <input type="checkbox" id="check">
-        <label for="check" class="Bars"> <i class="fa-solid fa-bars"></i> </label> -->
-        
-        <nav>
-    
-            <ul>
-             <li>  <a onclick="Development()" class="u-url"> <i class="fa-solid fa-code"></i> Development </a>  </li> 
-            <li><a onclick="BlogPosts()" class="u-url"><i class="fa-brands fa-readme">  </i> Blogs </a> </li> 
-            <li><a onclick="ContactMe()" class="u-url"> <i class="fa-solid fa-address-book"> </i>  Contacts </a></li> 
-            <li><a onclick="Reflections()" class="u-url"><i class="fa-solid fa-book-open-reader">  </i>Reflections </a></li> 
-            <li><a onclick="Profile()" class="u-url"><i class="fa-solid fa-id-card-clip"></i>About Me </a></li>  
-             </ul>
-           
-        </nav>
-       
+        <ul> 
+          <li><a onclick="Index()" class="u-url"><i class="fa-solid fa-house-chimney"> </i> Home </a>  </li> 
+          <li> <a onclick="Development()" class="u-url"> <i class="fa-solid fa-code">  </i> Development </a> </li> 
+           <li><a onclick="BlogPosts()" class="u-url"><i class="fa-brands fa-readme">  </i> Blogs </a> </li> 
+           <li><a onclick="ContactMe()" class="u-url"> <i class="fa-solid fa-address-book"> </i>  Contact </a></li> 
+           <li><a onclick="Reflections()" class="u-url"><i class="fa-solid fa-book-open-reader">  </i>Reflections </a></li> 
+           <li><a onclick="Profile()" class="u-url"><i class="fa-solid fa-id-card-clip"></i>About Me </a></li>  
+          </ul>
+    </nav>
     </header>
 <head>
-    <meta name="description" content="This is the home page of Matipa Marufu's web development/game development portolfio.">
+  <meta name="description" content="This is the game development section of my portolfio. This page includes reflection on my investigation.">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="CSS/general.css">
-    <link rel="stylesheet" href="CSS/index.css">
-
+  <link rel="stylesheet" href="CSS/general.css">
+        <link rel="stylesheet" href="CSS/carousel.css">
+    <link rel="stylesheet" href="CSS/BakeryGame.css">
     <script src="https://kit.fontawesome.com/e9f29bfa82.js" crossorigin="anonymous"></script>
-    <meta charset="utf-8" />   
-    <title>Matipa's Portfolio Website</title>
-</head>
+    <meta charset="utf-8" />
  
 
+    <title>Matipa's Portfolio Website</title>
+  
 </head>
+
 <body>
-    <span>
-        <a href="PlantsVsInsects.html" class="PostsBtn PrevBtn">Previous</a>
-        <a href="BakeryGame.html" class="PostsBtn TopBtn">Top</a>
-      <a href="Firtech.html" class="PostsBtn NextBtn">Next</a>
-      </span>
+  <h1>Bakery Game</h1>
+<section class="h-entry">
+    <p class="e-content">  
+      The aim of my hypothesis was to explore the different types of ‘Bakery Story’ games with a focus on which mechanics made gameplay more enjoyable for players and which mechanics made them less enjoyable. I aimed to produce three different types of ‘Bakery Story’ games and then ask my play testers questions on which mechanics they preferred overall. In this case, my definition of ‘Bakery Story’ games constitutes games which surround either the production or distribution of items. In my prototypes these items will be cakes.</p>
+<ul class="list">
+      Constants: <br/>
+      <li>
+      o	All three games require that a money goal be met within a certain time period. 
+      </li>
+      <li>
+      o	Each game takes less than 2 minutes to play.
+    </li>
+    <li>
+      o	Four different types of cakes present each with different profits.
+    </li>
+    </ul>
+  </section>
+   
+<section class="SlideshowContainer h-entry">
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="JS/Navigation.js"></script>
+    <!-- Full-width images with number and caption text -->
+    <div class="MySlides Fade">
+      <img src="Images/BakeryGame/Prototype1.png" alt="Variation 1 of prototype" class="ExampleImg u-photo">
+      <br/>
+      <!-- <div class="text">Variation One. </div> -->
+      <p class="e-content">My first prototype was a simple click game. The player is the owner of a bakery, and their job is to make sure there are always enough cakes available for customers to purchase. Each cake has a different rate of consumption, quantity, and profit. The player can purchase more tables to increase the number of cakes purchased as well as an additional oven to increase the rate of consumption of cakes.</p>
+    </div>
+  
+    <div class="MySlides Fade">
+     <img src="Images/BakeryGame/Prototype2.png" alt="Variation 1 of prototype" class="ExampleImg u-photo">
+      <!-- <div class="text">Variation Two</div> -->
+      <p class="e-content">My second prototype made of use of WASD/arrow keys for player movement. The aim of the game was for the player to make as many cake deliveries as they could within the given time. The player has limited resources to purchase inventory and they must then travel around the map completing order.  </p>
+    </div>
+  
+    <div class="MySlides Fade">
+        <img src="Images/BakeryGame/Protootype3.png" alt="Variation 1 of prototype" class="ExampleImg u-photo">
+        <br/>
+      <!-- <div class="text">Variation Three</div> -->
+      <p class="e-content">The third and final prototype was based in 3d. It also made use of WASD/arrow keys. In this case the player had access to four different types of batter and three ovens. The player must bake as many cakes as possible. </p>
+    </div>
+    </section>
 
+  <!-- The dots/circles -->
+  <section style="text-align:center">
+    <span class="Dot" onclick="currentSlide(1)"></span>
+    <span class="Dot" onclick="currentSlide(2)"></span>
+    <span class="Dot" onclick="currentSlide(3)"></span>
+  </section>
+
+<!-- <a href="WebGLBuild-PlantsVsInsects/PlantsVsInsects(Online)/index.html" class="GameLink">Link to the game</a> -->
+
+<article p-GameReflection h-entry>
+  <h2 class="Heading">
+Process
+  </h2>
+
+  <h3>
+    Prototype 1
+  </h3>
+
+  <p class="e-content">This game was a non-real time version of the game, ‘Bakery Story’ which I had studied in Micro Build 3. I compared the differences between my non-real time prototype and the original ‘Bakery Story’ which needs to be played in real time. The original ‘Bakery Story’ which was the focus of my previous MicroBuild, required the player to check into their bakery at multiple points throughout the day to check that they were still products available for customers to purchase. Products in that game took between 1 minute and 2 days to cook. In my prototype I reduced this time period to a matter of seconds and reduced the entire gameplay period to two minutes.</p>
+  <p class="e-content">With my previous iteration of this prototype, I received feedback that the game was too simple, as then the only mechanic was purchasing cakes – consumption of these cakes was automatic, therefore the player felt that they did not have enough components to manage during gameplay. In this iteration I added the option to purchase an extra oven – which reduced rate of consumption of cakes, so that the player could sell more cakes. I also reduced the number of tables produced at the start of the game from 4 (maximum number) to 1 and allowed the player to purchase more tables if they wished to. I thought this would add an extra layer of complexity as the player would not only have to figure out which of the four cakes was the most profitable, but they would also have to decide on whether purchasing an extra oven/table would be a beneficial investment in the long run. I made sure the additional items were labelled R100 more than they were, so that the player would not accidentally run out of money and could continue purchasing more cakes to generate more profit.</p>
+<h4>Improvements</h4>
+<p class="e-content">One way in which I think I could have improved this prototype was to add the option for players to decorate their bakery in their own. This is quite a large aspect of some Bakery Story games, especially the one this prototype was based on, as it makes it easier for the player to feel as though they have invested valuable time and money into the game. Essentially it gives the game’s money another purpose apart from beating the level. Another aspect which would have largely affected player attention to gameplay would have been including multiplayer functionality. As in the original ‘Bakery Story’ there is an option to visit other people’s bakeries for decorative inspiration, there is also another purpose if multiplayer interaction which is to befriend other x number of players from the game in order to complete certain goals. However, adding strangers to the game just to complete a level can feel like an unnecessary barrier to complete a level and does more for advertising’s the game than it does game feel.</p>
+
+<h3>
+  Prototype 2
+</h3>
+<p class="e-content">Prototype 2 allows the player to move around and explore the game space in a much more interactive way than a simple clicking game would allow. Some feedback I received from playtesting my first prototype, was that it would be nice to include a selling mechanic, on top of just being able to buy the products (as in prototype 1). In this prototype the player gets paid for delivering order requests from different houses spread all over the map. </p>
+<p class="e-content">At first, I had made it so that not every order made a profit and the player had to decipher whether completing the order would be profitable or not. As the pop-up panel will display a message asking if the player would like to trade x products for y rand. I decided against this as I had used the Random.Range() function to generate the number of cakes and type of cake, therefore often there is a case (especially in the beginning) where the player only has a limited number of orders they can complete. This is due to the low capital they begin with (R50 which can only purchase 1 cherry pie).</p>
+<p class="e-content">To avoid dead ends, I ensured that the furthest house from the player’s starting position would also order the cheapest item on the menu – which is 1 cherry pie. To deter player’s from simply completing that order alone, I made the profit the lowest option – with the other houses the profit is based on a randomized range. It is also less beneficial for players to complete low-cost orders as they do not generate as much money. This is especially true when it comes to the quantity, as the quantity is multiplied by the profit.</p>
+<p class="e-content">I added fuel to the game, because I thought it would be a lovely contextual feature, considering the player’s avatar is a car. Each time the player visits a new place their fuel is subtracted by one. The fuel does not cost any money, because if the avatar runs out of fuel the panels will not pop up therefore, they will not be able to complete any orders/purchase any more products. Hence, I wanted to avoid the case where the player is unable to make any more money and cannot afford fuel. The purpose of the garage was to make time management more challenging, e.g., if the player is at the end of the game and they need to complete one last order, but then they run out of fuel.</p>
+
+<h4>Improvements</h4>
+<p class="e-content">Adding another level to the game, where each house could order up to two different cakes, as in this prototype the player only orders one product at a time but different quantities. This way the player would have more items in each order to manage.</p>
+
+<h3>
+  Prototype 3
+</h3>
+<p class="e-content">In this protype I carried over the movement feature from the second prototype. As I saw from playtesting that movement required more agency from the player as opposed to clicking in terms player interaction. </p>
+<p class="e-content">This prototype ‘s main feature was baking cake batter and then taking the baked cakes out of the oven before they burnt. If a player leaves a cake burning in the oven, they lose R2 from the profit for each second that it burns. If the cake burns for long enough the oven catches on fire and then eventually burns down itself. Ovens are limited and cannot be rebought.</p>
+</p>
+<h4>Improvements</h4>
+<p class="e-content">Like the first prototype, I could have included the option to purchase more ovens as the player progressed through the game. I also think it would have been interesting to replace time as the challenge with other factors. In the case of this prototype, the game could have ended when the player burnt x cakes. I think this would have changed the dynamic in an interesting way, because a lot of the feedback suggested that the time made it difficult for the player to play these games in a strategic way. When I would ask them which cakes, they thought made them the most money, the first time they played, they would not have taken into consideration that different batter would bake cakes with different profit because the time added so much more pressure to the game play. For example, one of my play testers did not notice that the number of each cake type that they had purchased was being measured in the corner of their UI (User Interface) panel.</p>
+
+
+<h3>
+Questions
+</h3>
+
+<ul>
+  <li>
+    
+o	Which aspect of this game did you like the most?
+</li>
+<li>
+o	Which aspect of this game did you like the least?
+</li>
+<li>
+o	What improvements would you make?
+</li>
+<li>
+o	Which cake did you think was the most profitable (prototype 1+ prototype 3)?
+</li>
+<li>
+o	Please play the game again, and then list the cakes from most profitable to least.
+</li>
+<li>
+o	Between the three games, which did you like the most, why?
+</li>
+<li>
+o	Between the three games, which did you like the least, why?
+</li>
+<li>
+o	Which mechanic did you like the most?
+</li>
+
+</ul>
+
+<h2>
+Reflection 
+</h4>
+
+<p class="e-content">
+  Prototype 1 is an expanded version of my micro build study for assignment 3. I made sure to reuse the same play testers for this assignment, so they would also be able to comment on the game’s evolution and see how I incorporated some of their feedback into the game.
+</p>
+		
+<p class="e-content">
+  Cakes in order of profitability:
+  Cake 1 (Cherry) -> Cake 1 (Yellow) -> Cake 2 (Green) ->	Cake 3 (Brownie)
+</p>
+
+
+<h3>
+Prototype 1
+</h3>
+<p class="e-content">
+  This game was the least favoured out of all the prototypes as it was the most simplistic. Players felt restricted in their actions. This shows how important personalisation is with simulation games. As the original ‘Bakery Story’ game contains very few mechanics (baking drinks/food and visiting neighbouring bakeries). However, being able to decorate your bakery in a unique way makes investing the time into the game more valuable. Players were able to easily identify cake 1 (R152/second.) and 4 (R150/second.) as the most profitable and cake 3 the least profitable (R54/second). Players chose cake 4 the most at the beginning (as it had a longer rate of consumption) then cake 1 at the end when they were running out of time. </p>
+
+  <h3>
+  Prototype 2
+  </h3>
+<p class="e-content">
+  One play tester liked how this game echoed real life. They voted this prototype their favourite because they felt the system was intuitive and communicative. The shop made it clear which cakes were the most profitable by listing them in order of cost. It was quite visible wen completing orders that bigger orders = higher profits as it would in the real world.</p>
+
+  <h3>
+  Prototype 3
+  </h3>
+<p class="e-content">
+  In this prototype players biggest dilemma, was whether to wait for each cake to finish baking or to risk adding another one to the oven. The most successful participants were those who made use of all three ovens. Players found it easy to distinguish the most profitable cake and the least if I asked them to pay attention to it. However, initially one player had thought that all batter was just as profitable as one another until they noticed the UI panel was tracking how much of each cake type the player had collected at the end of the game. I think this speaks to how the pressure of the time limit can make the players think less strategically. Cake 4 took the longest to bake but also took the longest to burn, therefore in this prototype would have been the best cake to bake, however some play testers preferred cake 1 because it made the most money (even though it burnt the fastest. Most play testers did not notice that each cake took a different amount of time to burn despite there being around 30s between the fastest cake and slowest cake. Although, some players did notice that they made less money when their products burnt. This time includes cooking from ‘raw to oven on fire’ burnt. One player felt that the game was dependent more on skill than strategy as they were struggling to get to the ovens fast enough to prevent the cakes from burning.</p>
+<p>
+
+  <h3>
+Overall
+  </h3>
+<p class="e-content">The prototypes involved in my testing are just a few of which are inspired by previous bakery simulation games i.e. ‘Bakery Story’, ‘Diner Dash’, ‘Cooking Dash’ and ‘Smurfs Baking’ game. However, my research is limited in the sense that they are much more mechanics available which I could have chosen to research instead of the previously mentioned ones.</p>
+ <p class="e-content">
+  Using WASD/arrow keys for movement allowed the player to engage with the space more actively than just clicking. Prototype 2 was my most successful game, with the mechanics of money management being the most popular. Other prototypes lacked this aspect of money management, as they focused only on accumulating and only prototype 1 required limited investments (into equipment as opposed to the product). This prototype also allocated the most time which allowed players to be strategic about their decisions. Information was communicated clearly to each player which I think made the experience more enjoyable, as speed and strategy became equal factors instead of one dominating over the other. 
+  </p>
+</section>
+</section>
+
+</div>
+</article h-entry>
+<span>
+  <a onclick="Firtech()" class="PostsBtn PrevBtn u-url">Previous</a>
+  <a onclick="PlantsVsInsects()" class="PostsBtn TopBtn u-url">Top</a>
+<a onclick="BakeryGame()" class="PostsBtn NextBtn u-url">Next</a>
+</span>
+    <script src="JS/automaticCarousel.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/headings.js"></script>
+    <script src="JS/Navigation.js"></script>
 </body>
 
 <footer>

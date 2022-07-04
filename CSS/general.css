@@ -55,12 +55,10 @@ body{
     
 }
 
-
 cite{
     /* background-color: rgba(236,236,219,1); */
     color: black;
-    margin-bottom: 4%;
-    padding-bottom: 4%;
+    /* margin-bottom: 10%; */
 }
 
 
@@ -96,11 +94,6 @@ a:hover{
     cursor: pointer;
 }
 
-/* .LoginIcon{
-    margin-top: -20%;
-    margin-left: 60%;
-    font-size: 500%;
-} */
 
 .fa-readme{
     margin-top: -100%;
@@ -124,17 +117,6 @@ li{
     padding-left: 1%;
     white-space: no-wrap;
     text-align: center;
-}
-
-.LoginIcon{ 
-    /* not rendering */
-    font-size: 100%;
-    float: right;
-    margin-top: -5%;
-    margin-right: 2%;
-    color: rgba(76, 25, 126, 255);
-    margin-left: 50%;
-    color: maroon;
 }
 
 .fa-user{

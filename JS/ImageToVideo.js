@@ -9,8 +9,8 @@ let codeVideo3 = document.getElementById("CodeVideo3");
 
 function changeToVideo()
 {
-    codeImage.classList.add("hide");
-    codeVideo.classList.remove("hide")
+    codeImage.classList.add("Hide");
+    codeVideo.classList.remove("Hide")
 
     // setTimeout(() => {
     //     console.log("Waited for 5 seconds")
@@ -23,8 +23,8 @@ function changeToVideo()
 
 function changeToVideo2()
 {
-    codeImage2.classList.add("hide");
-    codeVideo2.classList.remove("hide")
+    codeImage2.classList.add("Hide");
+    codeVideo2.classList.remove("Hide")
 
     // setTimeout(() => {
     //     console.log("Waited for 5 seconds")
@@ -37,8 +37,8 @@ function changeToVideo2()
 
 function changeToVideo3()
 {
-    codeImage3.classList.add("hide");
-    codeVideo3.classList.remove("hide")
+    codeImage3.classList.add("Hide");
+    codeVideo3.classList.remove("Hide")
 
     // setTimeout(() => {
     //     console.log("Waited for 5 seconds")

@@ -1,0 +1,12 @@
+h1{
+    margin-top: 10%;
+    font-family: Lemon_Tuesday;
+    font-size: 200%;
+    text-transform: uppercase;
+}
+
+@media (max-width: 512px){
+    h1{
+        margin-top: 15%;
+    }
+}

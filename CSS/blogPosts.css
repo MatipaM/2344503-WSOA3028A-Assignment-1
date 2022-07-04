@@ -107,28 +107,8 @@ h4{
 }
 
 footer{
-    margin-left: -70%;
+    margin-top: 5%;
     padding-bottom: 2%;
-    margin-bottom: 5%;
-}
-
-cite{
-    margin-left: -15%;
-    padding-right: 100%;
-}
-
-/* body{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 60%;
-    letter-spacing: 2%;
-    margin-bottom: -5%;
-} */
-
-footer{
-    width: 200%;
-    margin-left: -170%;
-    margin-top: 10%;
 }
 
 .Grid{

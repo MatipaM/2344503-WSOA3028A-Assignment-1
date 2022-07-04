@@ -3,7 +3,7 @@ html{
 }
 
 h1{
-    margin-top: 10%;
+    margin-top: 15%;
     font-size: 300%;
 }
 
@@ -15,14 +15,14 @@ h1{
     margin-right: 5%;
 }
 
-
-body div:nth-child(1)
+.h-entry
 {
     grid-column: 1;
+    /* margin-right: 50%; */
 }
 
 
-body div:nth-child(2)
+.h-item
 {
     grid-column: 2;
     width: 100%
@@ -33,12 +33,12 @@ body div:nth-child(2)
     .CriticalReflectionSection{
         display: block;
     }
-
+/* 
     body{
         font-size: 10%;
-    }
+    } */
 
-        body div:nth-child(2)
+    .h-item
     {
         grid-column: 2;
         width: 75%
@@ -51,14 +51,22 @@ body div:nth-child(2)
     h1{
         margin-top: 20%;
     }
+
+    .grid{
+        display: block;
+    }
+
+    h-item{
+        display: none;
+    }
 }
 
 @media (max-width: 1024px){
-    body{
+    /* body{
         font-size: 50%;
-    }
+    } */
 
-    body div:nth-child(2)
+    .h-item
 {
     grid-column: 2;
     width: 75%
@@ -66,14 +74,19 @@ body div:nth-child(2)
 }
 
 @media (max-width: 2048px){
-        body{
+        /* body{
             font-size: 90%;
+        } */
+
+        .h-entry{
+            grid-column: 1; 
         }
 
-        body div:nth-child(2)
+        .h-item
     {
         grid-column: 2;
         width: 70%
         
     }
+
 }

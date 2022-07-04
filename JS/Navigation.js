@@ -23,6 +23,11 @@ function CreativeReflection()
     location.href = "CreativeReflection.html"
 }
 
+function CriticalReflection()
+{
+    location.href = "CriticalReflection.html"
+}
+
 function CriticalWriting2()
 {
     location.href = "CriticalWriting2.html"
@@ -58,6 +63,13 @@ function Development()
     location.href = "Development.html"
 }
 
+function ExternalEssay()
+{
+    location.href = "ExternalEssay.html";
+ 
+}
+
+
 function Firtech()
 {
     location.href = "Firtech.html";
@@ -73,6 +85,11 @@ function Index()
 function PlantsVsInsects()
 {
     location.href = "PlantsVsInsects.html";
+}
+
+function Profile()
+{
+    location.href = "Profile.html";
 }
 
 function Reflections()
