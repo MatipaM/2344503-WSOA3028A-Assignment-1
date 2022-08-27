@@ -1,0 +1,32 @@
+html{
+    background-image: none;
+    background-color: rgba(254,227,221,1);
+}
+
+h1{
+    margin-top: 5%;
+}
+
+p a{
+    padding: 0%;
+    margin: 0%;
+    font-family: Tahoma;
+    color: navy;
+
+}
+
+.grid{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+p{
+    grid-column: 2;
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}

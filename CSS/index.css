@@ -54,6 +54,10 @@
     animation: blink .6s linear infinite alternate;
 }
 
+footer{
+  bottom: 0;
+}
+
   @keyframes blink {
     0% {opacity: 1;}
     40% {opacity: 1;}

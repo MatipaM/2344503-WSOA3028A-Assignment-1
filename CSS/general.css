@@ -18,6 +18,14 @@ html{
   /* font-family: Calibri, 'Trebuchet MS', sans-serif; */
 }
 
+.currentPage{
+    color: brown;
+}
+
+.currentPage:hover{
+    color: brown;
+}
+
 *{
     font-family: Tahoma;
     letter-spacing: 1.5px;
@@ -52,7 +60,13 @@ h1{
 body{
     font-family: Calibri;
     cursor: auto;
-    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    margin-top: auto;
 }
 
 cite{

@@ -4,16 +4,15 @@
     <head>
        <!-- <input type="checkbox" id="check">
         <label for="check" class="Bars"> <i class="fa-solid fa-bars"></i> </label> -->
-        <nav>
-    
-            <ul>
-             <li>  <a onclick="Development()" class="u-url"> <i class="fa-solid fa-code"></i>Development </a>  </li> 
-            <li><a onclick="BlogPosts()" class="u-url"><i class="fa-brands fa-readme">  </i>  Blogs </a> </li> 
-            <li><a onclick="ContactMe()" class="u-url"> <i class="fa-solid fa-address-book"> </i>Contacts </a></li> 
-            <li><a onclick="Reflections()" class="u-url"><i class="fa-solid fa-book-open-reader">  </i>Reflections </a></li>
-            <li><a onclick="Index()" class="u-url"><i class="fa-solid fa-id-card-clip"></i>Home</a></li>   
-             </ul>  
-        </nav>
+        <ul>
+          <li><a onclick="Index()" class="u-url "><i class="fa-solid fa-house-chimney "> </i>Home </a>  </li>
+          <li>  <a onclick="Development()" class="u-url"> <i class="fa-solid fa-code "></i>Development </a>  </li> 
+         <!-- <li><a onclick="BlogPosts()" class="u-url"><i class="fa-brands fa-readme">  </i>  Blogs </a> </li>  -->
+         <li><a onclick="ContactMe()" class="u-url "> <i class="fa-solid fa-address-book"> </i>Contacts </a></li> 
+         <!-- <li><a onclick="Reflections()" class="u-url"><i class="fa-solid fa-book-open-reader">  </i>Reflections </a></li> -->
+         <li><a onclick="Profile()" class="u-url currentPage"><i class="fa-solid fa-id-card-clip currentPage"></i>About Me </a></li>   
+       </ul>
+       <script src="https://kit.fontawesome.com/e9f29bfa82.js" crossorigin="anonymous"></script>
     </head>
 
 <header>
@@ -25,21 +24,23 @@
 <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
 <link rel="stylesheet" type="text/css" href="CSS/example.css">
 <link rel="stylesheet" href="CSS/prism.css" />
+
+<link rel="stylesheet" href="CSS/Profile.css" />
 </header>
 
 <body>
   <div class="example">
-    <div class="section sub">About Me</div>
+    <h1>About Me</h1>
     <div class="ex-exp-tabs"></div>
 
 </div>
 
-          <div class="section sub">Education</div>
+          <h2>Education</h2>
           <div class="ex-item-grid"></div>
 
 
       <div class="ex-exp">
-        <div class="section">Work Experience</div>
+        <h2>Work Experience</h2>
         <div class="section-content">
           
           <!-- <div class="section sub">experience stepper</div> -->
@@ -61,6 +62,6 @@
 <script src="JS/Navigation.js"></script>
 </body>
 <footer>
-
+This page was created using <a target="_blank" href="https://github.com/gazijarin/Portfolio.js">Gazi's Porftolio.js API</a> 
 </footer>
 </html>

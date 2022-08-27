@@ -52,9 +52,9 @@ stepper.addExpItem(
 );
 stepper.addExpItem(
   "2022 June - Present",
-  "Software Developer Intern @ Uhuru Financial Services",
-  "  ",
-  ["Amazon Web Services - QuickSight"]
+  "Java Developer Intern @ Uhuru Wallet",
+  "I am currently training part-time to be a backend java developer at UhuruWallet. This training consists of me studying for the Oracle Certified Professional Java  SE 11 Developer Exam which I am planning on taking before year end.",
+  ["Java"]
 );
 
 
