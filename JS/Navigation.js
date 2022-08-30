@@ -69,6 +69,10 @@ function ExternalEssay()
  
 }
 
+function FarmingSimulator()
+{
+    location.href = "FarmingSimulator.html";
+}
 
 function Firtech()
 {
