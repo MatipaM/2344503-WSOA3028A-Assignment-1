@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <header>
+
+
+        <!-- <input type="checkbox" id="check">
+        <label for="check" class="Bars"> <i class="fa-solid fa-bars"></i> </label> -->
+        
+        <nav>
+    
+            <ul>
+             <li>  <a onclick="Development()" class="u-url"> <i class="fa-solid fa-code"></i>Development </a>  </li> 
+            <!-- <li><a onclick="BlogPosts()" class="u-url"><i class="fa-brands fa-readme">  </i>  Blogs </a> </li>  -->
+            <li><a onclick="ContactMe()" class="u-url"> <i class="fa-solid fa-address-book"> </i>Contacts </a></li> 
+            <!-- <li><a onclick="Reflections()" class="u-url"><i class="fa-solid fa-book-open-reader">  </i>Reflections </a></li> -->
+            <li><a onclick="Profile()" class="u-url"><i class="fa-solid fa-id-card-clip"></i>About Me </a></li>   
+             </ul>
+           
+        </nav>
+       
+    </header>
+<head>
+    <meta name="description" content="This is the home page of Matipa Marufu's web development/game development portolfio.">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/ExternalEssay.css">
+
+    <script src="https://kit.fontawesome.com/e9f29bfa82.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />   
+    <title>Matipa's Portfolio Website</title>
+</head>
+
+
+</head>
+<body class="h-entry">
+    <h1>External library/Framework/API Essay</h1>
+
+<p class="e-content">In this essay, I will be discussing why I chose to use a small library called portfolio.js by Gazi. I will explore why I did not go for other options instead, such as another library e.g. jQuery or a framework like Node.js. I will take a look at challenges I had with implementing my desired functionality as well as how using an external library made it easier to display information in an amicable manner. I will examine how the library I chose allowed me to create a more in depth experience for the user by providing a simple yet functional design.</p>
+<p class="e-content">My first challenge when implementing an external asset was understanding the difference between an API, framework an library and then choosing which one I wanted to implement. API stands for Application Programming Interface, essentially it is a method of communication for digital programs (API - Wikipedia, 2022). A framework is a “universal, reusable software environment that provides particular functionality” (Software Framework - Wikipedia, 2022) within the development process. And lastly a library is a set of predefined functions which can be used repeatedly. The difference between a library and a framework, is that with a library, the developer is in control of “when and where to call the library” (freeCodeCamp.org, 2019), however with a framework, the framework controls when the code is called (freeCodeCamp.org, 2019). Overall, I decided to work with a library because I felt that it gave me more control over how I implemented my code and allowed me to edit as much of the library’s code as I wanted. </p>
+<p class="e-content">The reason I decided to work with Gazi’s portfolio library is because it was designed with the focus of a software developer portfolio website in mind. The library was created by a final year computer science student at the University of Toronto, she is also working as a software engineer intern at Amazon. I felt that it would be fitting to use the library of someone who was also a student and who had secured a job in the field I wanted to gain a career in. That way I would only have to make minimal changes to the code to get the effect that I wanted. </p>
+<p class="e-content">I also found that the layout and structure she had chosen for the library had a creative yet minimalistic look I was going for. She used a card system to display information which was similar to the card system I had used for my development, blog post and reflection pages. The cards even had the same shadow shading, I had previously used. Therefore fitting in that library into my website was easy to do, and kept up the uniformity I was aiming for. I did have to make changes to the background/card colour for consistency’s sake. The card design allowed users to access a lot of information in the same space therefore avoiding large blocks of text. As information was contained in short sections which could be toggled between with buttons. In the About Me section the user can switch between skills and programming languages. The same format was applied in the work experience tabs, where the user can  switch between jobs to see more detailed job descriptions.</p>
+<p class="e-content">I used the library on my about me page as most of the information was designed in a CV format. The library’s code was presented like a template, with examples containing where to put certain information. This made it extremely easy to use, as I just had to decide which sections of the library I wanted to keep and then fill in the JavaScript files with the corresponding information. Most of the text was contained in the javascript files therefore the html content was limited to class names which made it both easier and harder to sort through the CSS, as only the root class names were present in the HTML. This made it easy to sort through which sections I wanted to be visible but difficult to edit child classes, as I could not see which HTML elements they were altering.</p>
+<p ckass="e-content">Even though the library was small it made up for that by being well documented. It would have been easier to edit if the documentation had also included which parts of the CSS affected which html elements. The CSS names were not intuitive and because the library was not responsive, it meant that I had to test each section of CSS code to find its corresponding html element. Another issue was that the entire library had to be imported into my local folder, unlike jQuery which only requires one online reference to work. This made it easy to produce errors, as the scripts are extremely co-dependent on one another, therefore leaving just one out can affect the entire functionality of the selected pages. The co-dependency of scripts also meant that I had to read through all of the code in the library to ensure that everything which was required was in my project and was located in the correct subfolder. Reading through the library helped when solving unexpected errors as I gained a deeper understanding of how the library actually worked. Another downside to deciding to work with such a small library is that it has one creator and is not widely used. Therefore finding a support community where you can ask questions was not an option. This meant that any errors I ran into, I had to solve myself. The documentation did not have a section dedicated to common errors, other than what references to use to locate the scripts. </p>
+<p class="e-content">I also had the option of using jQuery. The portfolio.js library used some components from that library and I also created a function which changed the colour of all h1 elements on my website when the user hovered over it. I found that jQuery is very similar to traditional JavaScript, which makes it much easier to learn as there is a smaller learning curve. The library is advantageous when animating selectors as selecting all of a certain type of selectors on a page is simple. Although it seems less efficient than JavaScript when editing specific buttons. The library is well documented and widely used, therefore they are multitudes of external resources containing learning materials as well as communities available to ask specific questions. The library focuses mainly on the front end and is run on the client side as opposed to the server, which does mean that is not as secure. Overall jQuery would have been a good option, but I chose to primarily implement the portfolio library because it worked best for my specific application and design needs in mind.</p>
+<p class="e-content">When I was contemplating implementing a login system to my website I considered using Node.js. Node.js is a server side framework, which meant that my users data would be stored safely as opposed to using local storage which could easily be hacked. However, I decided against a login system as I did not think it would be appropriate for a portfolio website.
+<p class="e-content">    Overall, the portfolio.js library was the most appropriate for my specific needs. However I think when developing future non-portfolio website, I would be more likely to use another library/framework such as jQuery or Node.js depending on whether my project is more on the back or front end.
+</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/headings.js"></script>
+    <script src="JS/Navigation.js"></script>
+</body>
+<footer>
+    <cite> En.wikipedia.org. 2022. API - Wikipedia. [online] Available at: <https://en.wikipedia.org/wiki/API> [Accessed 4 July 2022].
+    </cite> <br/>
+
+    <cite>En.wikipedia.org. 2022. Software framework - Wikipedia. [online] Available at: <https://en.wikipedia.org/wiki/Software_framework> [Accessed 4 July 2022].</cite> <br/>
+<cite>freeCodeCamp.org. (2019). The Difference Between a Framework and a Library. [online] Available at: https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/.</cite> <br/>
+<cite>Jarin.me. 2022. Gazi. [online] Available at: <https://jarin.me/> [Accessed 4 July 2022].</cite>
+</footer>
+</html>

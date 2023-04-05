@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <header>
+        <nav> 
+            <ul>
+                <li><a onclick="Index()" class="u-url"><i class="fa-solid fa-house-chimney"> </i>  Home </a>  </li> 
+            <li><a onclick="Development()" class="u-url"><i class="fa-solid fa-code"> </i> Development </a>  </li> 
+            <li> <a onclick="ContactMe()" class="u-url"><i class="fa-solid fa-address-book"></i> Contact </a></li> 
+            <li> <a onclick="BlogPosts()" class="u-url"><i class="fa-solid fa-book-open-reader"></i>Blogs </a></li> 
+            <li><a onclick="Profile()" class="u-url"><i class="fa-solid fa-id-card-clip"></i>About Me </a></li>  
+        </nav>
+    </header>
+<head>
+    <meta name="description" content="This page contain blog posts. These posts are a critical reflection/response to the history and development of the world wide web">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/reflections.css">
+   
+    <script src="https://kit.fontawesome.com/e9f29bfa82.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <title>Matipa's Portfolio Website</title>
+</head>
+
+<body>
+
+<!-- <h1>Blog Posts!</h1> -->
+<section class="ReflectionsSection Grid h-entry">
+ 
+            
+           <a onclick="CriticalReflection()" onmouseover="changeToVideo3()" class="u-url">
+        <img src="Images/ReflectionsImages/Critical_Error_Frame1.png" id="CodeImage3" alt="Image of code art" class="Img1 Img">
+        <img src="Images/ReflectionsImages/Critical_Error.gif" id="CodeVideo3" alt="Video of code art" class="Img1 Img Hide">
+        <h3 class="Text1"> Critical Reflection </h3>
+    </a> 
+
+        <a onclick="CreativeReflection()" onmouseover="changeToVideo2()" class="u-url">
+        <img src="Images/ReflectionsImages/Creative_Anim_Frame1.png" id="CodeImage2" alt="Image of code art" class="Img2 Img">
+        <img src="Images/ReflectionsImages/Creative_Anim.gif" id="CodeVideo2" alt="Video of code art" class="Img2 Img Hide">
+        <h3 class="Text2"> Creative Reflection </h3>
+        </a>
+
+        <a onclick="TechnicalReflection()" onmouseover="changeToVideo()" class="u-url">
+        <img src="Images/ReflectionsImages/Code_Anim_Frame1.png" alt="Image of code art" id="CodeImage" class="Img Img3">
+        <img src="Images/ReflectionsImages/Code_Anim.gif" alt="Video of code art" id="CodeVideo" class="Img Img3 Hide">
+        <h3 class="Text3"> Technical Reflection </h3>
+        </a>
+
+        <a onclick="ExternalEssay()" class="u-url">
+            <img src="Images/ExternalLibraryIcon.png" alt="Image of a web crawler" class="Img2 Img u-photo">
+            <h3 class="Text4"> External Library/API/Framework Essay </h3>
+        </a>
+
+    
+<!-- <span class="Text Heading1">Critical Reflection</span>
+<span class="Text Heading2">Creative Reflection</span>
+<span class="Text Heading3">Technical Reflection</span> -->
+
+</section>
+<script src="JS/ImageToVideo.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="JS/headings.js"></script>
+<script src="JS/Navigation.js"></script>
+</body>
+<footer>
+    <cite>Cloudinary.com. (2022). [online] Available at: https://res.cloudinary.com/indysigner/image/upload/v1600878227/8_avckve.gif.</cite>
+    <br/>
+<cite>dribbble.com. (n.d.). ‘Code’ animation. [online] Available at: https://dribbble.com/shots/4569474--Code-animation [Accessed 17 Jun. 2022].
+</cite>
+<br/>
+<cite>GIPHY (n.d.). Technical Difficulties Error GIF - Find & Share on GIPHY. [online] giphy.com. Available at: https://giphy.com/gifs/1RkDDoIVs3ntm [Accessed 17 Jun. 2022].
+</cite>
+<cite>Jarin.me. 2022. Gazi. [online] Available at: <https://jarin.me/> [Accessed 4 July 2022].</cite>
+
+</footer>
+
+</html>

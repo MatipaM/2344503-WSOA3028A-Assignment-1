@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <header>
+        <nav>
+    
+            <ul>
+                <li><a onclick="Index()" class="u-url"><i class="fa-solid fa-house-chimney"> </i>  Home </a>  </li> 
+                <li>  <a onclick="Development()" class="u-url"> <i class="fa-solid fa-code"></i> Development </a>  </li> 
+                 <li><a onclick="BlogPosts()" class="u-url"><i class="fa-brands fa-readme">  </i> Blogs </a> </li> 
+                 <li><a onclick="ContactMe()" class="u-url"> <i class="fa-solid fa-address-book"> </i>  Contact </a></li>
+                 <li><a onclick="Reflections()" class="u-url"> <i class="fa-solid fa-address-book"> </i>Reflections </a></li>
+                 <li><a onclick="Profile()" class="u-url"><i class="fa-solid fa-id-card-clip"></i>About Me </a></li>  
+                            </ul>
+        </nav>
+    </header>
+<head>
+    <meta name="description" content="This is the reflections page of portolfio. This page speaks to how I created this website via wireframes, technical and creative reflections.">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="CSS/general.css">
+     <link rel="stylesheet" href="CSS/TechnicalReflection.css"> 
+    <script src="https://kit.fontawesome.com/e9f29bfa82.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />   
+    <title>Matipa's Portfolio Website</title>
+</head>
+
+
+    <body>
+        <section>
+        <article>
+            <span class="TechnicalReflectionSection">
+            <h1 class="Heading">
+    Technical Reflection </h1>
+<span class="TechnicalReflectionSection Grid h-entry">
+            <div>
+                <p class="e-content">
+                    I made the navigation bar position fixed so that no matter how far the user scrolls down on the page, they can use the navigation bar immediately as it will always be positioned at the top of the screen. I also made sure to only use one script to control where the navigation bar was positioned to prevent it from moving around. 
+                    </p>
+    
+    <p class="e-content">
+        I decided to add text to the bottom of my icons, as I received feedback that my icons were not distinctive enough to be used without text. I managed to scale this efficiently for a smaller device and was happy with how the navigation bar looked on all three devices. 
+        </p>
+
+<p class="e-content">I managed to figure out how to position the carousels on the app dev page (Firtech.html) side by side by using grids, which kept the carousels in place when resizing. I changed the carousels to be placed one after another on a mobile device so that the user would have enough space to be able to view each carousel clearly. I also used a double column to display the logos and text below the carousels. As I thought a single column would make the text confusing, as the user may not know if the paragraph is talking about the loo above or below.</p>
+<p class="e-content">I created a 2x3 grid for the blog posts page and then a 1x3 grid for the reflections and development page. I found that using 3 column cards gave the website a more uniform look. It also allowed all the blog posts to be visible on a single page so that the user would not have to scroll down to see all the reflections. All the grids collapse into a single column on a mobile screen. This is to compensate for the smaller fonts and images. As a grid would be much more difficult to see on a 500pixel device or less.</p>
+<p class="e-content">When it came to semantic markup, I made an effort to mark all elements on my page with tags that I thought were most appropriate. Initially, I wasn't too sure what content to place in the header and footer section of my website. After doing some research I decided to add references/citations of pixel art from other artists which I had added to my website as well the contact details I was comfortable with recruiters seeing. In the header of each webpage, I placed the navigation bar. </p>
+<p class="e-content">I used an external API to make my Contact Me page functional. The contact me page, validates the users email and password length with html. I am then forwarded the email the user has typed in the message box. The page redirects to a Thank you page I created, where the user can use the navigation bar to visit any other pages they find interesting.</p>
+</div> 
+
+    <div class="h-entry">
+        <img src="Images/TechnicalReflectionWireframe.png" style="width:100%"  alt="X page on mobile screen" class="u-photo"> 
+        <!-- change to screenshot of image of actual website -->
+    </div> 
+
+</span>
+    </article>
+            </section>
+            <span h-entry>
+                <a onclick="CriticalReflection()" class="PostsBtn PrevBtn u-url">Previous</a>
+                <a onclick="TechnicalReflection()" class="PostsBtn TopBtn u-url">Top</a>
+            <a onclick="CreativeReflection()" class="PostsBtn NextBtn u-url">Next</a>
+            </span>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="JS/headings.js"></script>
+            <script src="JS/Navigation.js"></script>
+</body>
+<footer class="h-resume">
+<p class="p-contact">Contact Email: ocmatipa@gmail.com</p>
+</footer>
+</html>
